@@ -1,0 +1,1495 @@
+0000  no Hyla cinerea (Hc)
+0001  only human voices and footsteps and bird
+0002  lots of voices (family walking by)
+0003  voices (Doug and Joe and Ratnam), bronze frog, couple of bugs
+0004  our voices, couple of bugs
+0005  some bronze frog calls, our noise from dropping stuff
+0006  voices, several bronze frog calls, our noise, bird
+0007  standard background
+0008  background
+0009  background, some weird bird toward the end?  Only about 4 calls
+0010  no, I think it's a frog with a frog in its throat!  From about 5-34 sec. Slightly bigger on Array 3 than 1, somewhat smaller on 2.
+Extracted from 5-35 sec; 1 is scratchy-voiced frog, 2 another Hc making a few random calls?  Max level on Array 3 about -1.0; this may be too small
+meanlocs =
+   -5.2768    4.9791    0.5314  Assuming array at (0,0), or frogs coming into arena?
+   -3.3552    7.7762    0.2251
+
+0011  chorus at distance; lots of them sounding scratchy.  Emerging from background at about 40-45 sec
+0012  local jumbled chorus of at least three until about 42 sec
+Max ampl about 0.6; probably too far away to recover well
+0013  bullfrog in background, bug
+0014  two bugs, bronze frog or two
+0015  some voices
+0016  background
+0017  background
+0018  background, plop in water
+0019  background
+0020  background
+0021  background
+0022  background
+0023  background, one calling fairly far away toward end
+0024  background
+0025  background
+0026  background, voices
+0027  background
+0028  background
+0029  frogs far away, airplane flying over
+0030  background
+0031  background
+0032  background
+0033  background
+0034  background
+0035  background
+0036  background
+0037  background
+0038  background
+0039  background + bugs in the last 7 seconds
+0040  background; two katydids or some other bug in first 4 sec; otherwise nothing but another bug call
+0041  one bug
+0042  bout beginning about 35 sec; collision about 46 sec, some other collisions, too.  Strongest on Array 3, but second frog only visible on array 2
+extracted from 30-65 sec
+meanlocs (Array 2) =
+   -0.5394    6.8788    0.5529 clean
+    9.8274    7.1377    1.0000  still dominated by largest source
+    9.7911    9.7360    1.0000  still dominated by largest source
+This set just seems too far away to separate
+0043  bout continues until about 12 sec
+0044  one bug
+0045  one bug
+0046  two bugs
+0047  bout starting at about 42 sec; looks like just one frog, loudest on Array 3
+0048  one bug; what happened to the bout?  Didn't look like it was about to end at that point ...
+0049  one bug
+0050  couple isolated other calls, not Hc
+0051  couple isolated other calls, not Hc
+
+0052  isolated bout from 7-30 sec; looks like we may have some good, clean collision action on Array 2
+Processed from 7 to 32 seconds
+Locations (Array 2):    (0.1630    8.5233    0.5487) [for this one, had to lower corrminthresh to about 0.3 for it to emerge (which it did strongly]
+(8.2254    6.7011    0.7781)   bbsp0052new.mat;  bbsp0052.mat thissource 1, 8 respectively
+Box 3 places it at (-1.1161    8.6995   -0.1497) or maybe (1.4341    9.4351   -0.4817) (former, I think; that's consistent w projecting Box 2 out along the ray to the water surface)  The extraction of that source is much better, too!
+Box 1 says
+    0.0809    7.7038    1.4869
+    5.3001    5.4281    1.1256
+When Box 2 restricted to z=0,
+   -0.8466    9.0807         0
+    9.9707    6.7949         0
+when Box 3 at z=0, widely scattered from x on (-2,2) y on (8.5 to 9.5)
+ 7.7  6.0  0
+when Array 1 has z=0,
+ 0.3  7.8  0
+ either about 6 6 0 or 8.4 6.75 0
+Clustering seems worse with z=0.
+Redoing, 5-30 sec:
+meanlocs (Array 2) =
+    0.1654    8.5276    0.5289  clean (0.6 thresh 0.16)  0-25 ex-secs; three scratchy pulses at end
+    8.3594    6.7084    0.6987  clean (0.9 thresh 0.11)  8-25 ex-secs; scratchy segment in middle
+Collision at 10 sec due to 1.5 from lead guy, then he goes short to interleave; skips a pulse at 11.5.  At 14 sec, short pulse from lead causes collision, second frog immediately 1.5.  At 18, second frog goes scratchy until collision, then immediately six 1.5s in a row, of which 3 and 5 collide!
+Redoing yet again with robust steering vector adaptation enabled, 5-30 sec
+meanlocs (Array 2 bbsp0052box2) =
+    0.1885    8.5108    0.4346  clean (0.6 thresh 0.21)  0+-24 ex-secs  Source Y  Three scratchy calls at end
+    8.5161    6.8060    0.5179  clean (1.0 thresh 0.12)  7-25 ex-secs  Source W  Scratchy segment in middle
+   -1.9266    9.4047    0.0712  Same as 2.1
+   -5.6100   11.2581   -0.2379  Didn't extract; same as 2.1
+
+0053  single caller starting up about 23 sec; looks like another may be trying to join in around 44 sec.  Extracted from 20-60 sec.  All frogs largest on Array 2 (1.5)
+meanlocs (Array 2) =
+    0.2833    8.4809    0.2496  fairly clean (0.6)  25-36 ex-secs
+    8.6207    6.7368    0.6002  clean (0.9) 2-37 ex-secs; several scratchy bursts at end of call
+There were more distant frogs not recovered.
+0054  tail end of that bout from 0 to about 6 sec, otherwise nothing; second frog not very consistent?
+
+0055  nothing
+0056  nothing but couple non-Hc calls
+0057  single frog calling from 31-39 sec; much stronger on Array 2
+Two other sources in Array 2, both much smaller than dominant one.
+bbsp0057.mat recovers the second source from 30-40 sec (it starts around 20 sec), but I'm not sure the suppression of the larger source is sufficient to resolve all collisions.  bbsp0057b.mat contains the extracted largest source from 20-40 sec.
+
+0058  four bug calls, then isolated chorus begins at about 14 sec; strongest on array 2 and 3; all frogs on 2; some collisions? then a barking one toward the end mixed in.  Extract 10-65 sec
+meanlocs (Array 2) =
+    0.4846    8.8314   -0.4047  fairly clean (0.7 thresh 0.3) 14-42 ex-sec  Source A
+    8.4696    6.7937    0.5769  clean (1.0, thresh 0.1)  4-39 ex-sec;  Source B (best)  scratchy calls near end.  At 26 sec, he delays once and two collisions in a row happen, and a delay at 30 causes another.  Gets scratchy 36-39 ex-sec.  Seems to be dodging some frog in distance, not 2.1
+meanlocs (Array 3) =
+    3.6248    6.8454    1.0000  marginal (0.25 thresh 0.2)  SAME AS 3.2! = Source B
+    4.7993    6.5492    1.0000  marginal (0.25 thresh 0.2)  4 to 39 or 42 ex-sec; scratchy toward end  Source B
+    0.8246    8.9902   -0.3294  clean (1.3 thresh 0.15)  14-42 ex-sec  Source Y  No scratchy  Source A (best)
+   -1.0994   12.4952    0.6782  not separable (0.25)
+meanlocs (Array 1) =
+    0.2969    7.8083    0.8951  fairly clean (0.6 thresh 0.2)  15-30, 36-42 ex-secs; some jostling around, but no scratchies  Source A
+    5.7246    3.3434    0.6711  fairly clean (0.35, thresh 0.12) 25-42 ex-secs;  three scratchy segments at end with pauses in between  Source C
+    4.6105    5.5171    0.0374  fairly clean (0.6 thresh 0.17)  3-39 ex-secs  scratchy at end  Source B
+    4.8684    5.6685   -0.4912  fairly clean (0.6 thresh 0.14)  3-39 ex-secs,  SAME AS 1.3  Same as 1.3 = Source B
+    5.2204    5.8184   -0.4585  fairly clean (0.6 thresh 0.17)  3-39 ex-secs,  SAME AS 1.3  Same as 1.3 = Source B
+overlapskew (1.1, 1.2, 1.3) =
+   13.0446    0.4803    0.5206
+         0    6.5193    0.8831
+         0         0    5.3503
+1.1 and 1.3 in perfect synchrony (maybe with more distant unextracted one; yes, listening to extraction 2.1 I can hear it is slipping in between two others) until 1.2 enters
+0059  chorus continues through about two sec, then nothing
+
+0060  one bug call, brief voice, bronze frog
+0061  nothing
+0062  nothing
+0063  chorus emerging from background at about 12, lasting in various forms through 42 seconds.  More starting at 46 sec
+Max ampl on box 2, about 1.5 earlier, then box 1 later.  Different frog bigger on box 3 (although smaller)   Extract 0-50 sec
+meanlocs (Array 2) =
+    2.2564    4.5220   -0.3794  clean (1.0 thresh 0.25)  17-38 ex-secs  Three scratchy episodes  Source A
+    0.4082    8.8085    0.3453  somewhat clean (0.8 thresh 0.4) 12-37 ex-secs  Scratchy toward end, short pause, one clean, then scratchy again Source B
+    8.4480    6.7140    0.6477  clean (1.0 thresh 0.4)  4-36, 37-42, 47-50  Several scratchy episodes  Source C
+meanlocs (Array 1) =
+    3.6858    5.8275   -0.4311  clean (2.2 thresh 0.25)  17-38 ex-secs  Three scratchy/fast episodes; I think they get scratchy and fast when it's too dense to interleave  Source A
+    0.3279    7.7543    0.8872  fairly clean (0.7 thresh 0.35)  10-37 ex-secs  Two scratchy episodes  Source B
+meanlocs (Array 3) =
+    1.2228    5.5621    0.9938  borderline (0.35 thresh 0.18)  19-37 ex-secs.  Source A
+    0.7042    9.3163   -0.3721  clean (0.7 thresh 0.19)  9-37 ex-secs.  Source B (best)
+   -0.1790   12.8284    1.0000  borderline (0.35 thresh 0.2)  3-32 ex-secs  Three scratchy intervals  Source D
+    4.7975    6.5235    1.0000  marginal at best (0.25) 4-42, 47-50 ex-sec; many scratchies; must be Source C
+   -4.0758   10.2143   -0.4841  Bronze frog at 45-46 sec
+
+0064  single final call; one bug near end
+
+0065  nothing
+0066  bug calls every few seconds
+0067  couple bug calls only
+0068  couple of transients only
+0069  bug calls only
+0070  bugs
+0071  chorus starting at about 9 sec until about 48 sec; first part until about 28 sec best on array 3 or maybe 2; then action shifts to array 2 with one strongest on array 1; great chorus for the whole array!  Should have good collisions
+Processed from 8 to 50 seconds
+meanlocs (Array 3) =
+   -0.0955   12.9310    0.9998  somewhat clear (0.5 thresh 0.3)  Source A (better here)  1-30 ex-sec
+    0.7326    9.3154   -0.3585  clean (0.9)  (better here)  Source B  5-40 ex-sec  Some scratchy toward end
+    1.0052    5.5373    0.9459  fairly clean (0.4 thresh 0.15)  Source C  Source Z  Several scratchies
+    4.1523    6.8162    1.0000  too small (0.3)  Source E
+meanlocs (Array 2) =
+   -1.2558   12.4826    1.0000  not really separable (0.4 thresh 0.35)  Source A
+    0.2893    8.8695    0.2981  somewhat clear (0.8 thresh 0.35)  Source B (better on Array 3)
+    0.7665    2.9770   -0.2770  clean (1.4 thresh 0.3)  Source C (better here)  16-40 ex-sec
+    7.9736    7.2642    0.4635  clean (1.1 thresh 0.25) Source D (better here)  16-40 ex-sec  mostly scratchy
+    9.9976    6.6751    0.9018  borderline (1.0 thresh 0.4)  Source E; kind of disordered (Better here)  15-40 ex-sec  starts off OK, then goes mostly scratchy
+One collision in 0-15 ex-sec, at 9.65; starting frog does two 1.5s in a row, and first one collides, second one resyncs.  I don't see or hear any other frogs in background.
+
+0072  burst of 7 calls from 3-6 sec on array 2
+0073  regular bug calls
+0074  more bugs
+0075  beautiful bout from about 5-47 seconds; looks like three frogs, one about equally strong on boxes 1 and 2, second stronger on box 3, third one pretty distant from all and perhaps not recoverable.  Box 2 may get them all, and box 3 can pull out the third?  Extract from 0-50 sec
+meanlocs (Array 2) =
+    0.2517    8.8777    0.2844  borderline  (0.7 thresh 0.45)  8-38 sec  scratchy burst at end  Source A
+    2.0289    4.2809   -0.2677  clean  (1.7 thresh 0.55)  10-41 sec  scratchy episode toward end  Source B
+    8.4849    6.9193    0.7271  borderline (0.75 thresh 0.45)  22-47 sec  alternating scratchy/not-scratchy throughout  Source E
+seemed to separate all three of them as distinct sources
+meanlocs =  (Array 3)
+    0.7218    9.3240   -0.3566  clean (0.8 thresh 0.2)  8-39 ex-sec;  scratchy burst at end  Source A
+    1.0276    5.5099    0.8762  smaller but pretty clean (0.4+ thresh 0.15)  12-41 ex-sec.  Scratchy part toward end (28-32 sec?)  Source B
+    4.5816    6.7305    1.0000  probably too weak to use  (0.25 thresh 0.25)  can't really make anything out
+   -0.1920   12.7029    0.9827  even smaller but decently clean (0.6 thresh 0.28)  5-34 ex-sec.  Scratchy at end.  Sourrce C
+meanlocs =  (Array 1)
+    0.3166    7.8380    0.8304  somewhat weak and dirty (0.7 thresh 0.55)  8-38 ex-sec  scratchy burst at end  Source A
+    3.1721    5.7629   -0.5000  clean  (1.8 thresh 0.3)  10-41 sec  scratchy at end  Source B
+    5.9267    5.7152    0.5983  somewhat weak and dirty  (0.6 thresh 0.35)  14-48 sec  six scratchy bursts at end  Source D
+overlapskew (Sources 3.1, 1.2, 2.3, 3.4) =
+    6.0636    0.2375    0.8047    0.0715
+         0    6.4604    1.4802    0.7036
+         0         0    4.8608    0.9862
+         0         0         0    6.4373
+VERY INTERESTING! 1,2, and 4 go in perfect synchrony until 3 comes in, then it breaks up; only three can interleave!  Good analysis (onthreshfac = 0.8, offthreshfac = 0.6); no false or dropped pulses
+0076  a few distant calls from 5-10 sec
+0077  one bug
+0078  nothing
+0079  nothing
+0080  chorus beginning about 40 sec still building to end; two frogs, different strength on different arrays.  Two frogs about equal on Arrays 1 and 2 (1.2); one stronger (1.6) on Array 3, but other much weaker than on other arrays.  Collision and 1.5 backoff!  [Extract 40-100 from array 2]
+meanlocs (Array 2) =
+    0.3133    9.0170    0.0164  somewhat clean (0.7, thresh 0.4)  about 0-36 ex-secs  Source A
+    1.7531    4.5486   -0.4677  clean (1.5, thresh 0.3) about 6-58 ex-secs  Source B
+    8.6503    6.6742    0.3669  fairly clean (1.5, thresh 0.45) about 15-40 ex-sec
+    5.9355    5.8522    0.6914  marginal (1.0, thresh 0.5?) about 20?-53 ex-sec  all scratchy
+meanlocs (Array 3) =
+    1.7478   10.2129    0.2450  clean (1.2, thresh 0.25) from 0-40 ex-secs  scratchy couplet after end  Source A
+Source A starts, but is alternating with distant frog before B comes in
+0081  chorus continues through 48+ sec.  Two frogs alternating beautifully; most evenly balanced on array 3.  Collision just after 5 sec.  Third frog enters about then; get some nice three-way action.  Another starts joining at about 15 sec, and gets complicated. Bulk of the action shifts to box 2.  Interesting sequence!
+
+0082  Two bugs, nothing else
+0083  Two bugs, nothing else
+0084  two bugs, nothing else
+0085  one bug
+0086  chorus beginning about 37 sec, building to end; one frog stongest on box 3, another on box 2
+Extract from 35-100 sec
+meanlocs (Array 2) =
+    1.9748    4.6964   -0.4083  clean (1.5, thresh 0.5)  10-55 ex-sec; gets briefly scratchy twice  Source A
+    7.0765    5.5348   -0.2426  marginal (1.3, thresh 0.7) 30?-55 ex-sec; five scratchy, last three bursts  may be two frogs mixed together?  Source B
+    8.5024    6.6476    0.2278  somewhat clean (1.5, thresh 0.6) 20?-53 ex-sec  lots of scratchy at end; Source C
+meanlocs (Array 3) =
+    1.0908    5.6914    0.9302  pretty clean (0.8, thresh 0.3)  10-55 ex-sec; briefly scratchy twice  Source A
+    3.1095    6.3859    1.0000  not separable (0.4, thresh ?)  Source B
+    1.6705   10.6819    0.3926  clean (1.2, thresh 0.25)  3-38 ex-sec; scratchy at very end  Source D
+meanlocs (Array 1) =
+    3.4545    6.2568   -0.3939  clean (1.7, thresh 0.3) 10-55 ex-sec  source A
+    5.7266    5.6519    0.8870  0.7 but still a mess; threshold > 0.4  Source B
+    0.3731    7.3910    0.2636  not really separable (0.5, thresh 0.3)  Source D
+Three sets of three collisions between D and A, then looks like one or the other 1.5s; maybe the distance is on the borderline?
+D is chorusing with one in background that's not extracted
+0087  chorus continues to 40 sec, with a distant burst or final gasp from 44 to 46 sec.  As in previous chorus, action seems to shift from box 3 to box 2 later.
+
+0088  one bug
+0089  one bug
+0090  one bug
+0091  two bugs
+0092  chorus beginning about 27 sec through to end.  Seems to start with box 2 guy this time.  Box 3 guy comes in later; seems to insert delay after near collision at 34 sec!  Another one comes in about 40 sec.  Seems to me the later-starting frog is generally the one to adjust, although at 40 sec it looks like the starter yields.  Sometimes it looks like the leader shifts slightly to cause collision; is there complex signalling going on?  Need playback!
+Extract 25-100 sec
+meanlocs (Array 3) =
+    1.0989    5.6985    0.7752  fairly clean (0.6, thresh 0.25)  2-48, again 64-74 ex-secs,  No scratchies.  Source A
+    1.4044    9.8541    0.0931  clean (1.2 thresh 0.2) 5-70 ex-secs; several scratchy bursts at end  Source B
+    0.1221   12.9014    0.9852  borderline (0.55 thresh 0.4)  12-37 ex-secs, scratchy at end, then again 57-70, scratchy again at end of this second group of calls  Source C  extraction better here
+A collision at 15 sec, and 3.1 does a 1.5 duration to dodge.  Again at 22 sec and maybe 25 sec
+meanlocs (Array 2)=
+    2.1165    4.7511   -0.4221  fairly clean (1.5 thresh 0.6)  2-48 again 64-74 ex-sec  Source A
+    0.3699    9.0957    0.2132  marginal (0.6 thresh 0.3)  5-70 sec  scratchy bursts at end.  Source B
+    0.9944   10.5283    0.9912  borderline (0.8 thresh 0.6)  scratchy in parts; a mess, I'm not sure which is which  Source C
+    8.5320    6.6274    0.5734  somewhat clean (1.0 thresh 0.45)  15?-47 ex-sec on and off scratchy the whole time  Source D
+meanlocs (Array 1) =
+    3.4100    6.0576   -0.4935  clean (1.8 thresh 0.3) 2-48 ex-sec, again 64-74; best on this array  Source A  no scratchies; a few pauses
+    0.4100    7.4275    0.2680  fairly messy (0.5)  7?-70  Source B
+    5.0485    5.3920    0.8455  not really separable (0.6 thresh 0.5)  10??-48/53?  Source E  can't really tell them apart
+0093  chorus continues in various flavors until 48 sec
+
+0094  distant stuff early and bug
+0095  only two bugs
+0096  bug near end
+0097  bout begins at 12+ sec, still going strong through end.  Strongest on array 2. Three going in perfect synchrony.  Do they learn to synchronize timings over the evening?
+Do 10-75 sec
+meanlocs (Array 2) =
+    2.0785    4.8168    0.0938  clean (2.0 thresh 0.7), 2-47 ex-sec. Single scratchy pulse near end  Source A
+    8.6702    6.5720    0.5755  fairly clean (1.5 thresh 0.7), about 15-62 ex-secs.  Seven scratchy episodes, but joining during full chorus, so can never find a spot to interleave without collision  Source B
+   -0.0138    8.0222   -0.3283  fairly clean (1.2 thresh 0.7 in one place), about 4-29 ex-sec.  No scratchies  Source D
+    0.9691   10.5492    0.9906  borderline (0.7 thresh 0.6) 1-46 ex-sec?  No scratchies; may have stopped earlier than 46  Source E
+meanlocs (Array 3) =
+    0.9695    5.6702    0.9470  clean (0.8, thresh 0.25) 2-46 ex-sec; one scratchy pulse near end; same as 2.1  Source A
+    1.5503    8.6736    0.0957  clean (1.0, thresh 0.25) 4-29 ex-sec; collision w 3 and 2 immediately delays, No scratchy  Source D
+    0.1776   12.9760    0.9548  marginal (0.6, thresh 0.4) 1-29 ex-sec  No scratchy  Better here  Source E  
+meanlocs (Array 1) =
+    1.1342    3.9398   -0.0328  clean (2.0 thresh 0.3)  about 2-46 sec  Source A  One scratchy pulse near end  Source A
+    4.9567    5.3188    0.8333  mess (0.6 thresh ?)  clean at end, though; seems to have mixed some sources; probably can be fixed.  About 24-58; some gaps toward end.  many scratchy  Source C
+    3.3787    6.2209   -0.4528  clean (2.0 thresh 0.4)  about 2-46 ex-sec  SAME AS 1.1!  Source A
+    3.5777    7.2655   -0.2416  clean (2.0 thresh 0.4)  about 2-46 ex-sec; SAME AS 1.1!  one scratchy pulse near end  Source A
+   -0.1536    7.0379    0.9025  clean (1.1 thresh 0.4)  about 4-30 ex-sec; no scratchy;  Source D
+0098  strong chorus continues until 6+ seconds, then the final scratchy bursts go on with gaps to 22 sec.  A more distant chorus starts up at 40 sec (max ampl about 1.2)  Single frog bout starting at about 40 sec (1.4 ampl) 1.5 ampl; actually, it's chorusing with at least two other more distant frogs.
+Recover from 35-60 sec
+meanlocs (Array 3) =
+    0.1782   12.9909    1.0000  clean (0.7 thresh 0.1)  6-22 ex-secs
+0099  tail end of single frog call sequence 1+ amplitude, from 0-7 sec
+
+0100  nothing but background
+0101  some fairly distant barely above noise
+0102  coming nearer and nearer, then ENTIRE local chorus from about 25 to 40 seconds; great!
+Extract from 0-50
+meanlocs (Array 2) =
+    8.7383    6.8254    0.3820  somewhat clean (0.7 thresh 0.4) 4-47 sec  (better here) Source E
+    8.8289    8.2131    0.9833  (0.6 thresh 0.25 until 12 sec, bigger mess afterwards)  0-12 sec only, I think)  Source D
+But both of these were small signals; what happened to the big one?  Let's try extracting again.
+meanlocs (Array 2; bbsp0102box2b) =
+    1.5747    4.4713    0.3121  clean (2.0 thresh 0.5)  17-45 sec  Source A  Three scratchy pulses at end
+Needed high locthresh, powersratiothresh to pull it out
+meanlocs (Array 3) =
+    1.4400    8.7325   -0.2141  clear (1.0 thesh 0.35)  14-38 sec  No scratchies  Source B
+    0.1897   12.9954    1.0000  somewhat clean (0.6 thresh 0.35)  11-38 sec  No scratchies  Source C
+    3.9249    6.8024    1.0000  mostly not separable (0.3 thresh 0.25)  4 to 37 or 47 sec  Source E
+Four collisions in a row from 25-27, then 3.1 does 1.5
+meanlocs (Array 1) =
+    1.7399    5.6516   -0.1771  clean (1.5 thresh 0.6)  17-45 sec  Source A
+0103  tail end of 0102 bout until about 12 sec
+0104  one frog on array 2 at great distance for a short time, couple of bronze frogs
+0105  two-frog chorus starting at about 40 sec; some collisions; uniformly strongest on Array 3 (2.0). Extracted from 40-65
+meanlocs (Array 3) =
+    0.1871   13.0006    1.0000  fairly clean (0.6 thresh 0.27)  0-24 sec  No scratchies
+    1.9037    8.6594   -0.3444  clean (0.8 thresh 0.15)  1-22 ex-sec  No scratchies
+Nice: 3 collisions, then 1.5 on 2nd frog, another collision then immediately 1.5 from 2nd frog, perfect synchrony from there on out
+
+0106  two-frog chorus until about 14+ sec, stongest on Array 3; new chorus w 3 frogs starting about 42 sec
+Extracted from 35-100
+meanlocs (Array 1) =
+    2.2739    4.0228   -0.2742  clean (2.5 thresh 0.4)  7-40,45-57 ex-secs  scratchy at end of first set, a scratchy set, then normal and scratchy at end of that
+    1.5126    6.6465   -0.4577  clean (2.5 thresh 0.4)  SAME AS 1.1
+    4.7660    5.2697    0.8908  marginal (0.8 thresh 0.4)  20?-36, 38-42, 47-53  scratchy at end of first set, last two all scratchy
+Largest source recovered, but substantial sources not recovered
+meanlocs (Array 3) = rejectlocthresh = 1.97  powersratiothresh = 0.091  maxcorrthresh = 0.30
+    0.6164    5.5540    0.5447  somewhat clean (0.6 thresh 0.27)  Source Z
+    1.5664    8.7382   -0.2482  clean (0.9 thresh 0.3)  6-62 ex-sec, three short gaps  Source Y  several scratchies at end
+   -1.5647   13.2717    0.9234  somewhat clean (0.7 thresh 0.33 over call interval; up to 0.45 earlier)  35-62 ex-sec, one gap  Source T  Alternates scratchy and clean
+    0.2134   13.0857    1.0000  somewhat clean (0.6 thresh 0.33)  7-29, 43-60 ex-secs  Source X  scratchy only at end of final burst
+There sure is a lot of attenuation, but it looks like it recovered all of the largest sources on Array 3
+meanlocs (Array 2) =
+   -0.2301    8.3181   -0.2014  somewhat clean (1.0 thresh 0.55)  12-62 ex-secs  Source Y
+    0.9081    9.4071    0.7473  marginal (0.8 thresh 0.5) 
+    1.0295   10.6668    1.0000  marginal (0.9 thresh 0.7) 8-29, 43-60 ex-secs
+    0.2731    5.3167   -0.0799  mostly clean (1.4 thresh 0.5)  7-58 ex-secs  Source Z
+    8.7452    6.8250    0.9442  somewhat clean (0.7 thresh 0.45)  9-54 ex-secs, 3 gaps after 32 sec  Source W
+THE BIGGEST SOURCE ON ARRAY 2 SEEMS NOT TO BE CAPTURED ... REPROCESS WITH VERY HIGH POWERSRATIOTHRESH TO FIND OUT HOW TO FIND IT ... JUST USE EXTRACTFROGS AFTER HAND-EDITING THRESHOLDS
+TOTALLY ALL OVER THE MAP, BUT POWERSRATIOTHRESH = 0.5 SELECTED ONLY IT  MAYBE IT'S ALWAYS OVERLAPPING
+bbsp0106box2b:  not separated; (2.0 thresh ?)
+TRY RECOVERING WITH ONLY THE TOP FOUR ARRAY ELEMENTS ...
+meanlocs (Array 2 with findfrogs4) =
+   -0.5059    9.1215         0  somewhat clean (0.9 thresh 0.5)  12-62 ex-secs  Source Y
+    0.1957   10.1217         0  borderline (0.8 thresh 0.65) 12?-62 sec
+    0.5556   11.4065         0  not separable (0.5)  7-28?, 43?-60 sec  Source X?
+   -0.5455    5.1474         0  clean (1.9 thresh 0.6)  7-40, 45-58 ex-sec  Source Z
+    0.4532    5.3941         0  clean (1.9 thresh 0.6)  7-40, 45-58 ex-sec  Source Z
+    6.4603    5.8050         0  marginal (1.0 thresh 0.7) 20?-36, 38-42, 47-53
+    9.4593    6.9113         0  jumble (0.8 thresh 0.7)
+DOESN'T LOOK AS GOOD AS WITH 5 MICS
+0107  chorus continues until about 47 sec; many frogs; strong on all arrays
+
+0108  background full chorus roar, couple of bronze frogs
+0109  two-frog chorus beginning about 32 sec; several collisions in a row; strongest on Array 3, slightly less on 2, all sources smaller on 1.  Scratchy voice colliding; is it a threat or complaint?  Or is it a way to get attention when it's not possible to interleave?
+Extract from 30-70 sec  Smallest on Array 1; Source Z must just not be active here
+meanlocs (Array 1) =
+    5.6560    7.6807    1.0000  not separated (0.25)
+    5.9698    5.8427    0.9564  not separated (0.15)
+    0.7653    7.9457    0.9506  clean (1.0 thresh 0.2)  SAME AS 1.5; 18-37 ex-sec  Source Y  very slightly better than 1.5  gets somewhat scratchy at end
+    0.9122    8.6769    1.0000  somewhat clean (0.5 thresh 0.25)  3-6, 8-35 ex-secs  lots of scratchy
+    0.4018    9.4092    1.0000  clean (1.0 thresh 0.2)  18-37 ex-sec
+meanlocs (Array 2) =
+    0.6429    8.9340    0.5627  clean (1.3 thresh 0.4)  19-37 ex-secs  Source Y
+    0.8997    9.3686    0.7555  fairly clean (0.9 thresh 0.42)  3-6, 9-35 ex-sec  Source T
+    0.9280   10.8269    1.0000  fairly clean (0.9 thresh 0.45)  2-34 sec  Source X
+    0.6635   11.2666    1.0000  same as 2.3;  Source X
+    8.7925   10.8868    1.0000  not quite (0.35 thresh 0.28)  32-40+ ex-secs
+meanlocs (Array 3) =
+    1.3696    8.8130   -0.1484  clean (1.1 thresh 0.25)  18-37 ex-secs  Source Y  almost scratchy in middle, somewhat scratchy at end
+    2.7956    9.2950    0.3052  same as 3.1
+    0.0691   10.1205   -0.3956  fairly clean (0.8 thresh 0.36) best for this source, also picks up less of the missing source  Scratchy burst at start, pause, then normal then scratchy period in middle and again at end
+    0.2227   11.6386    0.0797  same as 3.3
+   -1.4861   12.9331    0.8424  same as 3.3
+meanlocs (Array 3 bbsp0109box3b) =
+    1.5817    8.9180    0.2230  clean (1.0 thresh 0.23)  18-37 ex-sec  Source Y
+   -1.4133   12.8617    0.8916  somewhat clean (0.8 thresh 0.45)  3-6, 9-35 ex-secs  Source T  Scratchy burst at start, pause, then normal then scratchy period in middle and again at end
+    0.2032   13.0424    1.0000  somewhat clean (0.7 thresh 0.4)  2-34 ex-sec  Source X  No scratchy
+On box3b, 3.1 and 3.2 try to avoid each other; 3.3 doesn't seem to care
+overlapskew =
+    4.7930    0.5776    1.0074
+         0    4.7195    1.1676
+         0         0    7.5746
+0110  Continues nearby until 17 sec, then at greater distance and still well audible as individuals until nearly the end
+
+0111  somewhat distant through almost 20 sec, moving on farther away; a new one starting about 48 sec
+0112  one isolated call at about 2 sec; distant caller for awhile, a burst of 4 then 2 calls from a closer one
+0113  Bout starting at the beginning; complex multifrog bout continuing through end (but settling down)
+meanlocs (Array 1) =
+    0.7689    7.8912    0.8782  mostly clean (1.2 thresh 0.41)  5-62 ex-sec with gaps  Source Y  (best here I think)
+    5.3489    5.5308    0.8821  mess (0.5 thresh ?)  9-60?  really hard to say
+    0.3394    7.1356   -0.1267  mostly clean (1.3 thresh 0.53)  20-60 ex-sec with gaps  Source Z  (best here)
+meanlocs (Array 2) =
+    0.6487    8.9408    0.5656  fairly clean (1.2 thresh 0.62)  4-62 ex-sec with gaps  Source Y (better than 3.2)  Two scratchy bursts at beginning, five or six scratchy bursts at end
+    7.0488    5.5869   -0.3828  clean (2.3 thresh 0.63)  15-38, 42-46, two more pulses until 52  Source V  Scratchy at end of first set, second set scratchy
+meanlocs (Array 3) =
+    0.6197    5.7643   -0.2227  fairly clean (0.7 thresh 0.33)  4?-20-40, 49-54, 57-61 ex-sec  Source Z  Two scratchy intervals in 20-40, last two bursts all scratchy
+    1.5881    8.9829    0.2223  fairly clean (1.33 thresh 0.5?  16-(or 12?)-48 ex-sec  Source Y  Several scratchy in middle and end.  Are the little ones at beginning and end a different frog bleeding through or this one?
+    0.2042   13.0452    0.9999  marginal (0.7 thresh 0.52)  7-34-(or 36), 54-67  Source X  Scratchy at end of second burst
+   -1.5232   12.7829    0.9614    (0.8 thresh 0.53)  17-43 ex-sec  Source T  Several scratchy intervals in there
+Two false recoveries in 3.3 more in 3.4 using analyzechorus 0.8, 0.6
+See tail end of bbsp0113box3 57-61 sec, where frogs 3.1 and 3.3 beat 4 vs 3!
+0114  Neighborhood bout continues until about 17 sec, and above unfiltered background through 24 sec
+
+0115  background, bugs, and bullfrogs in distance
+0116  background, bugs, bronze frog
+0117  incoming chorus, emerges about 10 sec, continues through end, mainly three frogs
+Extract from 5 to 70 sec
+0118  local chorus continues until about 16 sec; couple attempts to start it up again 45-47 sec
+0119  background, distant bullfrog, bugs, bronze frog
+0120  background, barely audible bullfrogs, incoming chorus
+0121  chorus emerges about 7 sec, 2 frogs at first, soon three, maybe 4 through to end
+Extract from 10-80 secs.  Looks like clean 1 then 2 then 3 on the first part of array 3, where it starts
+meanlocs (Array 1) =
+    1.6111    4.1715    0.0576  fairly clean (1.0 thresh 0.55)  6-59 with gaps (same as 1.2)  Source Y
+    0.7785    7.8090    0.8681  fairly clean (1.2 thresh 0.55)  6-59 with gaps (better)  
+    2.4737    4.4742   -0.5000  slightly clean (0.8 thresh 0.73)  6-59 with gaps (same as 1.2)  
+meanlocs (Array 2) =
+    0.4682    9.0300    0.4371  somewhat clean (1.2 thresh 0.78)  6-59 sec w gaps  Source Y
+    6.2370    5.9311   -0.2943  mostly clean (2.5 thresh 1.0)  13-56 sec, with gaps  Source V  Scratchy at end of first long burst, a few normal then scratchy for second burst, two more short scratchy bursts
+meanlocs (Array 3) =
+    0.7657    5.7962    0.1283  fairly clean (0.8 thresh 0.47)  3-38, 43-46 ex-secs  Source Z  Scratchy at end of first burst, second burst
+    1.5524    8.9584    0.2485  clean (1.6 thresh 0.43)  6-59 ex-sec, latter part is gaps with scratchies.  Source Y  Scratchy at end of first burst, thereafter
+    0.1859   12.9875    1.0000  somewhat clean (0.6 thresh 0.42)  -0-23, 46-60 sec  Source X  No scratchies
+3.1 and 3.2 have below-independent overlap
+0122  chorus continues until about 29 secs; then occasional bug or bronze-frog spikes later
+
+0123  background
+0124  distant chorus starting up about 35 sec
+0125  chorus continues through 56 sec
+0126  distant stuff from 0-12 sec
+0127  background
+0128  chorus begins about 12 sec through end; looks like it starts off with two, then three local frogs.  Looks pretty regular.
+Extracted from 0-50 sec
+meanlocs (Array 2) =
+    0.3803    8.9090    0.1727  (1.0 thresh 0.37)  17-44 ex-sec  Source Y  No scratchies
+    3.4404    6.6785    0.7972  fairly clean (0.8 thresh 0.3)  17-42 ex-sec  Several scratchies alternating with normal
+   -1.9730    6.3669    0.6248  mostly clean (1.0 thresh 0.37)  30-47 ex-secs  No scratchies
+    8.8449    6.8531    0.3111  clean (1.2 thresh 0.3)  43-50+ ex-secs  Source W  No scratchies but just starting
+meanlocs (Array 3) =
+    1.0643    8.4388    0.1902  clean (1.0 thresh 0.4)  17-44 ex-secs  Source Y
+    0.2181   13.0718    1.0000  mostly clean (0.8 thresh 0.33)  12-42 ex-secs  Source X  No scratchy
+   -1.9453   14.0000    1.0000  borderline (0.3 thresh 0.25)  Source T  18?30?-50+ ex-secs
+Second-largest source wasn't recovered ... where is it?  Second-largest in other two arrays as well.
+0129  chorus continues through 49 sec
+0130  chorus off in distance, a bit too far to extract
+0131  distant stuff, picks up locally about 27-48 sec; largest on Array 3
+Extract from 25-50 sec from Array 3
+meanlocs (Array 3) =
+    0.1833   12.9699    1.0000  clean (0.8 thresh 0.13)  4.5-23.5 sec  a bit irregular, but no scratchies
+   -2.0292   14.0000    1.0000  fairly clean (0.3 thresh 0.14)  2-20 ex-sec  No scratchies
+meanlocs (Array 3) robust steering vector adaptation turned on =
+    0.1890   12.9807    1.0000  clean (1.0 thresh 0.15)  
+   -2.0292   14.0000    1.0000  fairly clean (0.4 thresh 0.16)
+It does seem better; 3.1 is maybe 25% higher, with the interferers being essentially the same level.  Similar for 3.2
+
+0132  nothing, then starts about 19-20 sec through end
+0133  goes until about 9 sec, then farther away, then picks up locally again through end
+0134  continues to 13 secs, then bursts to 42 sec
+0135  distant chorus continues through 33 sec; probably at the edge of extractibility
+0136  somewhat distant stuff on and off from about 10 sec, strongest on Array 2; can probably extract some
+0137  local chorus emerges at 3 sec through 44 sec
+0138  distant stuff through about 18 sec
+0139  distant chorus about 25 sec, local from 41 sec
+0140  local chorus through 47 sec
+0141  distant chorus most of the time
+0142  chorus starting at about 33 sec
+0143  chorus continues to 32 sec; new chorus starting after 41 sec
+0144  chorus continues through 22 sec
+0145  distant stuff in middle
+0146  local stuff begins to emerge around 16 sec
+0147  local and somewhat distant chorus continue until 20- sec
+0148  very distant stuff starting up about 43 sec
+0149  recoverable stuff starting up maybe at about 2 sec, through end
+THIS IS PROBABLY A GOOD ONE IN THIS SECTION OF THE RAMPING-UP CHORUS TO RECOVER
+Extract from 0-60 sec
+meanlocs (Array 1) =
+    0.6701    7.2693    0.0958 clean (2.0 thresh 0.46)  7-44 sec  BETTER HERE; SAME AS 2.1  SOURCE A  No scratchies
+    4.8700    5.3096    0.8937 pretty clean (1.1 thresh 0.47)  29-57 sec  SAME AS 2.2  No scratchies
+    4.9678    6.2709    0.9976 fairly clean (1.2 thresh 0.48)  24-55 sec  SAME AS 2.3  Scratchy burst at end
+meanlocs (Array 2) =
+   -0.0777    6.4128    0.3042  somewhat clean (1.4 thresh 0.66)  7-44 sec  SAME AS 1.1  No scratchies
+    6.9977    5.6624   -0.2791  clean (2.8 thresh 0.85)  29-57 sec  BEST HERE; SAME AS 1.2  SOURCE F?  No scratchies
+    7.4941    7.6476   -0.0756  clean (2.2 thresh 0.63)  24-55 sec  BEST HERE; SAME AS 1.3  Scratchy burst at end
+meanlocs (Array 2) bbsp0149box2b =
+    1.3733   11.0253   -0.0014  probably not (1.0 thresh 0.77)  12-33 sec  Scratchy in middle, at end
+meanlocs (Array 3) =
+    3.3257    6.1543    1.0000  looks like two sources (0.4 thresh 0.4)  but listening, it just sounds like the later one is really extracted  LATER ONE SAME AS 1.2, 2.2
+    1.6169    8.4863   -0.1637  clean (1.8 thresh 0.46)  4-33 sec  SOURCE B  No scratchy
+    0.2173   13.0768    1.0000  pretty clean (0.9 thresh 0.39)  0-31 sec  SOURCE E  Scratchy burst at end
+There's a source of about magnitude 1.0 on Array 1 that's not recovered ... maybe fourth largest
+A big one on Array 2 (magnitude 1.5+, 13-56.5 sec) hasn't been recovered ... try again!  I got it by processing 10-22 sec on Array 2, (1.2, 10.7) to (1.8, 11.5).  Maybe it's Source C.  Had to lower maxcorrthresh one notch to get them to show up.  (1.0 thresh bad); two of the points were clean, one also overlapped another source; try extracting again using various groups of two.  OK, got it, in bbsp0149box2.  Not very good recovery, but easily analyzable by ear
+1.2 on Array 3.
+0150  local chorus continues through 7 sec
+
+
+
+0169  local chorus 5-50 sec
+Extract 5-55 sec
+meanlocs (Array 1) =
+    0.6635    7.3068    0.1195  mostly clean (1.5 thresh 0.65)  1-40 ex-secs  No scratchies  PROBABLY SOURCE A
+    2.9769    7.2887    0.7265  mostly clean (1.0 thresh 0.43)  7-39 ex-secs  No scratchies  PROBABLY SOURCE D
+    5.4200    6.0377    0.9641  looks like two mixed (0.9 thresh 0.8?)  Appears to be a mix of 1.1 and 1.4  JUNK
+    9.0547    8.1581   -0.0019  somewhat clean (1.0 thresh 0.55)  14-50 ex-secs  No scratchies  
+meanlocs (Array 2) =
+   -0.1431    6.4156    0.2903  mostly clean (1.4 thresh 0.65)  1-40 ex-sec  No scratchies  PROBABLY SOURCE A
+    8.7179    6.1168    0.7256  borderline (1.3 thresh 1.0)  0-48 ex-sec, mostly scratchy bursts at first, then scratchy-sounding calls at normal pace!  One normal call in there, so he can do it!  PRESUMABLY SOURCE F
+   -0.0318    8.7876    0.3073  somewhat clean (1.3 thresh 0.8)  5-40 ex-sec  No scratchies
+    3.5105    9.6832   -0.5000  clean (3.0 thresh 0.8)  7-39 ex-sec  No scratchies  PROBABLY SOURCE D
+meanlocs (Array 3) =
+    2.5654    4.1746    1.0000  total mess
+    0.8378    8.3968    0.2373  messy (0.5 thresh 0.35)  5?-39? ex-secs?
+    2.4790    8.1430    1.0000  clean (1.0 thresh 0.54)  7-39 ex-secs  MAYBE SOURCE D
+    4.8184    8.0862    1.0000  somewhat clean (1.0 thresh 0.73)  7-39 ex-secs  SAME AS 3.3!!
+    1.0813   10.6455    0.8977  looks like it's passing two sources
+    0.1298   12.9070    1.0000  fairly clean (1.2 thresh 0.58)  9-36 ex-secs  PROBABLY SOURCE E
+meanlocs (Array 3: bbsp0169box3b) =
+    1.6476    4.9974    1.0000  slightly clean (0.9 thresh 0.56)  1-40 ex-secs  PROBABLY SOURCE A
+    2.1975    8.2565    0.8766  mostly clean (1.7 thresh 0.73)  5-39 ex-secs  MAYBE SOURCE D
+    2.8257   11.6344    1.0000  (1.5? thresh 0.9?)  looks like it's passing two sources; listening, it seems to be biggest (1.5) when those two sources are synced in the middle. Both selected template pulses are from the middle in which the two seem to collide.
+    0.1298   12.9070    1.0000  fairly clean (1.2 thresh 0.6)  9-36 ex-secs  PROBABLY SOURCE E
+
+0170  local chorus continues through 4.7 sec.  New chorus beginning at 19 sec through end.
+0171  local chorus continues through 2.5 sec.  New chorus beginning just after 35 sec through end
+0172  chorus contines through 48 sec
+0173  chorus starts at 4 sec through end
+
+0174  chorus continues through 7 sec; new one starts on Array 3 at 28 sec
+Extract from 25-75 ex-secs
+meanlocs (Array 1) =
+    0.6724    7.2698    0.0677  clean (2.0 thresh 0.58)  15-49 ex-secs  No scratchies
+    3.0865    7.4277    0.8174  clean (1.0 thresh 0.47)  22-47 ex-secs  No scratchies
+    5.1625    7.9359    1.0000  not really separable (0.4 thresh 0.3?)  0-10, 38?-50+
+    5.8301    8.8298    1.0000  not really separable (0.4 thresh 0.3?)  0-10, 38?-50+
+meanlocs (Array 2) =
+   -0.1360    6.4227    0.2921  mostly clean (1.4 thresh 0.54)  16-49 ex-secs  No scratchies
+    1.8308   10.1444    0.5503  mostly clean (1.7 thresh 0.74)  18-43 ex-secs  Scratchy burst in middle and at end
+    3.5070    9.6760   -0.4984  clean (3.0 thresh 0.67)  22-48 ex-secs  No scratchies
+    8.7738    6.4951    0.6479  mostly clean (1.7 thresh 0.8)  42-50 ex-secs  No scratchies
+    8.0062   10.8155    1.0000  not good (0.8 thresh 0.7?)  -0-10 ex-sec; stuff at end is 2.4 bleeding through  No scratchies
+meanlocs (Array 3) =
+    1.6597    8.3980   -0.1215  mostly clean (1.1 thresh 0.45)  12-46 ex-secs  No scratchies
+    1.3019   10.6882    0.8662  mostly clean (1.1 thresh 0.39)  18-43 ex-secs  Scratchy episodes in middle and at end
+    0.1465   12.9191    1.0000  mostly clean (1.2 thresh 0.5)  3-30 ex-secs  No scratchies
+
+0175  chorus continues through whole record, but drops to one frog on Array 2 at about 23.5 sec
+Extract from 25-70 sec
+meanlocs (Array 1) =
+    0.6643    7.2780    0.0361  mostly clean (1.5 thresh 0.57)  12-40 ex-secs  No scratchies
+    3.0699    7.4635    0.9279  fairly clean (1.0 thresh 0.6)  12-42 ex-secs  No scratchies
+    5.8878    5.8004    0.9998  mostly clean (1.0 thresh 0.39)  9-31 ex-secs  Scratchy at end
+meanlocs (Array 2) =
+   -0.1445    6.4133    0.2992  mostly clean (1.3 thresh 0.9)  12-40 ex-secs  No scratchies
+    3.5187    9.6703   -0.5000  clean (3.0 thresh 1.15)  12-42 ex-secs  No scratchies
+    8.6182    6.6212    0.4500  mixture of at least two frogs
+The jumble around source F is multiple frogs!  Try extracting again
+meanlocs (Array 2 bbsp0175box2b) =
+    3.5052    9.6721   -0.5000  clean (3.0 thresh 1.2)  12-42 ex-secs  No scratchies
+    8.1748    6.6451    0.5512  fairly clean (1.8 thresh 0.85)  9-31 ex-secs  SAME AS 2.3b
+    8.7219    6.6733    0.3367  fairly clean (2.0 thresh 1.0)  9-31 ex-secs  Scratchy at end
+    8.6871    6.4829    0.6291  fairly clean (1.7 thresh 0.82)  -0-23 ex-secs  No scratchies
+meanlocs (Array 3) =
+    1.6767    8.4091   -0.0536  mostly clean (1.2 thresh 0.48)  17-39 ex-secs  No scratchies
+    1.2906   10.5059    0.6711  clean (1.2 thresh 0.38)  17-40 ex-secs  Several scratchy calls in there
+    0.1607   12.9564    0.9974  mostly clean (1.2 thresh 0.7)  1-36 ex-secs  No scratchies
+0176  chorus continues until 17 sec
+
+0177  chorus starts at 6 sec, first on Array 3, then staying strong on Array 2 (gone on 3) through end
+Extract from 5-85 sec
+meanlocs (Array 1) =
+    0.6433    7.2912    0.0712  clean (1.7 thresh 0.55)  7-42, 47-69 ex-secs  SOURCE A, BETTER HERE, SAME AS 1.2  Three scratchy calls at end of second bout
+    3.0457    7.3879    0.9057  mostly clean (1.1 thresh 0.56)  5-35, 43-75 ex-secs  SOURCE D  No scratchies
+    5.9282    5.3815    1.0000  somewhat clean (1.0 thresh 0.7)  33-78 ex-secs, gaps 58-62, 64-66  SOURCE F? NO, A NEW ONE! SOURCE G!?  Lots of scratchy bursts at end
+meanlocs (Array 2) =
+   -0.1340    6.4219    0.2970  fairly clean (1.5 thresh 0.65) 7-41, 47-69 ex-secs  SOURCE A, SAME AS 1.1  Three scratchy calls at end
+    3.5017    9.6731   -0.5000  clean (2.8 thresh 0.75)  5-34, 43-75 ex-secs  SOURCE D, BETTER HERE; SAME AS 1.2  No scratchies
+    8.7389    6.4891    0.6641  somewhat clean (1.5 thresh 0.82)  18-47, then scratchy burst from 54-57 ex-secs  SOURCE F  Only last burst scratchy
+meanlocs (Array 3) =
+    1.6957    8.4056    0.0030  mostly clean (1.2 thresh 0.51)  5-32, 52-77 ex-secs  SOURCE B
+    1.3232   10.5758    0.5940  clean (1.4 thresh 0.36)  3-30, 53-77 ex-secs  SOURCE C
+    0.1216   12.8605    1.0000  mostly clean (1.1 thresh 0.47)  1-30, 55-78 ex-secs  SOURCE E
+Does F get scratchy when D comes back in?
+0178  chorus continues until 33 sec
+
+0179  chorus starts at 17 sec on Array 3 through end
+Extract 15-55 seconds
+meanlocs (Array 1) =
+    0.5595    5.3234   -0.5000  clean (1.9 thresh 0.62)  9-38 ex-secs  SOURCE A, BEST HERE; SAME AS 2.1, 3.1  No scratchies
+meanlocs (Array 2) =
+   -0.1431    6.4156    0.2903  mostly clean (1.3 thresh 0.69)  8?10-38 ex-secs  SAME AS 1.1, 3.1  No scratchies
+    0.3119    8.5802    0.4496  not separable (0.9 thresh 0.85)  Two sources mixed together, sometimes colliding
+    3.4918    9.6801   -0.5000  clean (2.9 thresh 0.85)  7-36 ex-secs  SOURCE D  No scratchies
+meanlocs (Array 3) =
+    0.4086    6.3814   -0.5000  marginal (0.6 thresh 0.42)  8?10?-38 ex-secs  SAME AS 1.1, 2.1  No scratchies
+    1.6861    8.4263   -0.0397  mostly clean (1.2 thresh 0.52)  9-37 ex-secs  SOURCE B  No scratchies
+    1.3339   10.5792    0.6348  clean (1.4 thresh 0.4)  3-35 ex-secs  SOURCE C  Scratchy burst at end
+    0.2508   13.1818    1.0000  mostly clean (1.2 thresh 0.51)  2-28 ex-secs  SOURCE E  No scratchies
+No false short call intervals
+onoffcts =
+    54    49    58    53    50     0
+overlapskew =
+    6.6448    0.7726    1.0719    0.8080    1.7740         0
+         0    7.2915    1.3379    0.8142    2.0071         0
+         0         0    6.4302    1.0054    0.3367         0
+         0         0         0    6.9170    0.6186         0
+         0         0         0         0    7.4019         0
+         0         0         0         0         0         0
+whichsources =
+    1.1000    3.2000    3.3000    2.3000    3.4000         0
+
+0180  chorus ending at 3 sec; new chorus starting on Array 3 at 24.5 sec through end
+Extract 20-60 seconds
+meanlocs (Array 1) =
+    0.6626    7.2695    0.0965  clean (1.8 thresh 0.44)  12-39 ex-secs  SOURCE A, BETTER HERE, SAME AS 2.1  No scratchies
+    2.9883    7.3299    0.7082  clean (1.2 thresh 0.35)  18-39 ex-secs  SAME AS 2.2  No scratchies
+meanlocs (Array 2) =
+   -0.1449    6.4162    0.2888  clean (1.4 thresh 0.65)  12-39 ex-secs  SAME AS 1.1  No scratchies
+    3.4963    9.6992   -0.4975  clean (2.8 thresh 0.46)  18-39 ex-secs  SOURCE D, BEST HERE, SAME AS 1.2  No scratchies
+meanlocs (Array 3) =
+    1.6948    8.4119   -0.0393  clean (1.3 thresh 0.51)  8-36 ex-secs  SOURCE B No scratchies
+    1.3106   10.5484    0.6302  clean (1.3 thresh 0.42)  7-33 ex-secs  SOURCE C  Scratchy at end
+    0.1563   12.9836    1.0000  clean (1.2 thresh 0.45)  4-34 ex-secs  SOURCE E  No scratchies
+No false shohrt call detections
+onoffcts =
+    52    52    52    39    54     0
+overlapskew =
+    6.9317    0.1463    0.9073    0.8612    1.9416         0
+         0    8.6111    0.1621    3.1552    1.3539         0
+         0         0    6.5385    0.0608    0.4579         0
+         0         0         0    6.3872    1.4338         0
+         0         0         0         0    7.8470         0
+         0         0         0         0         0         0
+whichsources =
+    1.1000    3.1000    3.2000    2.2000    3.3000         0
+
+0181  chorus continues until 9 sec; some smaller short bursts on array 2 in gap, then new chorus starting at 34 sec.  Seems to begin on Array 1!
+Extract from 30-90 sec
+meanlocs (Array 1) =
+    0.5672    5.3197   -0.4813  clean (2.0 thresh 0.41)  19-58 ex-sec  SOURCE A  BEST HERE; SAME AS 2.1, 3.1  No scratchies  SOURCE A
+    2.9698    7.3310    0.7671  mostly clean (1.1 thresh 0.41)  33-56 ex-sec  No scratchies
+Together, all five extracted sources get everything above 0.7 in micarray(5,:).  Everything significant was recovered
+meanlocs (Array 2) =
+   -0.1117    6.3838    0.2955  clean (1.4 thresh 0.43)  19-58 ex-sec  SAME AS 1.1, 3.1
+    3.4984    9.6929   -0.4992  clean (3.0 thresh 0.62)  33-56 ex-secs  BEST HERE; SAME AS 1.2  No scratchies  SOURCE D
+Missing two big sources that go from about 16-40; could try to recover them by extracting from 15-20 ex-secs
+But across all three arrays, everything above a peak of 0.9 in the main part of the chorus is recovered; no missing frogs.
+There is a distant bit from 2-8 sec that stands out up to 1.1 (collisions of two distant frogs, I think) you could try to recover to see where they are.
+meanlocs (Array 3) =
+    0.8185    5.9517    0.4214  mess (0.5 thresh 0.45)  15?-58 ex-sec  SAME AS 1.1, 2.1 but with BIG bleedthrough of another one
+    1.7047    8.4072   -0.0674  mostly clean (1.3 thresh 0.53)  15-50 ex-secs  No scratchies  SOURCE B
+    1.4062   10.5990    0.6164  mostly clean (1.2 thresh 0.46)  15-45 ex-sec w one more pulse at 48  A couple scratchy pulses in middle and scratchy at end!  SOURCE C
+    0.0501   12.6663    1.0000  mostly clean (1.0 thresh 0.43)  14-41 ex-sec  No scratchies  SOURCE E
+Together, the extracted sources get everything above 0.7 peak level in xfilt(15,:); everything large was recovered, but I can visually see three-way interleaving at about the peak=0.5 level before the local guys begin.
+Sources A,B,C,D,E recovered
+whichsources' =
+    1.1000    3.2000    3.3000    2.2000    3.4000
+onoffcts =
+    76    62    59    37    50
+overlapskew =
+    6.4369    0.0789    0.5550    2.3572    3.0311
+         0    6.7470    0.2497    0.3556    0.1267
+         0         0    6.0424    1.1570    0.7757
+         0         0         0    7.3657    0.1936
+         0         0         0         0    7.8517
+One false short call on channel 2 at 43 ex-sec
+From 17-22 sec, C and E are right on top of each other (presumably due to more distant sources).  B comes in at 17 and by 18 falls into the slot after C/E.  A comes in at 19 and by 22 is in the remaining slot after B and before C/E.  Then at 22, C shifts over on top of A.  After 3 collisions, A shifts over to collide with E, and they stably stay this way until 37, well after D joins around 34 sec and eventually messes it up.  The distance between A and E is largest, so this is in fact the best choice of who should collide from the four A/B/D/E!
+I tried extracting from 30-40 sec on Array 3; peak level about 0.5; no frames exceeded default limits; fiddling with parameters brought nothing.  Just too small.  Tried on Array 2; successfully recovered a scratchy burst at meanlocs =  (8.8244  6.4427  0.4973) from 4-6.5 sec, so maybe that's Source F!  Peak 0.64, thresh 0.18.  But other recovery attempts were unsuccessful; only extracted the one pulse they selected.
+0182  chorus continues through 38 sec
+
+0183  chorus starts at 7 sec until 39 sec; mostly dies down for about 2 sec, then picks up again at 40 sec
+Extract from 5-40 sec
+meanlocs (Array 1) =
+    0.5477    5.3141   -0.5000  clean (1.8 thresh 0.48)  11-34 ex-secs  SOURCE A, BETTER HERE, SAME AS 2.1  No scratchies
+    2.8216    7.2054    0.4517  clean (1.2 thresh 0.42)  5-31 ex-secs  SOURCE D, SAME AS 2.3, 3.3
+meanlocs (Array 2) =
+   -0.2677    6.4534    0.1942  somewhat clean (1.1 thresh 0.55)  11-34 ex-secs  SOURCE A, SAME AS 1.1  No scratchies
+    0.5792    8.5916   -0.2959  two sources equally mixed together; not separable  Not D,A; C is one of them
+    3.4934    9.6830   -0.4977  clean (2.6 thresh 0.67)  5-31 ex-secs  SOURCE D, BEST HERE, SAME AS 1.2, 3.3  No scratchies
+meanlocs (Array 3) =
+    0.1283   12.8894    1.0000  mostly clean (1.2 thresh 0.5)  2-28 ex-secs  SOURCE E  No scratchies
+    1.4665   10.6173    0.7449  mostly clean (1.3 thresh 0.51)  4-28 ex-secs  SOURCE C  No scratchies
+    2.9723    8.0866    1.0000  mostly clean (1.1 thresh 0.5)  5-31 ex-secs  SOURCE D, SAME AS 1.2, 2.3  No scratchies
+No false short call detects
+onoffcts =
+    42     0    47    48    50     0
+overlapskew =
+    7.3559         0    0.9946    1.8817    1.4516         0
+         0         0         0         0         0         0
+         0         0    5.2375    0.2529         0         0
+         0         0         0    6.5061    0.8172         0
+         0         0         0         0    9.0248         0
+         0         0         0         0         0         0
+whichsources =
+    1.1000         0    3.2000    2.3000    3.1000         0
+Try again to recover B; 7-30 ex-secs
+
+0184  chorus ramps up and continues through 37 sec
+Extract from 40 on 0183 to 90 sec; name these files 0184
+meanlocs (Array 1) =
+    0.5594    5.3230   -0.5000  clean (1.7 thresh 0.52)  12-43 ex-secs  SOURCE A  Last call scratchy
+    2.7988    7.2319    0.5731  mostly clean (1.2 thresh 0.53)  12-42 ex-secs  SOURCE D, SAME AS 2.1, 3.5  No scratchies
+    6.0441    5.6784    0.9906  pretty clean (1.0 thresh 0.56)  0-47 ex-secs  SOURCE F, SAME AS 2.2  Scratchy at end
+meanlocs (Array 2) =
+    3.4947    9.6808   -0.5000  clean (2.7 thresh 0.95)  12-42 ex-secs  SOURCE D, BEST HERE, SAME AS 1.2, 3.5  No scratchies
+    8.5036    6.3590    0.2577  clean (2.0 thresh 0.57)  0-47 ex-secs  SOURCE F, BETTER HERE, SAME AS 1.3  Scratchy at end
+meanlocs (Array 3) =
+    0.9419    6.1349    0.3247  not really separable (0.7 thresh 0.6)  12-43? ex-secs  Two frogs come through strongly
+    1.6644    8.3854   -0.0506  mostly clean (1.1 thresh 052)  11-39 ex-secs  SOURCE B  No scratchy
+    1.4817   10.5867    0.6772  mostly clean (1.2 thresh 0.43)  13-38 ex-secs  SOURCE C  Several scratchy calls at end
+    0.1075   12.8962    1.0000  mostly clean (1.1 thresh 0.58)  14-39 ex-secs  SOURCE E  No scratchies
+    4.8225    8.0389    1.0000  mostly clean (1.0 thresh 0.56)  12-42 ex-secs  SOURCE D, SAME AS 2.1, 1.2  No scratchies
+One false short interval for source F at around 2 ex-sec
+onoffcts =
+    60    53    49    54    47    97
+overlapskew =
+    6.2953    0.5213    1.9713    0.4575    1.1930    1.8263
+         0    6.1590    1.6134    0.4608    0.2715    0.7113
+         0         0    5.0190    0.1791    0.1526    1.0675
+         0         0         0    6.2569    2.3942    0.7003
+         0         0         0         0    7.9824    1.2990
+         0         0         0         0         0    4.7910
+whichsources =
+    1.1000    3.2000    3.3000    2.1000    3.4000    2.2000
+Locating source F with [7 8 9 10 15], zmax = 2.0;
+meanloc =
+    6.5570    6.3379    1.0202
+stdsxyz =
+    0.1505    0.0401    0.0844
+stdloc =
+    0.1772
+Locating Source F with [5 7 8 10 15]
+meanloc =
+    6.2366    6.3165    1.0723
+stdsxyz =
+    0.0693    0.0849    0.0556
+stdloc =
+    0.1228
+Locating Source F with [5 6 7 8 15]
+meanloc =
+    6.1212    6.2968    1.0963
+stdsxyz =
+    0.0496    0.0533    0.0272
+stdloc =
+    0.0777
+
+0185  chorus starts at 8 sec on Array 3, continues through 44 sec
+Extract from 5-45 sec
+meanlocs (Array 1) =
+    0.6596    7.2738    0.1016  clean (2.0 thresh 0.51)  13-38 ex-secs  No scratchy  SAME AS 2.1, BETTER HERE, SOURCE A
+    2.9606    7.3185    0.7017  clean (1.2 thresh 0.33)  13-38 ex-secs  No scratchy  SAME AS 2.2
+Very large source not recovered.  These two are different sources; overlap sometimes, like from 27.5-30.5 ex-secs
+meanlocs (Array 2) =
+   -0.1428    6.4174    0.2919  mostly clean (1.4 thresh 0.74)  13-39 ex-secs  SAME AS 1.1
+    3.5008    9.6816   -0.5000  clean (2.8 thresh 0.59)  13-38 ex-secs  SAME AS 1.2, BETTER HERE  SOURCE D  No scratchy
+meanlocs (Array 3) =
+    1.6846    8.4210   -0.0242  mostly clean (1.2 thresh 0.46)  10-36 ex-secs  SOURCE B  No scratchy
+    1.5275   10.6221    0.7283  mostly clean (1.4 thresh 0.51)  7-33 ex-secs  SOURCE C  Scratchy at end
+    0.1561   12.9747    0.9986  mostly clean (1.2 thresh 0.55)  3-34 ex-secs  SOURCE E  No scratchy
+No false short intervals
+onoffcts =
+    50    46    53    42    55     0
+overlapskew =
+    6.9902    0.7313    0.1799    1.1107    1.3382         0
+         0    8.5048    0.5950    1.9509    0.6926         0
+         0         0    5.2648    1.6711    0.3483         0
+         0         0         0    6.9308    0.5181         0
+         0         0         0         0    8.6578         0
+         0         0         0         0         0         0
+whichsources =
+    1.1000    3.1000    3.2000    2.2000    3.3000         0
+meanlocs = (from three arrays, 0185 5-25 sec [5 9 10 11 15])  zmax = 2.0
+   -0.3778   11.8773    1.7863
+stdsxyz =  0.0286    0.2034    0.1065
+stdlocs =  0.2314
+meanloc = same but zmax = 1.0
+   -0.4958   12.0906    0.9911
+stdsxyz =  0.0714    0.5330    0.0344
+stdloc =  0.5388
+
+0186  chorus starts about 18 sec on Array 2, continues through end
+Extract 15-75 sec
+meanlocs (Array 1) =
+    0.9580    7.2127    0.5335  fairly clean (1.9 thresh 0.7)  10-46 ex-secs  SAME AS 2.1, BETTER HERE  SOURCE A Kind of irregular at times, but no scratchies
+    2.9323    7.3548    0.7317  clean (1.2 thresh 0.47)  10-51 ex-secs  SAME AS 2.2  No scratchies
+    5.6851    5.5630    0.9784  (1.0 thresh 0.5)  9-34 ex-secs  SAME AS 2.3  No scratchies
+meanlocs (Array 2) =
+   -0.1431    6.4156    0.2903  fairly clean (1.4 thresh 0.75)  10-46 ex-secs  SAME AS 1.1  No scratchy
+    3.5032    9.6749   -0.5000  mostly clean (2.8 thresh 0.95)  10-51 ex-secs  SAME AS 1.2, BETTER HERE  SOURCE D  No scratchies
+    8.3657    6.4026    0.2119  fairly clean (2.3 thresh 1.15)  8-34 ex-secs  SAME AS 1.3; BETTER HERE  SOURCE F  No scratchies
+meanlocs (Array 3) =
+    1.5833    8.3537   -0.0884  somewhat clean (1.0 thresh 0.55)  12-41 ex-secs  SOURCE B  No scratchies
+    0.1241   12.9517    0.9984  somewhat clean (1.1 thresh 0.58)  6-30, 44-60+ ex-secs  SOURCE E  No scratchies
+    1.3083   10.5105    0.7534  somewhat clean (1.3 thresh 0.75)  8-28 ex-secs  SOURCE C  Scratchy at end
+    3.8099   11.8644   -0.4540  somewhat clean (1.0 thresh 0.6)  8-28 ex-secs  SAME AS 3.3!
+Sources A,B,C,D,E,F all recovered
+False call at 27 sec in Source B; false call detect at 41-42 sec for Source C
+onoffcts =
+    67    57    38    71    72    46
+overlapskew =
+    8.7201    1.6955    1.1556    3.2303    1.0671    0.1310
+         0    6.5610    0.8165    0.6529    1.1018    0.2753
+         0         0    9.8438    0.4810         0    2.3111
+         0         0         0    6.9324    1.8739    0.9196
+         0         0         0         0   11.5526    0.5192
+         0         0         0         0         0    5.1467
+whichsources =
+    1.1000    3.1000    3.3000    2.2000    3.2000    2.3000
+
+0187  chorus continues with large sources until almost 16 sec, then more distant (probably E,F) until 23 sec, then one (probably E) carries on until more locals re-emerge at 25.5 sec; extract up until 25, I'd say, then again from 25 on.
+Extract from 25-65 sec
+meanlocs (Array 1) =
+    0.6740    7.2656    0.0922  clean (1.8 thresh 0.4)  7-39 ex-secs  SOURCE A  SAME AS 2.1; BETTER HERE  No scratchy
+    3.0002    7.3381    0.7433  clean (1.2 thresh 0.3)  0- to 37 ex-secs  SAME AS 2.2  No scratchy
+meanlocs (Array 2) =
+   -0.1431    6.4156    0.2903  clean (1.4 thresh 0.52)  6-39 ex-secs  SAME AS 1.1
+    3.5014    9.6819   -0.5000  clean (2.9 thresh 0.56)  0- to 19, 22-37 ex-secs  SOURCE D  SAME AS 1.2; BETTER HERE  No scratchy
+A large source >1.5 not recovered; 1-11, 20-22 sec, pulse at 39.5  about 1 on array 3, 0.8 on array 1  8.25, 8.75  Couldn't get it, trying hard from 25-37 ... just can't get it.  Sources C and F missing; could it be one of these?  C seems active at 0- in the next chunk, so why isn't it appearing here?  I bet it's C.
+meanlocs (Array 3) =
+    1.6914    8.4175   -0.0383  mostly clean (1.3 thresh 0.45)  3-23, 28-40+ ex-secs  SOURCE B  No scratchies; a few calls at a time, then short pauses between bursts
+    0.1809   13.0229    1.0000  fairly clean (1.2 thresh 0.52) 8-26 ex-secs  SOURCE E  No scratchies
+False detected call around 13.8 ex-sec for Source A
+onoffcts =
+    63    52     0    64    33     0
+overlapskew =
+    7.1918    1.6947         0    0.2500    0.8007         0
+         0   10.6955         0    0.3301    0.7925         0
+         0         0         0         0         0         0
+         0         0         0    6.3301    0.3937         0
+         0         0         0         0   10.7648         0
+         0         0         0         0         0         0
+whichsources =
+    1.1000    3.1000         0    2.2000    3.2000         0
+
+0188  chorus drops to one more distant frog strongest on Array 2 at 15 sec, then picks up again at 17 sec through the end.  Split at 15 sec
+Extract from 15-95 sec
+meanlocs (Array 1) =
+    0.6618    7.2844    0.1162  clean (1.5 thresh 0.53)  23-77 ex-sec  SAME AS 2.1; BETTER HERE  SOURCE A  Not scratchy
+    3.0551    7.4237    0.9462  clean (1.3 thresh 0.41)  3-20, 28-53, 62-77 ex-secs  SAME AS 2.2  Not scratchy
+    5.6216    5.5285    0.9633  mostly clean (1.0 thresh 0.47)  30-55 ex-secs  SOURCE F  Scratchy at end
+meanlocs (Array 2) =
+   -0.1543    6.4169    0.2828  fairly clean (1.4 thresh 0.65)  23-77 ex-secs  SAME AS 1.1  Not scratchy
+    3.5022    9.6855   -0.4996  clean (2.9 thresh 0.79)  3-20, 28-53, 62-77 ex-secs  SAME AS 1.2; BETTER HERE  SOURCE D
+2nd largest source on this array not recovered from it, but extracted from another array
+meanlocs (Array 3, attempt to get source C, too) =
+    1.6884    8.4053   -0.0404  mostly clean (1.2 thresh 0.45)  10-23, 27-42, 50-66 ex-secs  SOURCE B  Not scratchy
+    1.3021   10.5127    0.7180  somewhat clean (0.7 thresh 0.45)  -0 to 27, 42-66 ex-secs  SOURCE C  One kind of scratchy call at 17.5 ex-sec, another at 58.8
+    0.1987   13.0609    0.9994  mostly clean(1.2 thresh 0.5)  2-25, 45-67 ex-secs  SOURCE E  Not scratchy
+Missed Source C (3.2) the first time; had to rerun to get.  It's fairly in the clear at ex-secs  60 1/6, 60 4/6, 61 1/6, 61 4/6, and at 55 1/6, 55 4/6, ... 58 1/6
+0189  chorus continues until 41.5 sec.  Wow, that's a LONG one!
+False detected calls for Source C at 55, 62 sec; for Source D at 74.8 sec
+onoffcts =
+    97    80    97   102    81    49
+overlapskew =
+    6.6700    0.8114    0.8393    0.2553    1.8453    1.0336
+         0   10.1379    0.6065    1.2963    0.6469    2.1081
+         0         0    7.3534    1.1634    0.3339    2.1041
+         0         0         0    8.4448    1.6526    0.1305
+         0         0         0         0   11.7985    0.9750
+         0         0         0         0         0    6.2403
+whichsources =
+    1.1000    3.1000    3.2000    2.2000    3.3000    1.3000
+
+0190  local chorus begins at 26 sec, continues through end
+Extract 25-65 sec
+meanlocs (Array 1) =
+    0.5598    5.3260   -0.5000  clean (2.0 thresh 0.53)  6-38 ex-secs  BETTER HERE; SAME AS 2.1  SOURCE A
+    3.0221    7.3540    0.7725  clean (1.1 thresh 0.4)  3-32 ex-secs  SAME AS 2.2
+meanlocs (Array 2) = (These are the two largest sources on Array 2)
+   -0.1274    6.4162    0.2914  mostly clean (1.4 thresh 0.7)  6-38 ex-secs  No scratchies  SAME AS 1.1 (Not same as 3.2)
+    3.5075    9.6913   -0.5000  clean (2.8 thresh 0.6)  3-32 ex-secs  No scratchies  BEST HERE; SAME AS 1.2  SOURCE D
+meanlocs (Array 3) =
+    1.2283   10.6422    0.2269  fairly clean (0.8 thresh 0.45)  3-29 ex-secs  SOURCE C  No scratchies
+    1.7088    8.4217   -0.0510  clean (1.2 thresh 0.46)  6-38 ex-secs, gaps from 23.5-25, 33-34.5  No scratchies  SOURCE B
+    0.2396   13.1832    0.9974  mostly clean (1.2 thresh 0.49)  2-29 ex-secs  No scratchies  SOURCE E
+Source F just isn't there.
+No false bleedthrough calls.
+From cross-array beamforming, bbsp0190m15101315 (mics 1 5 10 13 15)
+meanlocs =
+    0.4835    6.3350    0.3816  clean (1.0 thresh 0.46)  6-38 ex-secs  SOURCE A
+    0.2347    8.6276    0.0445  mostly clean (1.2 thresh 0.5)  6-38 ex-secs  SOURCE B
+    1.1789   10.3482   -0.0749  somewhat clean (0.9 thresh 0.72)  3-29 ex-secs  SOURCE C
+    3.9791    8.8154    0.0521  clean (1.2 thresh 0.3)  3-32 ex-secs  SOURCE D
+   -0.6048   12.3001    0.7854  somewhat clean (1.0 thresh 0.7)  2-29 ex-secs  SOURCE E
+stdlocs = (Could be made tighter by tuning thresholds for each source independently)
+    0.3576
+    0.1200
+    0.4436
+    0.3827
+    0.3126
+onoffcts =
+    61    54    50    56    52     0
+
+meanlocs = (thresholds tuned individually for each source)
+    0.5120    6.3870    0.8517
+    0.3743    8.6227    0.8874
+    1.1452   10.2448    0.3795
+    3.6166    8.6591    0.7058
+   -0.5342   12.0501    0.9772
+stdlocs =
+    0.1564
+    0.0878
+    0.5354
+    0.2674
+    0.2921
+
+overlapskew =
+
+    7.0402    0.0701    0.1674    0.4363    3.9089         0
+         0    7.8179    0.1667    3.4499    0.6341         0
+         0         0    5.4752    0.3606    0.6155         0
+         0         0         0    6.3564    1.3993         0
+         0         0         0         0    7.6559         0
+         0         0         0         0         0         0
+whichsources =
+    1.1000    3.2000    3.1000    2.2000    3.3000         0
+
+0191  local chorus continues through 13 sec.  New chorus begins at 35 sec
+Extract from 35-80 sec
+meanlocs (Array 1) =
+    0.6902    7.3306   -0.0175  pretty clean (1.6 thresh 0.58)  3?-5-36 ex-secs  NOT THE SAME AS 3.2.  SAME AS 2.2.  BETTER HERE  SOURCE A
+    1.2980    8.3577    1.0000  marginal (0.55 thresh 0.36)  2-31 ex-secs  SAME AS 3.3
+    3.0361    7.3869    0.8249  fairly clean (1.1 thresh 0.45)  3-32 ex-secs  SAME AS 2.3
+    5.7299    5.6735    0.9841  fairly clean (0.7 thresh 0.37)  12-40 ex-secs  SAME AS 2.1
+meanlocs (Array 2) =
+    8.4240    6.7405    0.0977  clean (1.6 thresh 0.67)  12-40 ex-secs  SAME AS 1.4. BETTER?  No scratchies  SOURCE F
+   -0.0686    6.3718    0.2610  mostly clean (1.4 thresh 0.66)  5-37 ex-secs  SAME AS 1.1  No scratchies
+    3.5009    9.6855   -0.5000  clean (2.9 thresh 1.1)  3-32 ex-secs  SAME AS 1.3. BETTER?  No scratchies  SOURCE D
+meanlocs (Array 3) =
+    1.0024    5.8897    0.5157  not clear (0.8 thresh 0.6?)  2-29?  0-36?  Two mixed together; can't audibly separate
+    1.6455    8.4072   -0.0696  mostly clean (1.1 thresh 0.42)  4-36 ex-sec  No scratchies; 3 dropped pulses  SOURCE B
+    1.3420   10.5976    0.8147  somewhat clean (0.8 thresh 0.43)  2-31 ex-sec  BETTER HERE; SAME AS 1.2  A few individual calls that sound borderline scratchy, but stays on rhythm  SOURCE C
+    0.1768   12.9820    1.0000  fairly clean (1.2 thresh 0.54)  0-27 ex-sec  No scratchies  SOURCE E
+MISSING LARGE SOURCE INDIVIDUALLY IN BOX 1, IN BOX 2, AND BOX 3
+One false bleedthrough peak for Source F around 28 ex-sec
+onoffcts =
+    58    55    55    57    48    59
+overlapskew =
+    9.0404    0.3874    0.5938    1.5982    1.1990    0.8520
+         0    8.2216    2.6167    1.4089    0.1628    0.8476
+         0         0    5.2464    0.9760    0.0302    0.3443
+         0         0         0    6.2437    0.1063    1.0169
+         0         0         0         0    8.1644    2.5485
+         0         0         0         0         0    7.6781
+whichsources =
+    1.1000    3.2000    3.3000    2.3000    3.4000    2.1000
+
+0192  local chorus continues through 25.3 sec.  New chorus begins at 38 sec
+Extract from 35-85
+meanlocs (Array 1) =
+    0.5556    5.3220   -0.4813  clean (2.0 thresh 0.45)  12-43 ex-secs  BEST HERE; SAME AS 1.4, 2.1, 3.1  SOURCE A
+    5.7748    5.7499    0.9990  somewhat clean (0.8 thresh 0.42) 33-50+ ex-secs  SAME AS 2.2
+    3.0047    7.3566    0.7325  clean (1.3 thresh 0.4)  3-42 ex-secs  SAME AS 2.3, 3.7, 3.8
+    1.2197    9.0103    0.4114  clean (1.8 thresh 0.57)  12-43 ex-secs  SAME AS 1.1
+meanlocs (Array 2) =
+   -0.1453    6.4148    0.3368  clean (1.4 thresh 0.55)  12-43 ex-secs  SAME AS 1.1, 1.4, 3.1
+    8.2082    6.6693    0.1324  clean (2.2 thresh 0.55)  32-50+ ex-secs  BEST HERE; SAME AS 1.2  No scratchies  SOURCE F
+    3.5032    9.6785   -0.4996  clean (3.0 thresh 0.8)  3-42 ex-secs  BEST HERE; SAME AS 1.3, 3.7, 3.8  SOURCE D
+meanlocs (Array 3) =
+    0.4231    5.7999    1.0000  fairly clean (0.8 thresh 0.35)  12-43 ex-secs  SAME AS 1.1, 1.4, 2.1  No scratchies
+    1.7033    8.4153   -0.0339  mostly clean (1.2 thresh 0.55)  12-40 ex-secs, gap from 33-36 sec  SAME AS 3.5
+    1.4587   10.6031    0.4988  fairly clean (0.8 thresh 0.40)  8-34 ex-secs  Last call slightly scratchy?  SOURCE C
+    0.1519   12.9332    1.0000  mostly clean (1.2 thresh 0.55)  7-32 ex-secs  No scratchies  SOURCE E
+    2.7007    8.6646    0.0103  clean (1.2 thresh 0.45)  12-40 ex-secs, gap from 33-36 sec  BEST HERE; SAME AS 3.2, 3.6  No scratchies  SOURCE B
+    2.9666    8.9928   -0.0227  clean (1.2 thresh 0.45)  12-40 ex-secs, gap from 33-36 sec  SAME AS 3.2, 3.5
+    4.8085    8.0286    1.0000  fairly clean (1.0 thresh 0.5)  3-42 ex-secs  SAME AS 3.8, 2.3, 1.3  No scratchies
+    6.2624    8.0069    1.0000  fairly clean (1.0 thresh 0.5)  3-42 ex-secs  SAME AS 3.7, 2.3, 1.3
+No short false peaks
+onoffcts =
+    59    47    50    65    48    33
+overlapskew =
+    6.7774    0.4359    2.2278    0.8600    1.0815    1.0286
+         0    7.3771    0.3905    0.4692    1.2278    3.5126
+         0         0    5.1178    0.0387         0       NaN
+         0         0         0    7.0614    1.3918    0.4923
+         0         0         0         0    7.2952       NaN
+         0         0         0         0         0    6.2041
+whichsources =
+    1.1000    3.5000    3.3000    2.3000    3.4000    2.2000
+
+0193  local chorus continues until 27.5 sec.  One frog continues through "gap" on Array 2, with everything beginning again at 37.6 sec
+Extract from 30 to 80 sec
+meanlocs (Array 1) =
+    0.6100    5.3032   -0.4931  clean (1.9 thresh 0.53)  13-40 ex-secs  SOURCE A  No scratchies
+    2.7782    7.2371    0.6756  mostly clean (1.1 thresh 0.47)  7-38 ex-secs  SAME AS 2.2, 3.2  No scratchies
+meanlocs (Array 2) =
+    8.4205    6.6642    0.1107  clean (1.8 thresh 0.7)  0-44 with a gap from 12-14 ex-secs  BEST HERE; SAME AS 1.3  Two slightly scratchy calls near end  SOURCE F
+    3.5088    9.6692   -0.5000  clean (2.8 thresh 1.2)  7-38 ex-secs  BETTER HERE; SAME AS 1.2, 3.2  No scratchy  SOURCE D
+meanlocs (Array 3) =
+    1.6913    8.4179   -0.0707  mostly clean (1.2 thresh 0.5)  15-42 ex-sec  SOURCE B
+    2.4331    8.2663    0.9939  mostly clean (1.0 thresh 0.55)  7-38 ex-sec  SAME AS 1.2, 2.2
+    1.5131   10.6311    0.7897  fairly clean (0.8 thresh 0.41)  9-48 ex-sec, gap from 35-37  BETTER HERE; SAME AS 1.1  SOURCE C
+    0.2405   13.1155    1.0000  mostly clean (1.1 thresh 0.52)  10-44 ex-sec  SOURCE E
+PROBABLY MISSING A SOURCE?
+No false call detects
+onoffcts =
+    50    48    69    58    57    81
+overlapskew =
+    6.8412    0.4379    1.2581    2.7175    1.4939    1.4695
+         0    6.6823    0.8808    0.2638    0.9648    0.9388
+         0         0    6.1054    0.3835    0.5554    1.1267
+         0         0         0    5.9518    1.5767    0.3472
+         0         0         0         0    8.8331    1.6484
+         0         0         0         0         0   11.8128
+whichsources =
+    1.1000    3.1000    3.3000    2.2000    3.4000    2.1000
+0194  chorus continues until 28 sec
+
+0195  local chorus starts around 12 sec; a couple of seconds earlier on Array 3, slightly stronger on Array 2
+Extract from 10-60
+meanlocs (Array 1) =
+    0.6675    7.2759    0.0914  clean (2.0 thresh 0.65)  7-38 ex-secs  SAME AS 1.2, 2.1, 3.1
+    0.9204    8.0014    0.0603  clean (2.0 thresh 0.6)  7-38 ex-secs  BETTER HERE; SAME AS 1.1, 2.1 3.1  SOURCE A
+    2.6490    7.1810    0.5905  clean (1.2 thresh 0.38)  4-33 ex-secs  SAME AS 1.4, 2.2
+    3.0277    7.3992    0.8167  clean (1.2 thresh 0.45)  4-33 ex-secs  SAME AS 1.3, 2.2
+    5.8599    5.7554    0.9970  mostly clean (0.9 thresh 0.33)  24-46 ex-secs  SAME AS 1.6, 2.3, 3.5
+    6.7830    6.2341    1.0000  somewhat clean (0.6 thresh 0.32)  24-46 ex-secs  SAME AS 1.5, 2.3, 3.5
+meanlocs (Array 2) =
+   -0.1419    6.4098    0.2742  mostly clean (1.5 thresh 0.72)  6-38 ex-secs  SAME AS 1.1, 1.2, 3.1  No scratchies; jostles timing a bit at first then smooth
+    3.5049    9.6818   -0.4992  clean (3.0 thresh 0.8)  4-33 ex-secs  BEST HERE; SAME AS 1.3, 1.4  No scratchies  SOURCE D
+    8.3003    6.6688    0.1243  clean (2.3 thresh 0.6)  23-46 ex-secs  BEST HERE; SAME AS 1.5, 1.6, 3.5  No scratchies  SOURCE F
+meanlocs (Array 3) (0.12-length intervals, robust=1 =
+    0.6041    6.2157   -0.1331  marginal (0.7 thresh 0.47)  4?-38 ex-secs  SAME AS 1.1, 1.2, 2.1
+    1.6745    8.4076   -0.0956  clean (1.2 thresh 0.46)  5-28, 31-38 ex-secs  No scratchies  SOURCE B
+    1.5185   10.6398    0.7544  pretty clean (0.75 thresh 0.4) 4-31 ex-secs  5 scratchy calls at end  SOURCE C
+    0.2256   13.0722    1.0000  pretty clean (1.1 thresh 0.5)  2-26 ex-secs  No scratchies  SOURCE E
+    4.3164    6.3683    1.0000  not recoverable (0.4 thresh 0.35)  22?-46  SAME AS 1.5, 1.6, 2.3
+False call detected for Source C at 23 ex-sec
+onoffcts =
+    63    55    53    55    46    42
+overlapskew =
+    7.9375    0.6113    0.2944    0.6170    1.0134    0.2004
+         0    7.2190    2.7097    1.1559    0.1736    0.4695
+         0         0    4.9267    0.3011    0.1684    1.1985
+         0         0         0    6.2615    2.8565    0.5689
+         0         0         0         0    6.7441    3.4441
+         0         0         0         0         0    7.1703
+whichsources =
+    1.2000    3.2000    3.3000    2.2000    3.4000    2.3000
+Locating Source F with [5 6 7 8 15]
+meanloc =  6.1019    6.4922    1.2788
+stdsxyz =  0.0598    0.0754    0.1432
+stdloc =  0.1726
+
+0196  local chorus continues through 6 sec.  Moves off to more distant, new local chorus arises around 16 sec through 42 sec, about equal strength on all arrays
+Extract from 10-45 sec
+meanlocs (Array 1) =
+    0.6630    7.2966    0.1087  clean (2.0 thresh 0.39)  13-32 ex-secs  BEST; SAME AS 2.1, 3.1  No scratchies  SOURCE A
+    1.3613    7.8398    0.3477  somewhat clean (0.6 thresh 0.42)  7-30 ex-secs  SAME AS 3.3  No scratchies
+    2.5510    7.1519    0.4516  clean (1.2 thresh 0.38)  7-29 ex-secs  SAME AS 1.4, 2.2, 3.2, 3.5  No scratchies
+    3.0465    7.3779    0.7917  clean (1.2 thresh 0.36)  SAME AS 1.3, 2.2, 3.2, 3.5
+Perfectly sychronized between these three most of the time
+Extraction on Array 2 misses 3rd-strongest source, with which others are alternating
+meanlocs (Array 2) =
+   -0.1554    6.4131    0.2789  mostly clean (1.5 thresh 0.7)  13-32 ex-sec  SAME AS 1.1, 3.1  No scratchies
+    3.5062    9.6898   -0.4996  clean (2.8 thresh 0.8)  7-29 ex-sec  SOURCE D, BEST HERE; SAME AS 1.3, 1.4, 3.2, 3.5  No scratchies
+meanlocs (Array 3) =
+    0.8097    5.9569    0.4211  fairly clean  (0.6 thresh 0.34  13-32 ex-secs  SAME AS 1.1, 2.1  No scratchies
+    2.9486    7.9864    1.0000  fairly clean  (1.1 thresh 0.54)  7-29 ex-secs  SAME AS 1.3, 1.4, 2.2, 3.5  No scratchies
+    1.5262   10.6761    0.8298  fairly clean  (0.8 thresh 0.42)  7-30 ex-secs  BEST; SAME AS 1.2  One scratchy call in there
+    0.2082   13.0632    1.0000  mostly clean (1.1 thresh 0.47)  5-27 ex-sec  No scratchies
+    4.8176    8.0344    1.0000  fairly clean (1.1 thresh 0.55)  7-29 ex-secs  SAME AS 1.3, 1.4, 2.2, 3.2
+It looks like there's a distant frog not extracted that collides with different ones, giving the largest peaks.  It seems to sync with one, then another.
+3.2, 3.3 and 3.4 seem to interleave with perfect synchrony until 3.1 comes in; 3.1 collides with all three in turn, then settles in to colliding with 3.4.  After 3.4 drops out, shifts to interleaving with 3.2 and 3.3
+Source B seems to be there and to be recoverable, but I failed when I tried to get all of them from Array 3.  No sign of B in Array 2.  Source F really seems to be absent.
+
+No false short intervals
+onoffcts =
+    35     0    46    44    43     0
+overlapskew =
+    7.1174         0    0.2132    0.2151    3.4143         0
+         0         0         0         0         0         0
+         0         0    5.3459         0    0.3833         0
+         0         0         0    6.1097    0.3017         0
+         0         0         0         0    8.4845         0
+         0         0         0         0         0         0
+whichsources =
+    1.1000         0    3.3000    2.2000    3.4000         0
+
+0197  chorus 5-44 sec, strongest on Array 2
+Extract from 0-45 sec
+meanlocs (Array 1) =
+    0.5963    5.3064   -0.4700  clean (1.6 thresh 0.41)  12-40 sec  BETTER; SAME AS 1.2, 2.1
+    0.6681    7.4667    0.2470  (1.4 thresh 0.45)  12-40 sec  SAME AS 1.1, 2.1  This is probably correct location
+    2.8537    7.3047    0.6513  fairly clean (1.0 thresh 0.46)  5-35 secs  SAME AS 2.2, 4.2 (box3two.2)
+    5.8530    5.6350    0.7237  maybe (0.7 thresh 0.47)  17?-44 sec  SAME AS 2.3
+    0.0843    9.0278    0.8475  fairly clean (1.0 thresh 0.45)  12-38 sec  BETTER; SAME AS 4.1 (box3two.1)
+meanlocs (Array 2) =
+   -0.1874    6.3712    0.0845  clean (1.5 thresh 0.51)  12-40 secs  SAME AS 1.1, 1.2
+    3.5126    9.6807   -0.5000  clean (2.6 thresh 1.0)  5-35 secs  BEST; SAME AS 1.3, 4.2
+    8.9726    6.4613    0.9970  clean (2.0 thresh 0.6)  14-44 secs  BEST; SAME AS 1.4
+meanlocs (Array 3 bbsp0197box3two.mat to separate the two that got mixed in 3.1) =
+    1.6918    8.3984   -0.0908  fairly clean (1.0 thresh 0.46)  12-38 sec  SAME AS 1.5
+    2.2508    8.3435    0.9577  fairly clean (1.0 thresh 0.54)  5-35 sec  SAME AS 2.2, 2.3
+meanlocs (Array 3) =
+    1.9713    8.3710    0.4335  letting two frogs through (0.7 or 1.3 when they collide) thresh 0.7)  Better try without robust adaptation
+    1.2078   10.4976    0.8345  pretty clean (0.8 thresh 0.36)  10-35 sec
+    0.2110   13.0465    1.0000  mostly clean (1.1 thresh 0.5)  10-32 sec
+Everything exactly the same except for turning off steering vector adaptation
+meanlocs (Array 3) = bbsp0197box3r
+    1.9713    8.3710    0.4335  lets two through (0.6 or 0.9 on collision thresh 0.6)
+    1.2078   10.4976    0.8345  (0.7 thresh 0.33)
+    0.2110   13.0465    1.0000  (0.8 thresh 0.46)
+Robust adaptation looks at least slightly better always, often significantly but not tremendously better
+No erroneous short pulse recoveries
+onoffcts =
+    52    48    46    54    43    57
+overlapskew =
+    6.5244    1.4396    1.4936    1.9109    0.3863    1.0005
+         0    6.9133    1.1823    0.7123    1.9577    0.6188
+         0         0    5.4744    0.3950    0.2595    1.0422
+         0         0         0    6.4963    0.7103    1.2115
+         0         0         0         0    7.7975    1.0565
+         0         0         0         0         0    8.7450
+whichsources =
+    1.1000    1.5000    3.2000    2.2000    3.3000    2.3000
+
+0198  chorus starting about 7 sec on Array 3, goes through end although dying down
+Extract from 5-55 seconds
+meanlocs (Array 1) =
+    0.5630    5.3217   -0.5000  clean (2.0 thresh 0.53)  15-48 ex-secs  BEST HERE; SAME AS 2.1, 1.2  No scratchies  SOURCE A
+    0.8969    7.9609    0.1096  clean (1.8) SAME AS 1.1, 2.1
+    2.6135    7.1639    0.4155  mostly clean (1.1 thresh 0.42)  10-44 ex-secs  SAME AS 1.3, 2.3  No scratchies
+    2.9990    7.3275    0.6890  mostly clean (1.2 thresh 0.43)  SAME AS 1.3, 2.3
+    0.0700    8.2314    0.7777  mostly clean (1.3 thresh 0.57)  12-38 ex-secs  BETTER HERE; SAME AS 3.5, 3.6  No scratchies  SOURCE B
+meanlocs (Array 2) =
+   -0.1431    6.4156    0.2903  clean (1.4 thresh 0.55)  15-48 ex-secs  SAME AS 1.1, 1.2
+    8.1810    6.6082    0.2032  fairly clean (2.2 thresh 0.95)  19-48 ex-secs  SOURCE F
+    3.5096    9.6862   -0.5000  clean (2.8 thresh 0.95)  10-44 ex-secs  BETTER HERE; SAME AS 1.3, 1.4  SOURCE D
+meanlocs (Array 3) =
+    0.7710    6.1100    0.4714  not recoverable (0.3 thresh 0.29)
+    0.8416   10.3771    0.8695  mostly clean (0.8 thresh 0.35)  9-38 ex-secs  BETTER HERE; SAME AS 3.1  No scratchies  SOURCE C
+    1.4364   10.5605    0.8431  mostly clean  (0.8 thresh 0.43)  9-38 ex-secs  SAME AS 3.2
+    0.1990   13.0226    1.0000  fairly clean  (1.1 thresh 0.61)  7-31 ex-secs  No scratchies  SOURCE E
+    1.6871    8.4101   -0.0370  fairly clean  (1.2 thresh 0.7)  12-38 ex-secs  SAME AS 3.6, 1.5  No scratchies
+   -0.0191    8.4525    1.0000  fairly clean  (1.0 thresh 0.7)  12-38 ex-secs  SAME AS 3.5, 1.5
+One false short pulse-interval for Source B at 22 ex-sec
+onoffcts =
+    61    48    53    64    45    54
+overlapskew =
+    7.0813    0.1242    3.1617    2.1862    0.3210    1.4178
+         0    7.3804    0.6189    0.5094    0.9577    0.3310
+         0         0    5.5934    1.4818         0    1.2839
+         0         0         0    6.0525    0.1257    0.4662
+         0         0         0         0    7.4148    3.5832
+         0         0         0         0         0    7.9385
+whichsources =
+    1.1000    1.5000    3.2000    2.3000    3.4000    2.2000
+
+0199  chorus continues to 3 sec.  New bout beginning first on Array 3 at 16 sec through end although dying down
+Extract 15-60 sec
+meanlocs (Array 1) =
+    0.5768    5.3010   -0.5000  clean (2.1 thresh 0.53)  13-40 ex-secs  BETTER HERE; SAME AS 1.2, 1.3, 2.1
+    0.8530    5.2375   -0.5000  mostly clean (1.9 thresh 0.56)  13-40 ex-secs  SAME AS 1.1, 1.3, 2.1
+    0.6833    7.2747    0.0381  clean (1.8 thresh 0.52) 13-40 ex-secs  SAME AS 1.1, 1.2, 2.1
+    2.5692    7.1509    0.4876  clean (1.2 thresh 0.39)  4-29 ex-secs  SAME AS 1.5, 2.3
+    2.9713    7.2881    0.7618  clean (1.3 thresh 0.38)  4-29 ex-secs  SAME AS 1.4, 2.3
+meanlocs (Array 2) =
+   -0.1434    6.4148    0.2869  fairly clean (1.4 thresh 0.72)  13-40 ex-secs  SAME AS 1.2, 1.2, 1.3  No scratchies  
+    0.3465    8.5602    0.4980  somewhat clean (1.0 thresh 0.62)  5-31 ex-secs  SAME AS 3.2  No scratchies
+    3.5031    9.6834   -0.4998  clean (3.0 thresh 1.2)  4-29 ex-secs  BETTER HERE; SAME AS 1.4, 1.5  No scratchies
+    8.1512    6.6103    0.1729  clean (2.2 thresh 0.7)  17-45+ ex-secs  No scratchies
+meanlocs (Array 3) =
+    0.8852    5.9741    0.4352  fairly clean (0.8 thresh 0.45)  1-24 ex-secs  SAME AS 3.4!!  No scratchies
+    1.6962    8.4047   -0.0613  mostly clean (1.2 thresh 0.46)  6-31 ex-secs  BEST HERE; SAME AS 2.2  No scratchies
+    1.2534   10.5171    0.7073  mostly clean (0.8 thresh 0.32)  3-30 ex-secs  No scratchies
+    0.1973   13.0175    0.9995  mostly clean (1.2 thresh 0.47)  1-25 ex-secs  BETTER HERE; SAME AS 3.1!! This one had most of the points, and is probably right  No scratchies
+No false short intervals
+onoffcts =
+    50    45    51    49    46    52
+overlapskew =
+
+    7.1629    0.8162    0.2783    0.2435    1.9518    0.2256
+         0    7.0877    1.4250    1.5897    0.9551    0.0294
+         0         0    5.5756    1.1744    0.1822    2.8693
+         0         0         0    5.7172    1.6245    0.8822
+         0         0         0         0    8.4455         0
+         0         0         0         0         0    9.8204
+whichsources =
+    1.1000    3.2000    3.3000    2.3000    3.4000    2.4000
+
+0200  drops back to one frog at 6 seconds; he continues through it picking up again at 13, and this new bout continues until 45.
+Extract from 10 to 45 sec.
+meanlocs (Array 1) =
+    0.5724    5.3293   -0.4623  clean (2.0 thresh 0.47)  12-34 ex-secs  BETTER HERE; SAME AS 1.2  No scratchy
+    0.6756    7.2696   -0.1992  clean (1.5 thresh 0.4)  12-34 ex-secs  SAME AS 1.1!!
+    2.8492    7.3210    0.6134  mostly clean (1.2 thresh 0.49)  5-30 ex-secs
+Forgot to save; new extraction
+meanlocs (Array 1) =
+    0.6756    7.2696   -0.1992  clean (1.5 thresh 0.40)  12-34 ex-secs  BETTER HERE; SAME AS 2.1, 3.1
+    3.0124    7.3768    0.8095  mostly clean (1.2 thresh 0.47)  5-30 ex-secs  SAME AS 2.2
+Some fairly large sources not recovered
+meanlocs (Array 2) =
+   -0.2258    6.3901    0.0476  clean (1.5 thresh 0.61) 12-34 ex-secs  SAME AS 1.1, 3.1
+    3.4838    9.6846   -0.4969  clean (3.0 thresh 1.1)  5-30 ex-secs  BETTER HERE; SAME AS 1.2
+    7.1450    5.8905   -0.5000  mostly clean (2.0 thresh 0.9)  0- to 15 ex-secs  SAME AS 2.4  MAYBE SOURCE G??
+   10.3025    6.8479    1.0000  clean (2.1 thresh 0.8)  0- to 15 ex-secs  BETTER; SAME AS 2.3
+meanlocs (Array 3) =
+    0.8718    5.8935    0.3832  somewhat clean (0.8 thresh 0.5)  12-34 ex-sec  SAME AS 1.1, 2.1  No scratchy
+    1.7069    8.4044    0.0438  fairly clean (0.8 thresh 0.33)  7-30 ex-sec  No scratchy
+    2.4298    8.2659    0.9817  mostly clean (1.0 thresh 0.50)  5-30 ex-sec  SAME AS 1.2, 2.2  No scratchy
+    1.1133   10.4516    0.8634  fairly clean (1.0 thresh 0.52)  3-31 ex-sec  No scratchy, but a couple almost scratchy at times of hesitation
+    0.1878   13.0288    1.0000  fairly clean (1.2 thresh 0.65)  2-26 ex-sec  No scratchy
+1.4 does a 1.5 backoff at 13 sec to get away from 1.2, which had settled on the same slot alternating with 1.3 and 1.5.  Another one at 7 sec.
+It looks like they don't do scratchy here at the peak of the chorus, but they shift around who they alternate and who they collide with.
+One false short peak on Source C at15 ex-secs
+5 frogs perfectly synchronized from 15-25 ex-secs
+onoffcts =
+    43    42    51    48    45    29
+overlapskew =
+    7.0248    1.1000    0.5092    0.5683    3.4081    0.5724
+         0    7.6988    0.6382    3.2985    0.2403    1.0068
+         0         0    5.7824    0.0236         0    0.1497
+         0         0         0    6.3904    0.3367    0.9675
+         0         0         0         0    8.9505    1.8723
+         0         0         0         0         0    6.5026
+whichsources =
+    1.1000    3.2000    3.4000    2.2000    3.5000    2.4000
+
+0201  local chorus begins just after 21 sec, continues through end
+Extract from 20-65 sec
+meanlocs (Array 1) =
+    0.6514    7.2638   -0.5000  clean (1.5 thresh 0.47)  9-34 ex-sec
+    3.0236    7.2881    0.7153  fairly clean (1.1 thresh 0.49)  2.5-32 ex-sec  SAME AS 2.1, 3.2
+    5.5921    5.6680    1.0000  somewhat clean (0.8 thresh 0.48)  7?-43 ex-sec  SAME AS 2.2
+meanlocs (Array 2) =
+    3.5133    9.6825   -0.4982  clean (3.0 thresh 1.2)  2.5-32 ex-secs  BEST; SAME AS 1.2, 3.2
+    8.2181    6.6059    0.1808  mostly clean (2.0 thresh 0.7)  5-43 ex-secs  BEST HERE; SAME AS 1.3
+meanlocs (Array 3) =
+    1.6776    8.4014   -0.1184  borderline (0.8 thresh 0.53)  2-33 ex-sec
+    2.3910    8.2787    0.9312  somewhat clean (1.0 thresh 0.54)  3-32 ex-sec  SAME AS 1.2, 2.1
+    1.3844   10.5553    0.8778  somewhat clean (0.9 thresh 0.47)  2-32 ex-sec
+    0.2228   13.1138    1.0000  somewhat clean (1.2 thresh 0.71)  1-28 ex-sec
+Three false short intervals: two on channel 2 (B) at 18, 24 ex-secs; one on channel 5 (E) at 19 ex-secs
+onoffcts =
+    45    56    54    54    51    69
+overlapskew =
+    8.7205    0.9786    3.1308    0.3705    0.6300    2.4553
+         0    6.1141    0.5805    2.2710    1.8420    1.1438
+         0         0    5.4734         0    0.3194    1.6856
+         0         0         0    6.3129    0.8458    0.3917
+         0         0         0         0    8.8716    2.4887
+         0         0         0         0         0    9.3035
+whichsources =
+    1.1000    3.1000    3.3000    2.1000    3.4000    2.2000
+
+0202  chorus continues until 12.3 sec; new chorus begins at 36.6 sec
+0203  chorus drops to just to somewhat more distant frogs at 25, but never really stops (magnitude 2 on Array 2) then closer frogs pick up again at 40.3 sec
+
+
+
+
+
+0300  chorus begins at about 3 sec; two alternating for a few seconds, third (scratchy) comes in, lasts until 31 sec.  Looks like an interesting one to analyze
+Recover from 0 to 35 sec.  Strongest on Array 2, perhaps most balanced on Array 3
+meanlocs =  (Array 3)
+    0.2220   13.1206    1.0000  pretty clean
+    1.6013   10.7261    0.8617  pretty clean
+    2.7074    8.4805    0.9814  clean
+
+0301  scratchy-voiced guy, just beyond recovery distance probably, bullfrogs, bronze frogs, distant chorus beginning last few seconds
+0302  end of local bout, until about 12 sec; bullfrog chorus in distance
+0303  distant chorus winding down about 5 sec; several bronze frogs, particularly strong on Array 3, 
+0304  somewhat distant chorus emerging about 20 sec
+0305  chorus (3+ frogs) from beginning until about 20 sec; more distant one beginning about 45 sec
+0306  chorus until about 15 sec, three frogs, kind of distant
+0307  local chorus starts about 27 sec; one for a while, then 3 to end
+0308  end of bout through about 9 sec, with at least one collision; bullfrogs in background
+0309  short bout from 12-21 sec (kind of disordered end of more distant bout), with a few scratchy fast calls at end of bout
+0310  background + bronze frogs
+0311  background
+0312  background
+0313  bout starting at 9 sec through 48 sec.  Three frogs.  Some get scratchy-voiced at ends of respective calls.  One strongest on array 3, other on array 2
+Extract from 5-50 sec.
+meanloc (Array 2) =
+    3.3537   10.1735   -0.3634  clean (2.5)  This one is the largest source on Array 2, which comes in later
+meanlocs (Array 3) =
+    3.0112    8.5225    0.9834  (0.7) fairly clean (thresh above 0.31)  last eightish calls scratchy, scratchy burst later
+    1.6143   10.7714    0.8045  (0.9) pretty clean (thresh above 0.25)  three scratchies after trying to sync!  TWO AND FOUR ARE SAME SOURCE; TWO IS PROBABLY CORRECT LOCATION
+    0.1071   12.9574    1.0000  (1.4) clean  Starts bout, seems to hesitate until another one joins!  Seven scratchy calls at end, when chorus overloads
+    3.8762   12.0121   -0.1426  (0.8) pretty clean (thresh above .25)  Second to join; gets scratchy early after trying to sync, syncs then scratches two more times.  TWO AND FOUR ARE SAME SOURCE
+0314  background
+0315  background
+0316  background
+0317  background
+0318  busy background
+0319  bullfrogs, bugs
+0320  background
+0321  last recording.  Birds going crazy.  One frog calling from about 27-49 sec, largest on array 2
+
+
+OBSERVATIONS and IDEAS:
+
+They don't like to call alone; slow, tentative, stop soon if others don't take up the chorus.  Why?  Predation?  More attractive to females?
+
+They start off slow and increase pace once they get going; is this only when syncing with others, or even when calling alone?
+
+They do try to slot themselves into the gaps between neighbors.
+
+Can we do the simple overlap analysis to show that they avoid colliding with each other?
+And show that scratchy occurs in high-overlap situations?
+
+Same type thing to show that scratchy occurs when more neighbors are calling?
+
+Should go back to previous year's data with playback and see if you can get anything.
+
+Can we identify triggers for scratchy?  (How many collisions, e.g.?)
+
+Do average background level rise as trigger for chorus to begin ... to nearest microphone.
+
+Come up with a metric of crowdedness to quantitatively test scratchy hypothesis ... say min level of 0.05-sec intervals over pulse interval; if this is high, there's not a gap for interleaving calls
+
+Make a "precedence matrix" that compares pairwise the number of times each frog precedes others in a bout; if not consistent, there's no bout leader!
+
+Make movies of each bout: assign location according to nearest array, flash with each call, and see if the wave action is apparent!
+
+Can compute energy on all three arrays for, say, 2 seconds or 5 seconds before onset of first local caller,
+and use ratios of those as a crude indicator of wave direction.
+I bet we'll see strong correlation with which local frog starts first!
+
+Build mic array fixture out of Connexs!  Should be possible to control positions well, and easy to assemble and take apart!
+
+No point in trying to extract really distant stuff in loud chorus.  Max range in heavy chorus about 5 m?
+
+Try using the adaptive capability in robustafunc and see if you do better!
+
+Make histograms of intercall intervals, and of intercall intervals following collisions.  The latter will probably have far more 1.5s and 0.7s (scratchies).
+
+Make scatterplot of successive intercall intervals, x being first interval, y being second, both all and those on either side of a collision
+
+Find median intercall interval for each frog.
+
+Scratchy intercall interval seems to be 3/4 of usual; this should be good for hitting any unused slots, since it's relatively prime to 3/3 slots they use!
+See tail end of bbsp0113box3 57-61 sec, where frogs 3.1 and 3.3 they beat 4 vs 3!  Thus collide only every 4th pulse with any of three synced interferers!
+
+Count total calls in each bout!  (Ratnam suggestion.)  Is it more consistent than duration?
+
+Should compute intensity on one mic from each array for, say 1 sec
+intervals for the entire night!  This may illuminate wave behavior.
+
+It looks like they don't do scratchy here at the peak of the chorus, but they shift around who they alternate and who they collide with.
+How can this form of collision avoidance and three-way TDMA be quantified statistically?
+
+Could the purpose of the scratchy call be to jam the chorus?  If I can't get in, mess everyone else up?  Maybe test by seeing if other frogs
+lose synch after a scratchy episode by a neighbor.
+
+Do they go scratchy before they go fast, as a warning?  Doesn't look like it in 0181 Source C; normal nonscratchy at 40.99 sec, scratchy at 41.41 sec and thereafter.
+
+HOW TO ANALYZE DATA:
+- Take all bouts, all together, compute overlap statistics for all times that both frogs are calling over the whole period and show that it's less
+  than random expected.
+ - Also see if it's less for neighboring frogs
+ - if we assume number_of_calls*(1/on_time_fraction) = number of "slots", binomial distribution should give us number of expected collisions between
+   frogs if random; can estimate p-value from that.
+- Compute inter-frog inter-onset delay intervals, and show that those are not uniform, but strongly peaked at 1/3, 2/3 median intercall interval.
+  This will support 3-slot theory as well as interleaving
+- For frogs far from edge (Frog A, maybe B), show that overlap is near zero during times only three frogs are calling (if there's even enough such intervals!) 6 sec at end of 0190, 4 sec at end of 0191, 5 sec at end of 0195, 5 sec at end of 0196, 5 sec at end of 0197, 10 sec at end of 0198 (YES, it seems to happen here; before 38, A and D overlap, but when the others drop out, they quickly shift to 3-way interleaving), 9 sec at end of 0199, 4 sec at end of 0200.  Not really any such times to speak of for Frog B.  4 sec for C, 9 sec for D at beginning of 0192 (YES! perfectly interleaved up until 19 ex-secs, or 7 seconds after 4th and 5th sources enter), 3 sec for D in 0193, 6 sec for both C and D at beginning of 0196, 7 sec for D at beginning of 0197, 3 sec for C, 2 for D at beginning of 0198, 2-3 sec for both in 0199.  All together, this may be enough to get some decent stats; 50-100 pulses
+
+It looks like the backoff interval is 4/3, not 1.5!  See 0191.
+
+Frogs are better synched, collide less w nearer neighbors.  Show by
+- overlap matrix
+- mod 1/3 phase histogram stats
+- -1/6 to 1/6 percentage from phase histogram
+
+Frogs sync with/key off locally dominant callers when they enter the chorus, try to stay locked to them.
+- what broke up 0190 is that frog A dropped a call at 22 sec.  B went 4/3 waiting for it, and then got confused; A stayed locked to C, then switched to B at 25 sec when B collided w C
+
+They lock by entraining 1/3 behind locally dominant caller when they enter
+
+In 0191, at 14 sec A does a 4/3 for no obvious reason ... why?
+- F started to enter just before that ...
+- at 19, 3 drops a pulse and goes 5/3+.  This new phase overlaps 1, which goes 4/3.  This collides with 2, which drops out for two pulses and comes back in 1/3 earlier in phase
+- F loses lock about then and precesses thereafter
+- around 24, B shifts forward 1/3 relative to D; E drops out; C goes 4/3 and seems to sync to B, which A has been faithfully following
+- at 26, B drops a pulse and delays an additional 5/3 and appears to sync on A after that!  Whereas A seems to be locked to C in those times.  B remains faithfully locked to A to the end, whereas they're free-running with respect to F.
+
+In 0179, second frog in takes 1/3 slot; third frog jostles [5 3 4]
+  E 2; C 3; D 7; B 10; A 11
+  A achieves weak lock to B at 12, w C around 15, full lock w all at 20. Sync w E at 2/3 from 12.5-15.5 and C from 15-19 seems lower variance, but later on, 1/3 to D then E is best
+  B seems to be followed by A from 12 sec; C at 17, all at 20
+  B locks to E at 13, loses it at 15, then locks to D at 1/3 at 17 to 20, then switches to A at 19-24, then loses it
+In 0180, second frog in takes 1/3 slot; third jostles for about 8 sec [5 3 2]
+  E 4; C 7; B 8; A 12; D 18
+  B locked to C for five calls at 12; slips to 2/3 after 14, then locks to E at 15.5 and A at 18
+  A briefly locked 1/3 to B at 16, slips to 2/3 at 19, then 1/3 locked to C at 19.  A slips a 1/3 phase with everyone there
+In 0181, 3 and 2 come in about the same time; 2 takes 1/3 slot, 3 takes 0/3 slot [5 2=3]
+  E 14; C 15; B 15; A 19; D 33
+  A locked w B at 1/3 at 21, E at 2/3 at 21; 1/3 phase slip at 23, then C at 1/3, B at 2/3, E at 3/3 by 24
+  B locked w A (A following B) by 22; all by 23
+  B locked onto C at 1/3 at 18, phase slip to 2/3 at 22
+  B locked onto E at 1/3 from 18-36; A drops into 1/3 slot at 24-38
+In 0183, second frog takes 1/3 slot; third jostles around for about 8 sec; meanwhile fourth comes in, and in the mixup second jumps to 2/3 slot.  Hmm, somehow frog 4 slips in a bit of a gap between 5 and 3 and it looks like 3 slips to following 1/3 behind it! [5 3 4 1]
+  E 2; C 4; D 5; A 11
+  A locks to 1/3 after E at 15-21; also 2/3 wrt C; never resyncs after 21
+In 0184, 6 carries through alone from 0183, then 2,1,4 all come in at the same time.  It takes them 5 seconds to sync up to 6.
+  F 0; B 11; A 12; D 12; C 13; E 13
+  A,B locked from start (11)-30 sec, B 1/3 behind A
+  A locks 1/3 later to D,E at 15; E slips to 3/3 at 18, but A stays with D until 27.5
+  Nobody synced w F until 16
+  D following B from 15
+
+In 0185, 5 starts; 3 locks on 2/3 fairly quickly; 2 takes about 3 sec to sync.
+  E 3; C 7; B 10; A 13; D (13)15
+  B locks 1/3 after E 14-17 or A at 14.5-25.6
+  B's intercall intervals slowly decrease until 25; does it get tired and/or lose the ability to keep up?  Is that what breaks the synced chorus?
+  A locks 1/3 after C at 14; 2/3 after B at from 14-26, E at 3/3 from 14-17.  at 17, slips to 1/3 after E until 20, 2/3 after C; A 1/3 after C after 19-31
+In 0186, 5 starts; 3 locks quickly to 1/3; 4 comes in next and takes about 6 sec to sync to 5, but all the others are coming in very soon after as well.  But the other four all lock to each other much earlier, by 13 sec
+  E 6; C 8; F 8; D 10; A 10; B 12
+  A,B both lock 1/3 to D at 13; E drifts into sync w D at 15, then A,B follow 1/3 after E at 17-21 as D slips. They then are 1/3 behind C from 21, then A switches to following B at 23, while B stays locked to C until 26
+  A,B overlap until 22
+  At 13.3 where A,B sync w D, E drifts onto collision w D and C just so happens to coincide with A,B, thus leaving a good onset for A,B to latch on to!
+In 0187 (a carry-through by frog D), 2 comes in first but sputters in and out, managing to lock at 1/3 only after about 8 sec of trying
+  A follows 1/3 after D from 11.5-18, 23-31 sec
+  B 1/3 after D from 10-15; follows A from 33-37
+In 0188, C carries through; E comes in and settles into a 2/3 slot, although it looks more like C may adjust to 1/3 following (Is E a hotshot?).  D comes in a bit later and settles on 1/3 after E. B comes in at 10 sec and quickly locks on 1/3 after 3and4 (which overlap here).
+It looks like they kind of drift around for awhile at a slower clock rate until they happen to land at 1/3 behind a big guy, then they lock instantly.
+  A follows 2/3 after B from 29-40; 1/3 after D from 33-44
+  B 1/3 after C from 10.5-5, D from 10.5-13; switches to 1/3 after E or 2/3 after C at 16-20
+In 0190, E starts it off as usual; both D and C come in about the same time and lock to 1/3 on E, seem to throw each other off and others come in too and it takes a few sec for everyone to sync up
+  E 2; D 3; C 4; A 6; B 7
+  A locks 1/3 after C at 8-22; 2/3 after 8.5 on B,D from 8.5-22
+  B syncs 2/3 after C at 7-22; 1/3 after A 8.5-22; 1/3 after E 11.5-22
+In 0191, E starts it off; C comes in and quickly takes a 2/3 slot; D comes in and almost immediately grabs the 1/3 slot
+  E 0; C 2; D 3; B 4; A 5; F 12
+  A 1/3 after B 9-14 sec, C 10-14, F 13-19, E 14-19, C,D 20-24, B 21-26
+  B 1/3 after E for 3 calls 8-9.5 then slips to 2/3 behind from 10-20, D 10-20
+In 0192, D starts it off; E comes in and takes the 1/3 slot after D.  Then C comes in and takes 1/3 slot on E (or 2/3 on D, but it locked after a dropped D call on E)
+  D 3; E 7; C 8; A 12; B 12.5; F 34
+  A locks 1/3 after D from 15-24, E from 19-25
+  B syncs 3 pulse on C 14.5-15.5,slips to 3 pulses of D from 16-17, then slips to A from 17.5-25
+In 0193, F carries through from 0192; D comes next and starts to lock to 1/3, then C comes in and nabs the 1/3 slot, then F drops out.  This one is a bit messy all the way through.
+  F 0; D 8; C 9; E 10; A 14; B 15
+In 0195, E starts, D comes in first and grabs 1/3 slot; C tries a couple of calls at 2/3, then switches to overlapping D; B comes in and overlaps as well, then slips to 2/3s, with D immediately following to 1/3 after B = overlap of E
+  E 3; D 4; C 4; A 6; B 6; F 25
+  A syncs 1/3 after C at 11.5-13.5; this is 2/3 after D,E 11.5-13 (but those look incidental).
+  A slips to 2/3 behind C at 14 as 1/3 on D (14-28),E (14-23); locks to F at 28-38
+  B 1/3 after C at 10-13.5 sec, then 1/3 after A 14-23; C 24-26; A 32-36
+  B 1/3 on E 7.5-9, which slips to 2/3 and stays there for 10-22 along with C
+In 0196, E starts, C and D come in almost simultaneously; D immediately locks to 1/3 on E, C immediately locks to 2/3 is 1/3 of D
+In 0197, D starts, C starts just before E; E locks to 1/3 as soon as it gets close to 1/3; C tries to lock at the same time but collides with E and slips to 2/3-D = 1/3 E.  B comes in very soon, too, and locks to C; A comes in very soon and locks to B.
+In 0198, E starts; C comes in and locks to 2/3; D comes in and quickly locks to 1/3
+In 0199, E starts again; C comes in and locks to 2/3 after a few calls; D comes in next but can't really lock for at least 6 sec
+In 200, F carries through; E comes in and doesn't really lock to F (they're a long way apart, so this may make sense); C comes in and locks quickly to 2/3 E; D comes in and takes about 5 sec to lock to 1/3 of E; B takes about 5 sec to lock to 2/3 once it comes in
+In 201, E starts as usual; C and D start almost simultaneously; C quickly locks to 1/3, D to 2/3; they hold that until F comes in and seem to rotate around to settle in as a whole 6-frog chorus
+
+In 12 of the 20, the second or one of the simultaneous 2+3 take the 1/3 slot.
+In 2 of the 20, sync not achieved for several seconds.
+In 8 of the 20, C (always C, except for one where E follows C) locks to 2/3
+
+How about defining a lock as a certain # or more calls in a row within the same relative phase interval.
+- Look to see how long it takes to achieve a lock with anyone after entering:
+  - correlate against # of competing frogs
+  - do stats on locks
+  - how long do locks last?  What affects this?
+- Stability, phase of lock relative to distance?
+- What is the phase of a lock relative to when they entered; who followed whom?
+- If somebody's locked and the other drops out, how long will the follower delay before calling?
+
+Frogs intercall interval longer when not locked ... hypothesize this is a strategy for precessing in phase to look for a new slot/frog to sync with
+
+Frogs sync on 1/3 because
+- less delay from trigger means more accurate, since frequency drift is cumulative
+- less delay means less time for interfering events to slip in and cause problems
+- This maximizes the recovery period AFTER own call to recover hearing and listen for new trigger (Brilliant, Ratnam!)
+
+HOW TO PROVE IT!!!
+- In general, lower variance of intercall delay implies synchronization with leading frog.  So we should measure the variance of intercall delay over nominally synced intervals and claim the lowest variance is the one it's synced to.
+- The only caveat is that for timers, the timing delay error could be proportional to the delay, since the error is presumably a frequency offset, which accumulates linearly.  So we might expect that, if they synced on 2/3rds, the variance might be twice as high as a 1/3 sync and still be synced.  BUT ...
+- If a frog were synced directly at 2/3 and only INDIRECTLY to a frog at 1/3, then the variance of the dude at 1/3 should be EVEN HIGHER, because it would include the sum of all of the jitters through the indirection!  So this analysis works!
+- What about two synced to a third?
+- We could DISPROVE my 1/3 hypothesis by finding situations when a frog is synced to 2/3 and there's nobody at 1/3.  If we look only at frog A and B, where we see all the nearest neighbors, we can look for this case; I bet we'll never see it.  Conversely, we can look for 1/3 without 2/3 to support the 1/3 hypothesis.  We can always go back to the raw recordings and look and see whether there's unrecovered energy in the 1/3 slot.
+
+Is there a refractory period after calling in which they won't trigger to an onset, and does this trigger a slip?
+
+The model as of 3/22/10:
+- A frog calls starting at time 0 for about 0.1 sec
+- There's a refractory period after this in which it accepts
+
+One approach: build a statistical model that predicts next call time only from most recent call time of all frogs.  That is, no memory before that.
+- Could compare empirically derived statistical model to joint pdf induced by a mechanistic model
+
+Write a computer program that, given the call times for a bout (or merely given a frog's most recent call time and all calls of other frogs subsequent to that but before its next call), predicts the next call time for that frog.
+- tune model and parameters to minimize error with this model
+
+In 0179, at 19.2 sec A advances.  This is the shortest call A makes in the sequence, and it's late wrt C, which is potentially the new trigger (but lands partly on D, which had triggered it before); this suggests a minimum refractory period.  The call before, A was a bit early and C was a bit late, so it's possible that the gap got large enough for A to be triggered by C.  At 20.3, A introduces a 4/3 delay, thus putting itself back after D again in its prior slot.  The gap between C and D was a bit smaller, and the gap between B and C was considerably smaller, so maybe A couldn't see C's onset after B or offset before D so it slipped ... or maybe it was tired after two short intervals in a row and had to slip?
+Now at 19.8, B shifts late relative to D, its prior trigger, and seems to lock to A, which now overlaps D.  B follows A next cycle through a 4/3 interval, thus abandoning D for A.
+
+At 12.3, A locks to B, on its third above-threshold call.  It seems that it could have locked to C or D a cycle earlier, but that would have taken too short an 0.5 interval, which is perhaps too short for the first few calls.  Also, B is much closer to A.  B seems to sync to E at 13.3 but get a bit late at 14.8 (due either to D and C mostly overlapping E but a bit late, thus pushing the offset out, or it being just too fast for B this early in the bout) then slips even later at 15.35 with no excuse other than it can't keep up the pace, then it waits for 1.5 to 5/3, slotting after A (incidental?) at 16.1, then 4/3 to after D at 16.75, then finally locking to D at 17.3.
+
+At 23.6, A goes a bit short (and B follows) and then lands on D in the slot behind C after  In this time, E goes long at 23.1, C goes long at 23.85, and D follows C on that.  Now B is following A which overlapped E, but as A shortens up and moves forward, B ends up slipping to D at 24.7.  (B's min intercall period, 0.449, occurs at 22.25 and is just not as small as A's 0.413 sec.)
+
+At 27.3, E skips its slot to go 5/3 for its last call, but A stays right on the beat with no apparent trigger.  Hmm.  A goes a bit short, actually.  Both B and E go 5/3 here from their previous calls at 26.8, so C seems to have lost its trigger and goes 4/3 to the slot behind A, which it follows twice then drops two calls. A ends up following B,D at 28; which follow empty slots (hmm), but B seems unable to keep up (C's min intercall interval is 0.424) and slips a phase into following D then slips another phase at 31.7.
+A falls in behind D at 28 and follows until 31.5, when A advances on top of it to follow B which triggers at 31.7; A then follows B until B drops out after 36.0.
+A just seems to want to run faster than the others, so triggers early and drifts early?
+
+
+In 0186, all six seem mostly locked and interacting from about 15-25 sec.  Actually, not so good; A seems to lose lock from 20-23, and F's never well locked
+x In 0188, there never seems to be an interval with all six at once
+In 0191, all six seem to sync from 15-20 sec.  Slips around 19-20, and F drifts off and seems to be synced with some other cluster, not this one
+In 0193, most are in sync from about 17-37 sec, but slips every 2-3 sec, and except for 21-25 sec, there's always one or two that seem locked to a different cluster and drifting phase-wise; very interesting, perhaps!  NOT REALLY!
+x In 0197, F is never really in sync with the others, except for maybe 23-25 ex-secs, and not to B in there.
+In 0198, all nicely locked in fixed phase from 22-28, then E drops out.  A predictor does well on this one
+x In 0199, no overlapping times when all present and locked
+In 0200, never a time when F is locked, but A-E all strongly locked in fixed phase pattern from 16-25 sec  ALL VERY REGULAR AND BORING
+In 0201, all six locked, with occasional slips, from about 13-23.  From 20-23(25?), three each on a phase, leaving one phase open!  Predictor not so great overall, but good from 21-27.
+
+It's hard to show anythign with six frogs calling, since there's always one nearby.  Try times with fewer frogs!
+

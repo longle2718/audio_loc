@@ -1,0 +1,624 @@
+Arrays at (center center, lowest mic):
+Array 1:  (0.79  3.33  1.80)
+Array 2:  (4.01  6.33  1.63)
+Array 3:  (-2.50 8.34  1.91)
+
+Source Z: Array 1 (3.6858  5.8275  -0.4311);  Array 2 (2.2564  4.5220  -0.3794);  Array 3 (1.0276  5.5099  0.8762)  0063
+          Array 1 (1.5126  6.6465  -0.4577);  Array 2 (0.2731  5.3167  -0.0799);  Array 3 (0.6291    5.5410    0.5900)  0106
+Source Y: Array 1 (0.4100  7.4275  0.2680);  Array 2 (0.3699  9.0957  0.2132);  Array 3 (1.4044  9.8541  0.0931)  0092
+Source X: Array 1 ();  Array 2 (0.9691   10.5492    0.9906);  Array 3 (0.1776  12.9760  0.9548)  0097
+Source W: Array 1 (4.6105  5.5171  0.0374);  Array 2 (8.4696  6.7937  0.5769);  Array 3 (4.7993  6.5492  1.0000) 0058
+Source V: Array 1 (5.7266  5.6519  0.8870);  Array 2 (7.0765  5.5348  -0.2426);  Array 3 (3.1095  6.3859  1.0000)  0086    0058  0071?? (clean if so!)  0075?  0086 source B?  [mostly scratchy dude]  0092?  0097 (clean at end so could recover location from this bout)
+Source U: Array 1 ();  Array 2 (8.8289  8.2131  0.9833);  Array 3 ()  0102
+Source T: Array 1 ();  Array 2 ();  Array 3 (-1.5735   13.1224    0.9407)  0106
+
+0190 etc locations
+
+Array 1:
+(0.5963  5.3064 -0.4700)=(0.6630  7.2966  0.1087)  latter probably correct location  Source A
+(1.3613  7.8398  0.3477)  Source C
+(2.5510  7.1519  0.4516)=(3.0465  7.3779  0.7917)  Source D
+(5.8530  5.6350  0.7237)  Source V?  Source F
+(0.0843  9.0278  0.8475)  Source B
+
+Array 2:
+(-0.1419  6.4098  0.2742)  Source A
+(0.3465  8.5602  0.4980)  Source B
+(3.5049  9.6818 -0.4992)  Source D
+(8.3003  6.6688  0.1243)=(7.1450  5.8905 -0.5000)=(10.3025  6.8479  1.0000)  Source F
+
+Array 3:
+(0.8097  5.9569  0.4211)  Source A
+(1.6745  8.4076 -0.0956)=(-0.0191  8.4525  1.0000)=(2.7007  8.6646  0.0103)=(2.9666  8.9928 -0.0227)  Source B
+(2.2508  8.3435  0.9577)  0197 different from above source  Source D
+(1.518  10.6398  0.7544)=(0.8416  10.3771  0.8695)  Source C
+(0.2256  13.0722  1.0000)  Source E
+(2.9486  7.9864  1.0000)=(4.8176  8.0344  1.0000)  Source D
+(4.8085    8.0286    1.0000)=(6.2624    8.0069    1.0000)  0192  Source D
+
+BY SOURCE ACROSS ARRAYS: 190 etc
+
+Source A: Array 1 (0.5963  5.3064 -0.4700)=(0.6630  7.2966  0.1087);  Array 2 (-0.1419  6.4098  0.2742);  Array 3 (0.8097  5.9569  0.4211)
+Source B: Array 1 (0.0843  9.0278  0.8475);  Array 2(0.3465  8.5602  0.4980);   Array 3 (1.6745  8.4076 -0.0956)=(-0.0191  8.4525  1.0000)
+Source C: Array 1 (1.3613  7.8398  0.3477);  Array 2;  Array 3 (1.518  10.6398  0.7544)=(0.8416  10.3771  0.8695)
+Source D: Array 1 (3.0465  7.3779  0.7917);  Array 2 (3.5049  9.6818 -0.4992);  Array 3 (2.9486  7.9864  1.0000)=(4.8176  8.0344  1.0000)
+Source E: Array 1;  Array 2;  Array 3 (0.2256  13.0722  1.0000)
+Source F: Array 1 (5.8530  5.6350  0.7237);  Array 2 (8.3003  6.6688  0.1243)=(7.1450  5.8905 -0.5000)=(10.3025  6.8479  1.0000);  Array 3
+
+
+017x
+Source A:
+Source B:
+Source C:
+Source D:
+Source E:
+Source F:
+
+A avoids (o) (overlapskew < 0.5) or collides with (x) (overlapskew >= 2.0)  B oooooo  C oxooxox  D xoxooooxoo  E xxoox  F ooox
+B avoids or collides with A oooooo  C xoxoo  D xxooxooox  E ooooox  F oooxxo
+
+0179
+Source A: 1.1  9-38  N
+Source B: 3.2  9-37  N
+Source C: 3.3  3-35  S
+Source D: 2.3  7-36  N
+Source E: 3.4  2-28  N
+Source F:
+
+0180
+Source A: 1.1  12-39  N
+Source B: 3.1  8-36  N
+Source C: 3.2  7-33  S
+Source D: 2.2  18-39  N
+Source E: 3.3  4-34  N
+Source F:
+
+0181
+Source A: 1.1  19-58  N
+Source B: 3.2  15-50  N
+Source C: 3.3  15-45  S
+Source D: 2.2  33-56  N
+Source E: 3.4  14-41  N
+Source F:
+
+0183
+Source A: 1.1  11-34  N
+Source B:
+Source C: 3.2  4-28  N
+Source D: 2.3  5-31  N
+Source E: 3.1  2-28  N
+Source F:
+
+0184
+Source A: 1.1  12-43  N
+Source B: 3.2  11-39  N
+Source C: 3.3  13-38  S
+Source D: 2.1  12-42  N
+Source E: 3.4  12-42  N
+Source F: 2.2  0-47  S
+
+0185
+Source A: 1.1  13-38  N
+Source B: 3.1  10-36  N
+Source C: 3.2  7-33  S
+Source D: 2.2  13-38  N
+Source E: 3.3  3-34  N
+Source F:
+
+0186
+Source A: 1.1  10-46  N
+Source B: 3.1  12-41  N
+Source C: 3.3  8-28  S
+Source D: 2.2  10-51  N
+Source E: 3.2  6-30, 44-60+  N
+Source F: 2.3  8-34  N
+
+0187
+Source A: 1.1  7-39  N
+Source B: 3.1  3-23, 28-40+  N
+Source C:
+Source D: 2.2  -0-19, 22-37  N
+Source E: 3.2  8-26  N
+Source F:
+
+0188
+Source A: 1.1  23-77  N
+Source B: 3.1  10-23, 27-42, 50-66  N
+Source C: 3.2  -0-27, 42-66  S
+Source D: 2.2  3-20, 28-53, 62-77  N
+Source E: 3.3  2-25, 45-67  N
+Source F: 1.3  30-55  S
+
+0190
+Source A: 1.1  6-38 ex-sec  N
+Source B: 3.2  6-38  N
+Source C: 3.1  3-29  N
+Source D: 2.2  3-32  N
+Source E: 3.3  2-29  N
+Source F:
+
+0191
+Source A: 1.1  5-36  N
+Source B: 3.2  4-36  N
+Source C: 3.3  2-31  N?
+Source D: 2.3  3-32  N
+Source E: 3.4  0-27  N
+Source F: 2.1  12-40 N
+
+0192
+Source A: 1.1  12-43  N
+Source B: 3.5  12-40  N
+Source C: 3.3  8-34  N?
+Source D: 2.3  3-42  N
+Source E: 3.4  7-32  N
+Source F: 2.2  32-50+  N
+
+0193
+Source A: 1.1  12-43  N
+Source B: 3.1  15-42
+Source C: 3.3  9-48
+Source D: 2.2  7-38  N
+Source E: 3.4  10-44
+Source F: 2.1  0- -44  N
+
+0195
+Source A: 1.2  7-38
+Source B: 3.2  5-38
+Source C: 3.3  4-31
+Source D: 2.2  4-33
+Source E: 3.4  2-26
+Source F: 2.3  23-46
+
+0196
+Source A: 1.1  13-32
+Source B:
+Source C: 3.3  7-30
+Source D: 2.2  7-29
+Source E: 3.4  5-27
+Source F:
+
+0197
+Source A: 1.1  12-40
+Source B: 1.5  12-38
+Source C: 3.2  10-35
+Source D: 2.2  5-35
+Source E: 3.3  10-32
+Source F: 2.3  14-44
+
+0198
+Source A: 1.1  15-48
+Source B: 1.5  12-38
+Source C: 3.2  9-38
+Source D: 2.3  10-44
+Source E: 3.4  7-31
+Source F: 2.2  19-48
+
+0199
+Source A: 1.1  13-40
+Source B: 3.2  6-31
+Source C: 3.3  3-30
+Source D: 2.3  4-29
+Source E: 3.4  1-25
+Source F: 2.4  17-45+
+
+0200
+Source A: 1.1  12-34
+Source B: 3.2  7-30
+Source C: 3.4  3-31
+Source D: 2.2  5-30
+Source E: 3.5  2-26
+Source F: 2.4  0- -15
+
+0201
+Source A: 1.1  9-34
+Source B: 3.1  2-33
+Source C: 3.3  2-32
+Source D: 2.1  2.5-32
+Source E: 3.4  1-28
+Source F: 2.2  5-43
+
+0202
+Source A:
+Source B:
+Source C:
+Source D:
+Source E:
+Source F:
+
+
+Presumed matching of sources across bouts:
+
+0052
+Source Y: 0-25: (2.1)
+Source W: 8-25: (2.2)
+
+0053
+Source Y: 25-36: (2.1)
+Source W: 2-37:  (2.2)
+
+0058
+Source Y: 14-42: (1.1 2.1 3.3)  N
+Source X: ??: (3.4)
+Source W: 4-39:  (1.3 1.4 1.5 2.2 3.1 3.2)
+Source V: 25-42: (1.2)
+
+0063
+Source Z: 17-38: (1.1 2.1 3.1)  S on and off?
+Source Y: 9-37:  (1.2 2.2 3.2)  S on and off
+Source X: 3-32:  (3.3)
+Source W: 4-36, 37-42, 47-50: (2.3 3.4)
+
+0071
+Source Z: 16-40: (2.3 3.3)  S several in there
+Source Y: 5-40:  (2.2 3.2)  S some scratchy
+Source X: 1-30:  (2.1 3.1)
+Source W: 15-40: (2.5 3.4)
+Source V?: 16-40: (2.4)
+
+0075
+Source Z: 10-41: (1.2 2.2 3.2)  S toward end
+Source Y: 8-39:  (1.1 2.1 3.1)  S at end
+Source X: 5-34:  (3.4)
+Source W: 22-47: (2.3)
+Source V: 14-48: (1.3)
+
+0080
+Source Z: 6-58:  (2.2)  N 
+Source Y: 0-40:  (2.1 3.1)  S bursts at end
+Source X:
+Source W: 15-40: (2.3)
+Source V?: 20?-53 (2.4)
+
+0086
+Source Z: 10-55: (1.1 2.1 3.1)  S briefly twice
+Source Y: 3-38: (1.3 3.3)  S at end
+Source X:
+Source W: 20?-53: (2.3)
+Source V: 30?-55: (1.2 2.2 3.2)
+
+0092
+Source Z: 2-48:  (1.1 2.1 3.1)  N
+Source Y: 5-70:  (1.2 2.2 3.2)  S
+Source X: 12-37, 57-70: (2.3 3.3)
+Source W: 15?-47: (2.4)
+Source V: 10?-53? (1.3)
+
+0097
+Source Z: 2-47:  (1.1 1.3 1.4 2.1 3.1)  S single pulse
+Source Y: 4-29:  (1.5 2.3 3.2)
+Source X: 1-29:  (2.4 3.3)
+Source W: 15-62: (2.2)
+Source V: 24-58: (1.2)
+
+0098
+Source Z:
+Source Y:
+Source X: 6-22: (3.1)
+Source W:
+Source V:
+
+0102
+Source Z: 17-45: (1.1 2.3(2.1b))  S three pulses at end
+Source Y: 14-38: (3.1)  N
+Source X: 11-38: (3.2)
+Source W: 4-47: (2.1 3.3)
+Source V:
+Source U: 0-12: (2.2)
+
+0105
+Source Z:
+Source Y: 1-22: (3.2)  N
+Source X: 0-24: (3.1)
+Source W:
+Source V:
+
+0106
+Source Z: 7-40, 45-57 (1.1 1.2 2.4)  S alternating!
+Source Y: 6-62 (3.2)  S
+Source X: 7-29, 43-60 (3.4)
+Source W: 9-54 (2.5)
+Source V:
+Source T: 35-62 (3.3)
+
+0109
+Source Z:
+Source Y: 18-37 (3.1b)  S slightly at end
+Source X: 2-34 (3.3b)
+Source W:
+Source V:
+Source T: 3-6, 9-35 (3.2b)
+
+0113
+Source Z: 20-60 (1.3)  S a lot
+Source Y: 5-62 (1.1)  S on and off
+Source X: 7-34, 54-67 (3.3)
+Source W:
+Source V: 15-38, 42-46
+Source T: 17-43
+
+0117
+Source Z:
+Source Y:
+Source X:
+Source W:
+Source V:
+
+0121
+Source Z: 3-38, 43-46  S
+Source Y: 6-59  S
+Source X: -0-23, 46-60
+Source W:
+Source V: 13-56
+
+0128
+Source Z:
+Source Y: 17-44 (2.1 3.1)  N
+Source X: 12-42 (3.2)
+Source W: 43-50+ (2.4)
+Source V:
+Source U:
+Source T:
+
+01
+Source Z:
+Source Y:
+Source X:
+Source W:
+Source V:
+Source U:
+Source T:
+
+0195
+
+
+
+
+
+0052
+Array 2:
+meanlocs (Array 2) =
+    0.1654    8.5276    0.5289  clean (0.6 thresh 0.16)  0-25 ex-secs; three scratchy pulses at end
+    8.3594    6.7084    0.6987  clean (0.9 thresh 0.11)  8-25 ex-secs; scratchy segment in middle
+
+Processed with different z limits; gives some idea of error in range/location (see 15ChanArrayNotes.txt)
+
+0053
+meanlocs (Array 2) =
+    0.2833    8.4809    0.2496  fairly clean (0.6)  25-36 ex-secs
+    8.6207    6.7368    0.6002  clean (0.9) 2-37 ex-secs; several scratchy bursts at end of call
+
+0058
+meanlocs (Array 2) =
+    0.4846    8.8314   -0.4047  fairly clean (0.7 thresh 0.3) 14-42 ex-sec  Source A
+    8.4696    6.7937    0.5769  clean (1.0, thresh 0.1)  4-39 ex-sec;  Source B (best)  scratchy calls near end.  At 26 sec, he delays once and two collisions in a row happen, and a delay at 30 causes another.  Gets scratchy 36-39 ex-sec.  Seems to be dodging some toad in distance, not 2.1
+meanlocs (Array 3) =
+    3.6248    6.8454    1.0000  marginal (0.25 thresh 0.2)  SAME AS 3.2! = Source B
+    4.7993    6.5492    1.0000  marginal (0.25 thresh 0.2)  4 to 39 or 42 ex-sec; scratchy toward end  Source B
+    0.8246    8.9902   -0.3294  clean (1.3 thresh 0.15)  14-42 ex-sec  No scratchy  Source A (best)
+   -1.0994   12.4952    0.6782  not separable (0.25)
+meanlocs (Array 1) =
+    0.2969    7.8083    0.8951  fairly clean (0.6 thresh 0.2)  15-30, 36-42 ex-secs; some jostling around, but no scratchies  Source A
+    5.7246    3.3434    0.6711  fairly clean (0.35, thresh 0.12) 25-42 ex-secs;  three scratchy segments at end with pauses in between  Source C
+    4.6105    5.5171    0.0374  fairly clean (0.6 thresh 0.17)  3-39 ex-secs  scratchy at end  Source B
+    4.8684    5.6685   -0.4912  fairly clean (0.6 thresh 0.14)  3-39 ex-secs,  SAME AS 1.3  Same as 1.3 = Source B
+    5.2204    5.8184   -0.4585  fairly clean (0.6 thresh 0.17)  3-39 ex-secs,  SAME AS 1.3  Same as 1.3 = Source B
+
+0063
+meanlocs (Array 2) =
+    2.2564    4.5220   -0.3794  clean (1.0 thresh 0.25)  17-38 ex-secs  Three scratchy episodes  Source A
+    0.4082    8.8085    0.3453  somewhat clean (0.8 thresh 0.4) 12-37 ex-secs  Scratchy toward end, short pause, one clean, then scratchy again Source B
+    8.4480    6.7140    0.6477  clean (1.0 thresh 0.4)  4-36, 37-42, 47-50  Several scratchy episodes  Source C
+meanlocs (Array 1) =
+    3.6858    5.8275   -0.4311  clean (2.2 thresh 0.25)  17-38 ex-secs  Three scratchy/fast episodes; I think they get scratchy and fast when it's too dense to interleave  Source A
+    0.3279    7.7543    0.8872  fairly clean (0.7 thresh 0.35)  10-37 ex-secs  Two scratchy episodes  Source B
+meanlocs (Array 3) =
+    1.2228    5.5621    0.9938  borderline (0.35 thresh 0.18)  19-37 ex-secs.  Source A
+    0.7042    9.3163   -0.3721  clean (0.7 thresh 0.19)  9-37 ex-secs.  Source B (best)
+   -0.1790   12.8284    1.0000  borderline (0.35 thresh 0.2)  3-32 ex-secs  Three scratchy intervals  Source D
+    4.7975    6.5235    1.0000  marginal at best (0.25) 4-42, 47-50 ex-sec; many scratchies; must be Source C
+   -4.0758   10.2143   -0.4841  Bronze frog at 45-46 sec
+
+0071
+meanlocs (Array 3) =
+   -0.0955   12.9310    0.9998  somewhat clear (0.5 thresh 0.3)  Source A (better here)  1-30 ex-sec
+    0.7326    9.3154   -0.3585  clean (0.9)  (better here)  Source B  5-40 ex-sec
+    1.0052    5.5373    0.9459  fairly clean (0.4 thresh 0.15)  Source C
+    4.1523    6.8162    1.0000  too small (0.3)  Source E
+meanlocs (Array 2) =
+   -1.2558   12.4826    1.0000  not really separable (0.4 thresh 0.35)  Source A
+    0.2893    8.8695    0.2981  somewhat clear (0.8 thresh 0.35)  Source B (better on Array 3)
+    0.7665    2.9770   -0.2770  clean (1.4 thresh 0.3)  Source C (better here)  16-40 ex-sec
+    7.9736    7.2642    0.4635  clean (1.1 thresh 0.25) Source D (better here)  16-40 ex-sec  mostly scratchy
+    9.9976    6.6751    0.9018  borderline (1.0 thresh 0.4)  Source E; kind of disordered (Better here)  15-40 ex-sec  starts off OK, then goes mostly scratchy
+One collision in 0-15 ex-sec, at 9.65; starting frog does two 1.5s in a row, and first one collides, second one resyncs.  I don't see or hear any other frogs in background.
+
+0075
+meanlocs (Array 2) =
+    0.2517    8.8777    0.2844  borderline  (0.7 thresh 0.45)  8-38 sec  scratchy burst at end  Source A
+    2.0289    4.2809   -0.2677  clean  (1.7 thresh 0.55)  10-41 sec  scratchy episode toward end  Source B
+    8.4849    6.9193    0.7271  borderline (0.75 thresh 0.45)  22-47 sec  alternating scratchy/not-scratchy throughout  Source E
+seemed to separate all three of them as distinct sources
+meanlocs =  (Array 3)
+    0.7218    9.3240   -0.3566  clean (0.8 thresh 0.2)  8-39 ex-sec;  scratchy burst at end  Source A
+    1.0276    5.5099    0.8762  smaller but pretty clean (0.4+ thresh 0.15)  12-41 ex-sec.  Scratchy part toward end (28-32 sec?)  Source B
+    4.5816    6.7305    1.0000  probably too weak to use  (0.25 thresh 0.25)  can't really make anything out
+   -0.1920   12.7029    0.9827  even smaller but decently clean (0.6 thresh 0.28)  5-34 ex-sec.  Scratchy at end.  Sourrce C
+meanlocs =  (Array 1)
+    0.3166    7.8380    0.8304  somewhat weak and dirty (0.7 thresh 0.55)  8-38 ex-sec  scratchy burst at end  Source A
+    3.1721    5.7629   -0.5000  clean  (1.8 thresh 0.3)  10-41 sec  scratchy at end  Source B
+    5.9267    5.7152    0.5983  somewhat weak and dirty  (0.6 thresh 0.35)  14-48 sec  six scratchy bursts at end  Source D
+
+0080
+meanlocs (Array 2) =
+    0.3133    9.0170    0.0164  somewhat clean (0.7, thresh 0.4)  about 0-36 ex-secs  Source A
+    1.7531    4.5486   -0.4677  clean (1.5, thresh 0.3) about 6-58 ex-secs  Source B
+    8.6503    6.6742    0.3669  fairly clean (1.5, thresh 0.45) about 15-40 ex-sec
+    5.9355    5.8522    0.6914  marginal (1.0, thresh 0.5?) about 20?-53 ex-sec  all scratchy
+meanlocs (Array 3) =
+    1.7478   10.2129    0.2450  clean (1.2, thresh 0.25) from 0-40 ex-secs  scratchy couplet after end  Source A
+Source A starts, but is alternating with distant frog before B comes in
+
+0086
+meanlocs (Array 2) =
+    1.9748    4.6964   -0.4083  clean (1.5, thresh 0.5)  10-55 ex-sec; gets briefly scratchy twice  Source A
+    7.0765    5.5348   -0.2426  marginal (1.3, thresh 0.7) 30?-55 ex-sec; five scratchy, last three bursts  may be two frogs mixed together?  Source B
+    8.5024    6.6476    0.2278  somewhat clean (1.5, thresh 0.6) 20?-53 ex-sec  lots of scratchy at end; Source C
+meanlocs (Array 3) =
+    1.0908    5.6914    0.9302  pretty clean (0.8, thresh 0.3)  10-55 ex-sec; briefly scratchy twice  Source A
+    3.1095    6.3859    1.0000  not separable (0.4, thresh ?)  Source B
+    1.6705   10.6819    0.3926  clean (1.2, thresh 0.25)  3-38 ex-sec; scratchy at very end  Source D
+meanlocs (Array 1) =
+    3.4545    6.2568   -0.3939  clean (1.7, thresh 0.3) 10-55 ex-sec  source A
+    5.7266    5.6519    0.8870  0.7 but still a mess; threshold > 0.4  Source B
+    0.3731    7.3910    0.2636  not really separable (0.5, thresh 0.3)  Source D
+Three sets of three collisions between D and A, then looks like one or the other 1.5s; maybe the distance is on the borderline?
+D is chorusing with one in background that's not extracted
+
+0092
+meanlocs (Array 3) =
+    1.0989    5.6985    0.7752  fairly clean (0.6, thresh 0.25)  2-48, again 64-74 ex-secs,  No scratchies.  Source A
+    1.4044    9.8541    0.0931  clean (1.2 thresh 0.2) 5-70 ex-secs; several scratchy bursts at end  Source B
+    0.1221   12.9014    0.9852  borderline (0.55 thresh 0.4)  12-37 ex-secs, scratchy at end, then again 57-70, scratchy again at end of this second group of calls  Source C  extraction better here
+A collision at 15 sec, and 3.1 does a 1.5 duration to dodge.  Again at 22 sec and maybe 25 sec
+meanlocs (Array 2)=
+    2.1165    4.7511   -0.4221  fairly clean (1.5 thresh 0.6)  2-48 again 64-74 ex-sec  Source A
+    0.3699    9.0957    0.2132  marginal (0.6 thresh 0.3)  5-70 sec  scratchy bursts at end.  Source B
+    0.9944   10.5283    0.9912  borderline (0.8 thresh 0.6)  scratchy in parts; a mess, I'm not sure which is which  Source C
+    8.5320    6.6274    0.5734  somewhat clean (1.0 thresh 0.45)  15?-47 ex-sec on and off scratchy the whole time  Source D
+meanlocs (Array 1) =
+    3.4100    6.0576   -0.4935  clean (1.8 thresh 0.3) 2-48 ex-sec, again 64-74; best on this array  Source A  no scratchies; a few pauses
+    0.4100    7.4275    0.2680  fairly messy (0.5)  7?-70  Source B
+    5.0485    5.3920    0.8455  not really separable (0.6 thresh 0.5)  10??-48/53?  Source E  can't really tell them apart
+
+0097
+meanlocs (Array 2) =
+    2.0785    4.8168    0.0938  clean (2.0 thresh 0.7), 2-47 ex-sec. Single scratchy pulse near end  Source A
+    8.6702    6.5720    0.5755  fairly clean (1.5 thresh 0.7), about 15-62 ex-secs.  Seven scratchy episodes, but joining during full chorus, so can never find a spot to interleave without collision  Source B
+   -0.0138    8.0222   -0.3283  fairly clean (1.2 thresh 0.7 in one place), about 4-29 ex-sec.  No scratchies  Source D
+    0.9691   10.5492    0.9906  borderline (0.7 thresh 0.6) 1-46 ex-sec?  No scratchies; may have stopped earlier than 46  Source E
+meanlocs (Array 3) =
+    0.9695    5.6702    0.9470  clean (0.8, thresh 0.25) 2-46 ex-sec; one scratchy pulse near end; same as 2.1  Source A
+    1.5503    8.6736    0.0957  clean (1.0, thresh 0.25) 4-29 ex-sec; collision w 3 and 2 immediately delays, No scratchy  Source D
+    0.1776   12.9760    0.9548  marginal (0.6, thresh 0.4) 1-29 ex-sec  No scratchy  Better here  Source E  
+meanlocs (Array 1) =
+    1.1342    3.9398   -0.0328  clean (2.0 thresh 0.3)  about 2-46 sec  Source A  One scratchy pulse near end  Source A
+    4.9567    5.3188    0.8333  mess (0.6 thresh ?)  clean at end, though; seems to have mixed some sources; probably can be fixed.  About 24-58; some gaps toward end.  many scratchy  Source C
+    3.3787    6.2209   -0.4528  clean (2.0 thresh 0.4)  about 2-46 ex-sec  SAME AS 1.1!  Source A
+    3.5777    7.2655   -0.2416  clean (2.0 thresh 0.4)  about 2-46 ex-sec; SAME AS 1.1!  one scratchy pulse near end  Source A
+   -0.1536    7.0379    0.9025  clean (1.1 thresh 0.4)  about 4-30 ex-sec; no scratchy; 1.5 duration at 11 ex-sec  Source D
+
+0098
+meanlocs (Array 3) =
+    0.1782   12.9909    1.0000  clean (0.7 thresh 0.1)  6-22 ex-secs
+
+0102
+meanlocs (Array 2) =
+    8.7383    6.8254    0.3820  somewhat clean (0.7 thresh 0.4) 4-47 sec  (better here) Source E
+    8.8289    8.2131    0.9833  (0.6 thresh 0.25 until 12 sec, bigger mess afterwards)  0-12 sec only, I think)  Source D
+But both of these were small signals; what happened to the big one?  Let's try extracting again.
+meanlocs (Array 2; bbsp0102box2b) =
+    1.5747    4.4713    0.3121  clean (2.0 thresh 0.5)  17-45 sec  Source A
+Needed high locthresh, powersratiothresh to pull it out
+meanlocs (Array 3) =
+    1.4400    8.7325   -0.2141  clear (1.0 thesh 0.35)  14-38 sec  No scratchies  Source B
+    0.1897   12.9954    1.0000  somewhat clean (0.6 thresh 0.35)  11-38 sec  No scratchies  Source C
+    3.9249    6.8024    1.0000  mostly not separable (0.3 thresh 0.25)  4 to 37 or 47 sec  Source E
+Four collisions in a row from 25-27, then 3.1 does 1.5
+meanlocs (Array 1) =
+    1.7399    5.6516   -0.1771  clean (1.5 thresh 0.6)  17-45 sec  Source A
+
+0105
+meanlocs (Array 3) =
+    0.1871   13.0006    1.0000  fairly clean (0.6 thresh 0.27)  0-24 sec  No scratchies
+    1.9037    8.6594   -0.3444  clean (0.8 thresh 0.15)  1-22 ex-sec  No scratchies
+Nice: 3 collisions, then 1.5 on 2nd frog, another collision then immediately 1.5 from 2nd frog, perfect synchrony from there on out
+
+0106
+meanlocs (Array 1) =
+    2.2739    4.0228   -0.2742  clean (2.5 thresh 0.4)  7-40,45-57 ex-secs  scratchy at end of first set, a scratchy set, then normal and scratchy at end of that
+    1.5126    6.6465   -0.4577  clean (2.5 thresh 0.4)  SAME AS 1.1
+    4.7660    5.2697    0.8908  marginal (0.8 thresh 0.4)  20?-36, 38-42, 47-53  scratchy at end of first set, last two all scratchy
+Largest source recovered, but substantial sources not recovered
+meanlocs (Array 3) = rejectlocthresh = 1.97  powersratiothresh = 0.091  maxcorrthresh = 0.30
+    0.6164    5.5540    0.5447  somewhat clean (0.6 thresh 0.27)  Source Z
+    1.5664    8.7382   -0.2482  clean (0.9 thresh 0.3)  6-62 ex-sec, three short gaps  Source Y  several scratchies at end
+   -1.5647   13.2717    0.9234  somewhat clean (0.7 thresh 0.33 over call interval; up to 0.45 earlier)  35-62 ex-sec, one gap  Source T  Alternates scratchy and clean
+    0.2134   13.0857    1.0000  somewhat clean (0.6 thresh 0.33)  7-29, 43-60 ex-secs  Source X  scratchy only at end of final burst
+There sure is a lot of attenuation, but it looks like it recovered all of the largest sources on Array 3
+meanlocs (Array 2) =
+   -0.2301    8.3181   -0.2014  somewhat clean (1.0 thresh 0.55)  12-62 ex-secs  Source Y
+    0.9081    9.4071    0.7473  marginal (0.8 thresh 0.5) 
+    1.0295   10.6668    1.0000  marginal (0.9 thresh 0.7) 8-29, 43-60 ex-secs
+    0.2731    5.3167   -0.0799  mostly clean (1.4 thresh 0.5)  7-58 ex-secs  Source Z
+    8.7452    6.8250    0.9442  somewhat clean (0.7 thresh 0.45)  9-54 ex-secs, 3 gaps after 32 sec  Source W
+
+
+0109
+Extract from 30-70 sec  Smallest on Array 1; Source Z must just not be active here
+meanlocs (Array 1) =
+    5.6560    7.6807    1.0000  not separated (0.25)
+    5.9698    5.8427    0.9564  not separated (0.15)
+    0.7653    7.9457    0.9506  clean (1.0 thresh 0.2)  SAME AS 1.5; 18-37 ex-sec  very slightly better than 1.5  gets somewhat scratchy at end
+    0.9122    8.6769    1.0000  somewhat clean (0.5 thresh 0.25)  3-6, 8-35 ex-secs  lots of scratchy
+    0.4018    9.4092    1.0000  clean (1.0 thresh 0.2)  18-37 ex-sec
+meanlocs (Array 2) =
+    0.6429    8.9340    0.5627  clean (1.3 thresh 0.4)  19-37 ex-secs  Source Y
+    0.8997    9.3686    0.7555  fairly clean (0.9 thresh 0.42)  3-6, 9-35 ex-sec  Source T
+    0.9280   10.8269    1.0000  fairly clean (0.9 thresh 0.45)  2-34 sec  Source X
+    0.6635   11.2666    1.0000  same as 2.3;  Source X
+    8.7925   10.8868    1.0000  not quite (0.35 thresh 0.28)  32-40+ ex-secs
+meanlocs (Array 3) =
+    1.3696    8.8130   -0.1484  clean (1.1 thresh 0.25)  18-37 ex-secs  Source Y  almost scratchy in middle, somewhat scratchy at end
+    2.7956    9.2950    0.3052  same as 3.1
+    0.0691   10.1205   -0.3956  fairly clean (0.8 thresh 0.36) best for this source, also picks up less of the missing source  Scratchy burst at start, pause, then normal then scratchy period in middle and again at end
+    0.2227   11.6386    0.0797  same as 3.3
+   -1.4861   12.9331    0.8424  same as 3.3
+meanlocs (Array 3 bbsp0109box3b) =
+    1.5817    8.9180    0.2230  clean (1.0 thresh 0.23)  18-37 ex-sec  Source Y
+   -1.4133   12.8617    0.8916  somewhat clean (0.8 thresh 0.45)  3-6, 9-35 ex-secs  Source T  Scratchy burst at start, pause, then normal then scratchy period in middle and again at end
+    0.2032   13.0424    1.0000  somewhat clean (0.7 thresh 0.4)  2-34 ex-sec  Source X  No scratchy
+
+0113
+meanlocs (Array 1) =
+    0.7689    7.8912    0.8782  mostly clean (1.2 thresh 0.41)  5-62 ex-sec with gaps  Source Y  (best here I think)
+    5.3489    5.5308    0.8821  mess (0.5 thresh ?)  9-60?  really hard to say
+    0.3394    7.1356   -0.1267  mostly clean (1.3 thresh 0.53)  20-60 ex-sec with gaps  Source Z  (best here)
+meanlocs (Array 2) =
+    0.6487    8.9408    0.5656  fairly clean (1.2 thresh 0.62)  4-62 ex-sec with gaps  Source Y (better than 3.2)  Two scratchy bursts at beginning, five or six scratchy bursts at end
+    7.0488    5.5869   -0.3828  clean (2.3 thresh 0.63)  15-38, 42-46, two more pulses until 52  Source V  Scratchy at end of first set, second set scratchy
+meanlocs (Array 3) =
+    0.6197    5.7643   -0.2227  fairly clean (0.7 thresh 0.33)  4?-20-40, 49-54, 57-61 ex-sec  Source Z  Two scratchy intervals in 20-40, last two bursts all scratchy
+    1.5881    8.9829    0.2223  fairly clean (1.33 thresh 0.5?  16-(or 12?)-48 ex-sec  Source Y  Several scratchy in middle and end.  Are the little ones at beginning and end a different frog bleeding through or this one?
+    0.2042   13.0452    0.9999  marginal (0.7 thresh 0.52)  7-34-(or 36), 54-67  Source X  Scratchy at end of second burst
+   -1.5232   12.7829    0.9614    (0.8 thresh 0.53)  17-43 ex-sec  Source T  Several scratchy intervals in there
+
+0117
+
+0121
+Extract from 10-80 secs.  Looks like clean 1 then 2 then 3 on the first part of array 3, where it starts
+meanlocs (Array 1) =
+    1.6111    4.1715    0.0576  fairly clean (1.0 thresh 0.55)  6-59 with gaps (same as 1.2)
+    0.7785    7.8090    0.8681  fairly clean (1.2 thresh 0.55)  6-59 with gaps (better)  
+    2.4737    4.4742   -0.5000  slightly clean (0.8 thresh 0.73)  6-59 with gaps (same as 1.2)  
+meanlocs (Array 2) =
+    0.4682    9.0300    0.4371  somewhat clean (1.2 thresh 0.78)  6-59 sec w gaps
+    6.2370    5.9311   -0.2943  mostly clean (2.5 thresh 1.0)  13-56 sec, with gaps  Scratchy at end of first long burst, a few normal then scratchy for second burst, two more short scratchy bursts
+meanlocs (Array 3) =
+    0.7657    5.7962    0.1283  fairly clean (0.8 thresh 0.47)  3-38, 43-46 ex-secs  Source Z  Scratchy at end of first burst, second burst
+    1.5524    8.9584    0.2485  clean (1.6 thresh 0.43)  6-59 ex-sec, latter part is gaps with scratchies.  Source Y  Scratchy at end of first burst, thereafter
+    0.1859   12.9875    1.0000  somewhat clean (0.6 thresh 0.42)  -0-23, 46-60 sec  No scratchies
+
+0128
+Extracted from 0-50 sec
+meanlocs (Array 2) =
+    0.3803    8.9090    0.1727  (1.0 thresh 0.37)  17-44 ex-sec  No scratchies
+    3.4404    6.6785    0.7972  fairly clean (0.8 thresh 0.3)  17-42 ex-sec  Several scratchies alternating with normal
+   -1.9730    6.3669    0.6248  mostly clean (1.0 thresh 0.37)  30-47 ex-secs  No scratchies
+    8.8449    6.8531    0.3111  clean (1.2 thresh 0.3)  43-50+ ex-secs  No scratchies but just starting
+meanlocs (Array 3) =
+    1.0643    8.4388    0.1902  clean (1.0 thresh 0.4)  17-44 ex-secs  Source Y
+    0.2181   13.0718    1.0000  mostly clean (0.8 thresh 0.33)  12-42 ex-secs  Source X  No scratchy
+   -1.9453   14.0000    1.0000  borderline (0.3 thresh 0.25)  18?30?-50+ ex-secs
+
+
+Matlab's color order is blue green red cyan purple
