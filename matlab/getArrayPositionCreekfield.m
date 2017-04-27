@@ -34,26 +34,25 @@ if nargin < 2
     isplot = 0;
 end
 if nargin < 1
-    array_pos_version = 1;
+    excode = 1;
 end
 
 if excode == 1 %Jun4    
-        % distance between 2 consecutive mics in x direction:
-        d = 30 * 0.3048; % unit: meter
-        % 1. use measurement data for array position
-        % array_pos in feet
-        array_pos = [ -130  -10  10;... %M1
-            -100  0   10;... %M2
-            -70   0   3 ;... %M3
-            -40   -10 3 ;... %M4
-            -10   -10 10;... %M5
-            20    0   10;... %M6
-            50    -10 3 ;... %M7
-            80    0   3 ;... %M8
-            ];
-        % convert array_pos to meter
-        array_pos = array_pos*0.3048;
-        c = 347; 
+    % distance between 2 consecutive mics in x direction:
+    d = 30 * 0.3048; % unit: meter
+    % 1. use measurement data for array position
+    % array_pos in feet
+    array_pos = [ -130  -10  10;... %M1
+        -100  0   10;... %M2
+        -70   0   3 ;... %M3
+        -40   -10 3 ;... %M4
+        -10   -10 10;... %M5
+        20    0   10;... %M6
+        50    -10 3 ;... %M7
+        80    0   3 ;... %M8
+        ];
+    % convert array_pos to meter
+    array_pos = array_pos*0.3048;
 elseif excode == 2 % Jun5
     % distance between 2 consecutive mics in x direction:
     d = 45 * 0.3048; % unit: meter
@@ -77,7 +76,7 @@ elseif excode == 2 % Jun5
     % convert array_pos to meter
     array_pos = array_pos*0.3048;    
 end
-
+c = 347;
 
 nMic = size(array_pos,1);
 npair = nchoosek(nMic,2);
@@ -94,14 +93,12 @@ end
 
 % plot array configuration
 if isplot == 1
-    load('colorspec.mat');
-    mycolor = colorspec(1:nMic,:);
     mysize = 80;
     mic_list = 1:nMic;
     mic_list_str = num2str(mic_list'); mic_text = cellstr(mic_list_str);
     dx1 = 0.1; dy1 = 0.1; dz1 = 0.1; % displacement from the plotted point
     figure(1);
-    scatter3(array_pos(:,1), array_pos(:,2), array_pos(:,3),  mysize, mycolor,'filled');
+    scatter3(array_pos(:,1), array_pos(:,2), array_pos(:,3),  mysize);
     xlim([(min(array_pos(:,1)) - 5)  (max(array_pos(:,1)) + 5)]);
     ylim([(min(array_pos(:,2)) - 5)  (max(array_pos(:,2)) + 5)]);
     zlim([(min(array_pos(:,3)) - 1)  (max(array_pos(:,3)) + 1)]);
