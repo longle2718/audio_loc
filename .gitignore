@@ -1,0 +1,16 @@
+*
+!.gitignore
+!*/
+!*.m
+!*.c
+!*.java
+!*.h
+!*.tex
+!*.bib
+!*.png
+!*.py
+!*.ipynb
+!*.sh
+!*.md
+!*.png
+.ipynb_checkpoints/
