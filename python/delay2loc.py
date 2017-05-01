@@ -32,16 +32,29 @@ def delay2loc_grad(micsloc,meas_delayMat):
             # gradient descent update
             locNext = locnow-mu*grad
             err = errEst(locNext,micsloc,meas_delayMat)
-            if err < .9*err0:
+            if err <= err0:
                 locnow = locNext
                 err0 = err
                 break
             else:
                 mu = mu/2
+                if mu == 0.:
+                    break
 
         nIter += 1
+
         # check terminal condition
-        if np.norm(grad) < 1e-2 or nIter >= 1e3:
+        print('nIter = %s' % nIter)
+        print('|grad| = %s' % np.linalg.norm(grad))
+        print('mu = %s' % mu)
+        if nIter >= 1e2:
+            print('Done! Max # of iterations reached')
+            break
+        if np.linalg.norm(grad) < 1e-9:
+            print('Done! Gradient is sufficiently small')
+            break
+        if mu < 1e-9:
+            print('Done! Stepsize is sufficiently small')
             break
 
     return locnow,err0
