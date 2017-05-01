@@ -24,8 +24,8 @@ def delay2loc_grad(micsloc,meas_delayMat):
 
     locnow = np.mean(micsloc,axis=0)
     err0 = errEst(locnow,micsloc,meas_delayMat)
-    while True
-        grad = gradEst(locnow,miscloc,meas_delayMat,err0)
+    while True:
+        grad = gradEst(locnow,micsloc,meas_delayMat,err0)
         # backtrack line search
         mu = 1. # gradient step size
         while True:
@@ -44,12 +44,12 @@ def delay2loc_grad(micsloc,meas_delayMat):
         if np.norm(grad) < 1e-2 or nIter >= 1e3:
             break
 
-    return locnow
+    return locnow,err0
 
 def gradEst(loc,micsloc,meas_delayMat,err0):
     gradStep = .1 # meter
     N = len(loc)
-    grad = [None]*N
+    grad = np.zeros(N)
 
     for k in range(N):
         locNext = loc
@@ -64,7 +64,7 @@ def errEst(loc,micsloc,meas_delayMat):
     # estimate error at a location 
     # given measured delays and locations of array's mics
 
-    delays,_ = estDelay(micsloc,locNext)
+    delays,_ = estDelay(micsloc,loc)
     delayMat = toMat(delays)
     err = np.mean((delayMat-meas_delayMat)**2)
 
@@ -72,12 +72,13 @@ def errEst(loc,micsloc,meas_delayMat):
 
 def toMat(delays):
     # convert from delays vector to matrix
+    M = len(delays)
     delayMat = np.dot(np.ones((M,1)),np.expand_dims(delays,axis=0))-\
             np.dot(np.expand_dims(delays,axis=1),np.ones((1,M)))
 
     return delayMat
 
-def estDelays(micsloc,srcloc):
+def estDelay(micsloc,srcloc):
     # estimate theoretical delays given a 
     # source location and an array
     #
@@ -97,6 +98,6 @@ def estDelays(micsloc,srcloc):
     
     # normalize
     delays = delays-np.mean(delays)
-    gains = gains/np.norm(gains)
+    gains = gains/np.linalg.norm(gains)
 
     return delays,gains
