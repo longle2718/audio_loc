@@ -44,9 +44,7 @@ def delay2loc_grad(micsloc,meas_delayMat):
         nIter += 1
 
         # check terminal condition
-        print('nIter = %s' % nIter)
-        print('|grad| = %s' % np.linalg.norm(grad))
-        print('mu = %s' % mu)
+        print('nIter = %s, |grad| = %s, mu = %s' % (nIter,np.linalg.norm(grad),mu))
         if nIter >= 1e2:
             print('Done! Max # of iterations reached')
             break
