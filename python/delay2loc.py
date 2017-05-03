@@ -24,8 +24,8 @@ def delay2loc_grad(micsloc,meas_delayMat):
 
     locNow = np.mean(micsloc,axis=0)
     errNow = errEst(locNow,micsloc,meas_delayMat)
+    grad = gradEst(locNow,errNow,micsloc,meas_delayMat)
     while True:
-        grad = gradEst(locNow,errNow,micsloc,meas_delayMat)
         # backtrack line search
         mu = 1. # gradient step size
         while True:
@@ -35,16 +35,17 @@ def delay2loc_grad(micsloc,meas_delayMat):
             if errNext <= errNow:
                 locNow = locNext
                 errNow = errNext
+                grad = gradEst(locNow,errNow,micsloc,meas_delayMat)
                 break
             else:
                 mu = mu/2
                 if mu == 0.:
                     break
 
-        nIter += 1
-
         # check terminal condition
-        print('nIter = %s, |grad| = %s, err= %s, mu = %s' % (nIter,np.linalg.norm(grad),errNow,mu))
+        nIter += 1
+        print('nIter = %s, mu = %s, |grad| = %s, err= %s, loc = %s' % \
+                (nIter,mu,np.linalg.norm(grad),errNow,locNow))
         if nIter >= 1e2:
             print('Done! Max # of iterations reached')
             break
@@ -55,7 +56,7 @@ def delay2loc_grad(micsloc,meas_delayMat):
             print('Done! Stepsize is sufficiently small')
             break
 
-    return locNow,errNow
+    return locNow,errNow,grad
 
 def gradEst(loc,err,micsloc,meas_delayMat):
     gradStep = .1 # meter
