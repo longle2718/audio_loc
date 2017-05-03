@@ -25,7 +25,7 @@ def delay2loc_grad(micsloc,meas_delayMat):
     locNow = np.mean(micsloc,axis=0)
     errNow = errEst(locNow,micsloc,meas_delayMat)
     while True:
-        grad = gradEst(locNow,micsloc,meas_delayMat,errNow)
+        grad = gradEst(locNow,errNow,micsloc,meas_delayMat)
         # backtrack line search
         mu = 1. # gradient step size
         while True:
@@ -57,7 +57,7 @@ def delay2loc_grad(micsloc,meas_delayMat):
 
     return locNow,errNow
 
-def gradEst(loc,micsloc,meas_delayMat,err):
+def gradEst(loc,err,micsloc,meas_delayMat):
     gradStep = .1 # meter
     N = len(loc)
     grad = np.zeros(N)
@@ -77,7 +77,7 @@ def errEst(loc,micsloc,meas_delayMat):
 
     delays,_ = estDelay(micsloc,loc)
     delayMat = toMat(delays)
-    err = np.mean((delayMat-meas_delayMat)**2)
+    err = np.mean((delayMat-meas_delayMat)**2) # total squared delay error is metric to minimize
 
     return err
 
