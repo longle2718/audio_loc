@@ -22,19 +22,19 @@ def delay2loc_grad(micsloc,meas_delayMat):
     M = len(micsloc)
     nIter = 0
 
-    locnow = np.mean(micsloc,axis=0)
-    err0 = errEst(locnow,micsloc,meas_delayMat)
+    locNow = np.mean(micsloc,axis=0)
+    errNow = errEst(locNow,micsloc,meas_delayMat)
     while True:
-        grad = gradEst(locnow,micsloc,meas_delayMat,err0)
+        grad = gradEst(locNow,micsloc,meas_delayMat,errNow)
         # backtrack line search
         mu = 1. # gradient step size
         while True:
             # gradient descent update
-            locNext = locnow-mu*grad
-            err = errEst(locNext,micsloc,meas_delayMat)
-            if err <= err0:
-                locnow = locNext
-                err0 = err
+            locNext = locNow-mu*grad
+            errNext = errEst(locNext,micsloc,meas_delayMat)
+            if errNext <= errNow:
+                locNow = locNext
+                errNow = errNext
                 break
             else:
                 mu = mu/2
@@ -44,7 +44,7 @@ def delay2loc_grad(micsloc,meas_delayMat):
         nIter += 1
 
         # check terminal condition
-        print('nIter = %s, |grad| = %s, mu = %s' % (nIter,np.linalg.norm(grad),mu))
+        print('nIter = %s, |grad| = %s, err= %s, mu = %s' % (nIter,np.linalg.norm(grad),errNow,mu))
         if nIter >= 1e2:
             print('Done! Max # of iterations reached')
             break
@@ -55,9 +55,9 @@ def delay2loc_grad(micsloc,meas_delayMat):
             print('Done! Stepsize is sufficiently small')
             break
 
-    return locnow,err0
+    return locNow,errNow
 
-def gradEst(loc,micsloc,meas_delayMat,err0):
+def gradEst(loc,micsloc,meas_delayMat,err):
     gradStep = .1 # meter
     N = len(loc)
     grad = np.zeros(N)
@@ -66,8 +66,8 @@ def gradEst(loc,micsloc,meas_delayMat,err0):
         locNext = loc
         locNext[k] += gradStep
 
-        err = errEst(loc,micsloc,meas_delayMat)
-        grad[k] = (err-err0)/gradStep
+        errNext = errEst(locNext,micsloc,meas_delayMat)
+        grad[k] = (errNext-err)/gradStep
         
     return grad
 
