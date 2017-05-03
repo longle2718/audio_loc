@@ -1,5 +1,5 @@
 '''
-Utility functions
+(Time) delays to location conversion functions
 
 Long Le <longle1@illinois.edu>
 University of Illinois
@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 import multiprocessing
 from joblib import Parallel, delayed
 
-cSound = 343 # speed of sound m/s
+cSound = 340 # speed of sound m/s
 
 def delay2loc_grad(micsloc,meas_delayMat):
     # from delays to location using gradient descent
