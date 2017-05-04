@@ -68,10 +68,14 @@ def hieProc(data,fs,tHieBlk=[0.032,2.0],tHieInc=[0.004,1.0]):
     hRidges = [None]*NHie # hierarchical ridges
     bktRatio = 2
 
-    hSpecs[0] = Parallel(n_jobs=multiprocessing.cpu_count())(delayed(extrSpec)(data[k,:],fs,tHieBlk[0],tHieInc[0]) for k in range(NCh))
-    hRidges[0] = Parallel(n_jobs=multiprocessing.cpu_count())(delayed(extrRidge)(hSpecs[0][k][0],hSpecs[0][k][-1],bktRatio) for k in range(NCh))
+    hSpecs[0] = Parallel(n_jobs=multiprocessing.cpu_count())(delayed(extrSpec)\
+            (data[k,:],fs,tHieBlk[0],tHieInc[0]) for k in range(NCh))
+    hRidges[0] = Parallel(n_jobs=multiprocessing.cpu_count())(delayed(extrRidge)\
+            (hSpecs[0][k][0],hSpecs[0][k][-1],bktRatio) for k in range(NCh))
     for l in range(1,NHie):
-        hSpecs[l] = Parallel(n_jobs=multiprocessing.cpu_count())(delayed(pool)(hSpecs[l-1][k][0],hSpecs[l-1][k][1],hSpecs[l-1][k][2],tHieBlk[l],tHieInc[l],hSpecs[l-1][k][-1]) for k in range(NCh))
-        hRidges[l] = Parallel(n_jobs=multiprocessing.cpu_count())(delayed(extrRidge)(hSpecs[l][k][0],hSpecs[l][k][-1],bktRatio) for k in range(NCh))
+        hSpecs[l] = Parallel(n_jobs=multiprocessing.cpu_count())(delayed(pool)\
+                (hSpecs[l-1][k][0],hSpecs[l-1][k][1],hSpecs[l-1][k][2],tHieBlk[l],tHieInc[l],hSpecs[l-1][k][-1]) for k in range(NCh))
+        hRidges[l] = Parallel(n_jobs=multiprocessing.cpu_count())(delayed(extrRidge)\
+                (hSpecs[l][k][0],hSpecs[l][k][-1],bktRatio) for k in range(NCh))
 
     return hRidges,hSpecs
