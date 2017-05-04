@@ -54,7 +54,7 @@ def extrRidge(S,tInc,bktRatio):
     # bktRatio: backtrack ratio
     #
     tBkt = tInc*bktRatio # backtrack time
-    X = ridgeDTW.ridgeTracker(S,np.median(S.flatten()),tBkt,tInc,isMaxPool=False,supThresh=5.5)
+    X = ridgeDTW.ridgeTracker(S,np.median(S,axis=1),tBkt,tInc,isMaxPool=False,supThresh=5.5)
     return X
 
 def hieProc(data,fs,tHieBlk=[0.032,2.0],tHieInc=[0.004,1.0]):
