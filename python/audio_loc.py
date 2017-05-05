@@ -146,7 +146,7 @@ def labelObjects(XX):
     for k in range(M):
         for l in range(N):
             mask = bfs(X,(k,l),cnt)
-            if np.sum(mask) > 10:
+            if np.any(mask):
                 masks.append(mask)
                 cnt += 1
 
