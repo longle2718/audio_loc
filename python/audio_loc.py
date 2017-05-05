@@ -79,3 +79,22 @@ def hieProc(data,fs,tHieBlk=[0.032,2.0],tHieInc=[0.004,1.0]):
                 (hSpecs[l][k][0],hSpecs[l][k][-1],bktRatio) for k in range(NCh))
 
     return hRidges,hSpecs
+
+def segment(ts,nBlk,nInc):
+    # segment a time series
+    # ts: time series MxN
+    # M: data dimension
+    # N: length of the time series
+
+    M,N = np.shape(ts)
+    NSeg = int(np.ceil(N/nInc)) # total number of frames
+    tsSeg = [None]*NSeg
+    i = 0
+    for k in range(NSeg):
+        j = min(N,i+nBlk)
+
+        tsSeg[k] = np.pad(ts[:,i:j],((0,0),(0,nBlk-(j-i))),'constant',constant_values=0)
+
+        i = min(N,i+nInc)
+
+    return tsSeg
