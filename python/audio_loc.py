@@ -98,3 +98,62 @@ def segment(ts,nBlk,nInc):
         i = min(N,i+nInc)
 
     return tsSeg
+
+def labelObjects(XX):
+    # count and label all TF objects in
+    # a spectrographic image/matrix with masks
+    #
+
+    # make a copy of the input array
+    X = np.array(XX)
+    M,N = np.shape(X)
+    
+    def bfs(X,start,cnt):
+        # breadth first search
+        M,N = np.shape(X)
+        mask = np.zeros((M,N))
+
+        explored = set()
+        frontierQ = []
+        frontierQ.append(start)
+        while len(frontierQ) > 0:
+            node = frontierQ.pop(0)
+
+            mask[node] = 1+cnt
+            X[node] = 0.
+
+            # visit neighbors
+            for ngb in getNeighbor(node,X):
+                if ngb not in explored:
+                    explored.add(ngb)
+                    frontierQ.append(ngb)
+
+        return mask
+
+    def getNeighbor(node,X):
+        # define local constraints
+        M,N = np.shape(X)
+        ngb = []
+        for d in [[0,1],[1,0],[1,1],[0,-1],[-1,0],[-1,-1],[1,-1],[-1,1]]:
+            n = tuple(np.array(node)+d) 
+            if n[0]>=0 and n[0]<M and n[1]>=0 and n[1]<N and X[n]>0:
+                ngb.append(n)
+
+        return ngb
+
+    masks = []
+    cnt = 0
+    for k in range(M):
+        for l in range(N):
+            mask = bfs(X,(k,l),cnt)
+            if np.sum(mask) > 10:
+                masks.append(mask)
+                cnt += 1
+
+    '''
+    plt.figure()
+    plt.pcolormesh(X)
+    plt.show()
+    print(cnt)
+    '''
+    return masks
