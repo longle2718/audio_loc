@@ -119,7 +119,7 @@ def labelObjects(XX):
         while len(frontierQ) > 0:
             node = frontierQ.pop(0)
 
-            mask[node] = 1+cnt
+            mask[node] = X[node]
             X[node] = 0.
 
             # visit neighbors
