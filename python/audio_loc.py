@@ -99,10 +99,13 @@ def segment(ts,nBlk,nInc):
 
     return tsSeg
 
-def labelObjects(XX):
+def labelObjects(XX,mask=None):
     # count and label all TF objects in
-    # a spectrographic image/matrix with masks
+    # a spectrographic image/matrix,
+    # constrained by a mask
     #
+    if mask == None:
+        mask = np.ones(np.shape(XX))
 
     # make a copy of the input array
     X = np.array(XX)
@@ -111,7 +114,7 @@ def labelObjects(XX):
     def bfs(X,start,cnt):
         # breadth first search
         M,N = np.shape(X)
-        mask = np.zeros((M,N))
+        TFObj = np.zeros((M,N))
 
         explored = set()
         frontierQ = []
@@ -119,7 +122,7 @@ def labelObjects(XX):
         while len(frontierQ) > 0:
             node = frontierQ.pop(0)
 
-            mask[node] = X[node]
+            TFObj[node] = X[node]
             X[node] = 0.
 
             # visit neighbors
@@ -128,7 +131,7 @@ def labelObjects(XX):
                     explored.add(ngb)
                     frontierQ.append(ngb)
 
-        return mask
+        return TFObj
 
     def getNeighbor(node,X):
         # define local constraints
@@ -136,18 +139,18 @@ def labelObjects(XX):
         ngb = []
         for d in [[0,1],[1,0],[1,1],[0,-1],[-1,0],[-1,-1],[1,-1],[-1,1]]:
             n = tuple(np.array(node)+d) 
-            if n[0]>=0 and n[0]<M and n[1]>=0 and n[1]<N and X[n]>0:
+            if n[0]>=0 and n[0]<M and n[1]>=0 and n[1]<N and X[n]>0 and mask[n]>0:
                 ngb.append(n)
 
         return ngb
 
-    masks = []
+    TFObjs = []
     cnt = 0
     for k in range(M):
         for l in range(N):
-            mask = bfs(X,(k,l),cnt)
-            if np.any(mask):
-                masks.append(mask)
+            TFObj = bfs(X,(k,l),cnt)
+            if np.any(TFObj):
+                TFObjs.append(TFObj)
                 cnt += 1
 
     '''
@@ -156,4 +159,18 @@ def labelObjects(XX):
     plt.show()
     print(cnt)
     '''
-    return masks
+    return TFObjs
+
+def pruneObj(inObjs):
+    N = len(inObjs)
+    val = np.zeros(N)
+    for k in range(N):
+        val[k] = np.mean(inObjs[k])
+    thresh = np.percentile(val,80)
+
+    outObjs = []
+    for k in range(N):
+        if np.mean(inObjs[k]) > thresh:
+            outObjs.append(inObjs[k])
+
+    return outObjs
