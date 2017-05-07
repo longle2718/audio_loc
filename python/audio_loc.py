@@ -104,7 +104,7 @@ def labelObjects(XX,mask=None):
     # a spectrographic image/matrix,
     # constrained by a mask
     #
-    if mask == None:
+    if mask is None:
         mask = np.ones(np.shape(XX))
 
     # make a copy of the input array
