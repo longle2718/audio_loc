@@ -104,48 +104,42 @@ def hieProc(data,fs,tHieBlk=[0.032,2.0],tHieInc=[0.004,1.0]):
 
     return hRidges,hSpecs
 
-def bfs(X,start,cnt,mask):
-    # breadth first search
-    M,N = np.shape(X)
-    TFObj = np.zeros((M,N))
-
-    explored = set()
-    frontierQ = []
-    frontierQ.append(start)
-    while len(frontierQ) > 0:
-        node = frontierQ.pop(0)
-
-        TFObj[node] = X[node]
-        X[node] = 0.
-
-        # visit neighbors
-        for ngb in getNeighbor(node,X,mask):
-            if ngb not in explored:
-                explored.add(ngb)
-                frontierQ.append(ngb)
-
-    return TFObj
-
-def getNeighbor(node,X,mask):
-    # define local constraints
-    M,N = np.shape(X)
-    ngb = []
-    for d in [[0,1],[1,0],[1,1],[0,-1],[-1,0],[-1,-1],[1,-1],[-1,1]]:
-        n = tuple(np.array(node)+d) 
-        if n[0]>=0 and n[0]<M and n[1]>=0 and n[1]<N and X[n]>0 and mask[n]>0:
-            ngb.append(n)
-
-    return ngb
-
-def labelObjects(XX,mask=None):
+def labelObjects(XX):
     # count and label all TF objects in
     # a spectrographic image/matrix,
-    # constrained by a mask
     #
+    def bfs(X,start,cnt):
+        # breadth first search
+        M,N = np.shape(X)
+        TFObj = np.zeros((M,N))
 
-    if mask is None:
-        mask = np.ones(np.shape(XX))
-    print('np.shape(mask) = %s' % (np.shape(mask),))
+        explored = set()
+        frontierQ = []
+        frontierQ.append(start)
+        while len(frontierQ) > 0:
+            node = frontierQ.pop(0)
+
+            TFObj[node] = X[node]
+            X[node] = 0.
+
+            # visit neighbors
+            for ngb in getNeighbor(node,X):
+                if ngb not in explored:
+                    explored.add(ngb)
+                    frontierQ.append(ngb)
+
+        return TFObj
+
+    def getNeighbor(node,X):
+        # define local constraints
+        M,N = np.shape(X)
+        ngb = []
+        for d in [[0,1],[1,0],[1,1],[0,-1],[-1,0],[-1,-1],[1,-1],[-1,1]]:
+            n = tuple(np.array(node)+d) 
+            if n[0]>=0 and n[0]<M and n[1]>=0 and n[1]<N and X[n]>0:
+                ngb.append(n)
+
+        return ngb
 
     # make a copy of the input array
     X = np.array(XX)
@@ -155,7 +149,7 @@ def labelObjects(XX,mask=None):
     cnt = 0
     for k in range(M):
         for l in range(N):
-            TFObj = bfs(X,(k,l),cnt,mask)
+            TFObj = bfs(X,(k,l),cnt)
             if np.any(TFObj):
                 TFObjs.append(TFObj)
                 cnt += 1
