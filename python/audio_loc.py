@@ -33,8 +33,8 @@ def pool(S,F,T,tSegBlk,tSegInc,tInc):
     tSegBlk = fBlk*tInc
     fInc = int(tSegInc/tInc) # # of frames incremented between consecutive segments
     tSegInc = fInc*tInc
-    NSeg = int(np.ceil(NT/fInc))
 
+    NSeg = int(np.ceil(NT/fInc))
     FF = F
     # #-of-segs x #-of-frames-per-seg x #-of-seconds-per-frame
     TT = np.arange(NSeg)*fInc*tInc 
@@ -48,6 +48,30 @@ def pool(S,F,T,tSegBlk,tSegInc,tInc):
         i = min(NT,i+fInc)
     
     return SS,FF,TT,tSegBlk,tSegInc
+
+def segment(X,tSegBlk,tSegInc,tInc):
+    # segment a time series
+    # X: time series MxN
+    # M: data dimension
+    # N: length of the time series
+
+    M,N = np.shape(X)
+    nBlk = int(tSegBlk/tInc)
+    tSegBlk = nBlk*tInc
+    nInc = int(tSegInc/tInc)
+    tSegInc = nInc*tInc
+
+    NSeg = int(np.ceil(N/nInc)) # total number of frames
+    XSeg = [None]*NSeg
+    i = 0
+    for k in range(NSeg):
+        j = min(N,i+nBlk)
+
+        XSeg[k] = np.pad(X[:,i:j],((0,0),(0,nBlk-(j-i))),'constant',constant_values=0)
+
+        i = min(N,i+nInc)
+
+    return XSeg,tSegBlk,tSegInc
 
 def extrRidge(S,tInc,bktRatio):
     # (parallel) routine for extracting ridges
@@ -79,25 +103,6 @@ def hieProc(data,fs,tHieBlk=[0.032,2.0],tHieInc=[0.004,1.0]):
                 (hSpecs[l][k][0],hSpecs[l][k][-1],bktRatio) for k in range(NCh))
 
     return hRidges,hSpecs
-
-def segment(ts,nBlk,nInc):
-    # segment a time series
-    # ts: time series MxN
-    # M: data dimension
-    # N: length of the time series
-
-    M,N = np.shape(ts)
-    NSeg = int(np.ceil(N/nInc)) # total number of frames
-    tsSeg = [None]*NSeg
-    i = 0
-    for k in range(NSeg):
-        j = min(N,i+nBlk)
-
-        tsSeg[k] = np.pad(ts[:,i:j],((0,0),(0,nBlk-(j-i))),'constant',constant_values=0)
-
-        i = min(N,i+nInc)
-
-    return tsSeg
 
 def labelObjects(XX,mask=None):
     # count and label all TF objects in
@@ -174,3 +179,11 @@ def pruneObj(inObjs):
             outObjs.append(inObjs[k])
 
     return outObjs
+
+def seg2bounds(idx,tSegBlk,tSegInc,tInc):
+    # return the sample bounds of a segment at an index
+    n0 = int(idx*tSegInc/tInc)
+    n1 = n0+int(tSegBlk/tInc)
+
+    return n0,n1
+
