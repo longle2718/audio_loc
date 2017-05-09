@@ -170,7 +170,7 @@ def pruneObj(inObjs):
     val = np.zeros(N)
     for k in range(N):
         val[k] = np.mean(inObjs[k])
-    thresh = np.percentile(val,50)
+    thresh = np.percentile(val,80)
 
     outObjs = []
     for k in range(N):
