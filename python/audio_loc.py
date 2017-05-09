@@ -164,6 +164,9 @@ def labelObjects(XX):
 
 def pruneObj(inObjs):
     N = len(inObjs)
+    if N == 0:
+        return inObjs
+
     val = np.zeros(N)
     for k in range(N):
         val[k] = np.mean(inObjs[k])
