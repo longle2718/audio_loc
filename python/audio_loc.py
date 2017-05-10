@@ -43,7 +43,7 @@ def pool(S,F,T,tSegBlk,tSegInc,tInc):
     for k in range(NSeg):
         j = min(NT,i+fBlk)
 
-        SS[:,k] = np.mean(np.pad(S[:,i:j],((0,0),(0,fBlk-(j-i))),'constant',constant_values=0),axis=1)
+        SS[:,k] = np.mean(np.pad(S[:,i:j],((0,0),(0,fBlk-(j-i))),'constant'),axis=1)
 
         i = min(NT,i+fInc)
     
@@ -67,7 +67,7 @@ def segment(X,tSegBlk,tSegInc,tInc):
     for k in range(NSeg):
         j = min(N,i+nBlk)
 
-        XSeg[k] = np.pad(X[:,i:j],((0,0),(0,nBlk-(j-i))),'constant',constant_values=0)
+        XSeg[k] = np.pad(X[:,i:j],((0,0),(0,nBlk-(j-i))),'constant')
 
         i = min(N,i+nInc)
 
