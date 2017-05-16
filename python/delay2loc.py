@@ -11,7 +11,7 @@ from joblib import Parallel, delayed
 
 cSound = 340 # speed of sound m/s
 
-def delay2loc_grad(micsloc,meas_delayMat):
+def delay2loc_grad(micsloc,meas_delayMat,debug=False):
     # from delays to location using gradient descent
     #
     # micsloc: Mx3, 3-D locations of M mics
@@ -44,16 +44,20 @@ def delay2loc_grad(micsloc,meas_delayMat):
 
         # check terminal condition
         nIter += 1
-        print('nIter = %s, mu = %s, |grad| = %s, err= %s, loc = %s' % \
-                (nIter,mu,np.linalg.norm(grad),errNow,locNow))
+        if debug:
+            print('nIter = %s, mu = %s, |grad| = %s, err= %s, loc = %s' % \
+                    (nIter,mu,np.linalg.norm(grad),errNow,locNow))
         if nIter >= 1e2:
-            print('Done! Max # of iterations reached')
+            if debug:
+                print('Done! Max # of iterations reached')
             break
         if np.linalg.norm(grad) < 1e-9:
-            print('Done! Gradient is sufficiently small')
+            if debug:
+                print('Done! Gradient is sufficiently small')
             break
         if mu < 1e-9:
-            print('Done! Stepsize is sufficiently small')
+            if debug:
+                print('Done! Stepsize is sufficiently small')
             break
 
     return locNow,errNow,grad
