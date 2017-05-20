@@ -190,28 +190,34 @@ def bestLink(grps):
     # grps is NCh x NGrp (length varies)
     # find the most overlapped set of groups
     NCh = len(grps)
+    seq = []
 
     V = [None]*(NCh)
     backPtr = [None]*(NCh)
                     
-    N0 = len(grps[0])
-    V[0] = np.zeros(N0)
-    backPtr[0] = -np.ones(N0,dtype=int)
+    N = len(grps[0])
+    if N == 0:
+        return seq
+    V[0] = np.zeros(N)
+    backPtr[0] = -np.ones(N,dtype=int)
     for chIdx in range(NCh-1):
-        N0 = len(grps[chIdx])
-        N1 = len(grps[chIdx+1])
-        V[chIdx+1] = np.zeros(N1)
-        backPtr[chIdx+1] = -np.ones(N1,dtype=int)
-        for k in range(N1):
-            link = np.zeros(N0)
+        N0 = N
+
+        N = len(grps[chIdx+1])
+        if N == 0:
+            return seq
+        V[chIdx+1] = np.zeros(N)
+        backPtr[chIdx+1] = -np.ones(N,dtype=int)
+        for k in range(N):
+            link = V[chIdx]
             for l in range(N0):
                 # compute the link weight as the geometric mean of two groups
-                link[l] = V[chIdx][l] + np.sum(np.sqrt(grps[chIdx+1][k]*grps[chIdx][l]))
+                link[l] += np.sum(np.sqrt(grps[chIdx+1][k]*grps[chIdx][l]))
+            # this looks like a max pooling
             V[chIdx+1][k] = np.max(link)
             backPtr[chIdx+1][k] = np.argmax(link)
             
     # backtracking
-    seq = []
     seq.append(np.argmax(V[NCh-1]))
     for chIdx in range(NCh-1,0,-1):
         #print('chIdx = %s' % chIdx)
