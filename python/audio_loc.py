@@ -224,4 +224,9 @@ def bestLink(grps):
         #print('seq[-1] = %s' % seq[-1])
         seq.append(backPtr[chIdx][seq[-1]])
 
-    return seq
+    return seq[::-1]
+
+def rmGrp(grps,seq):
+    for k in range(len(grps)):
+        del grps[k][seq[k]]
+    return
