@@ -203,7 +203,7 @@ def bestLink(grps):
     for chIdx in range(NCh-1):
         N0 = N
 
-        N = len(grps[chIdx+1])
+        N = len(grps[chIdx+1]) # num of groups in a channel
         if N == 0:
             return seq
         V[chIdx+1] = np.zeros(N)
@@ -212,7 +212,7 @@ def bestLink(grps):
             link = V[chIdx]
             for l in range(N0):
                 # compute the link weight as the geometric mean of two groups
-                link[l] += max(gramCorr(grps[chIdx+1][k],grps[chIdx][l]))
+                link[l] += max(gramCorr(grps[chIdx+1][k],grps[chIdx][l],NInc=50))
             # this looks like a max pooling
             V[chIdx+1][k] = np.max(link)
             backPtr[chIdx+1][k] = np.argmax(link)
@@ -226,16 +226,17 @@ def bestLink(grps):
 
     return seq[::-1]
 
-def gramCorr(spec1,spec2):
+def gramCorrPar(n,spec1,spec2):
+    _,NT1 = np.shape(spec1)
+    _,NT2 = np.shape(spec2)
+    return np.sum(np.sqrt(np.pad(spec1,((0,0),(max(0,NT2-n),n)),'constant')\
+                         *np.pad(spec2,((0,0),(n,max(0,NT1-n))),'constant')))
+def gramCorr(spec1,spec2,NInc=1):
     # AIgram/spectrogram correlation
     _,NT1 = np.shape(spec1)
     _,NT2 = np.shape(spec2)
-
-    corr = np.zeros(NT1+NT2)
-    for n in range(NT1+NT2):
-        corr[n] = np.sum(np.sqrt(np.pad(spec1,((0,0),(max(0,NT2-n),n)),'constant')\
-                                *np.pad(spec2,((0,0),(n,max(0,NT1-n))),'constant')))
-    return corr
+    return Parallel(n_jobs=multiprocessing.cpu_count())(delayed(gramCorrPar)\
+            (n,spec1,spec2) for n in range(0,NT1+NT2,NInc))
 
 def rmGrp(grps,seq):
     for k in range(len(grps)):
