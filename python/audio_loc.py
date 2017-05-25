@@ -212,7 +212,7 @@ def bestLink(grps):
             link = V[chIdx]
             for l in range(N0):
                 # compute the link weight as the geometric mean of two groups
-                link[l] += max(gramCorr(grps[chIdx+1][k],grps[chIdx][l],NInc=50))
+                link[l] += max(gramCorr(grps[chIdx+1][k],grps[chIdx][l],NInc=100))
             # this looks like a max pooling
             V[chIdx+1][k] = np.max(link)
             backPtr[chIdx+1][k] = np.argmax(link)
@@ -240,5 +240,6 @@ def gramCorr(spec1,spec2,NInc=1):
 
 def rmGrp(grps,seq):
     for k in range(len(grps)):
-        del grps[k][seq[k]]
+        #del grps[k][seq[k]]
+        grps[k] = np.delete(grps[k],seq[k],axis=0)
     return
