@@ -212,7 +212,7 @@ def bestLink(grps):
             link = V[chIdx]
             for l in range(N0):
                 # compute the link weight as the geometric mean of two groups
-                link[l] += np.sum(np.sqrt(grps[chIdx+1][k]*grps[chIdx][l]))
+                link[l] += max(gramCorr(grps[chIdx+1][k],grps[chIdx][l]))
             # this looks like a max pooling
             V[chIdx+1][k] = np.max(link)
             backPtr[chIdx+1][k] = np.argmax(link)
@@ -225,6 +225,17 @@ def bestLink(grps):
         seq.append(backPtr[chIdx][seq[-1]])
 
     return seq[::-1]
+
+def gramCorr(spec1,spec2):
+    # AIgram/spectrogram correlation
+    _,NT1 = np.shape(spec1)
+    _,NT2 = np.shape(spec2)
+
+    corr = np.zeros(NT1+NT2)
+    for n in range(NT1+NT2):
+        corr[n] = np.sum(np.sqrt(np.pad(spec1,((0,0),(max(0,NT2-n),n)),'constant')\
+                                *np.pad(spec2,((0,0),(n,max(0,NT1-n))),'constant')))
+    return corr
 
 def rmGrp(grps,seq):
     for k in range(len(grps)):
