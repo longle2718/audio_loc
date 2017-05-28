@@ -11,15 +11,16 @@ from joblib import Parallel, delayed
 
 cSound = 340 # speed of sound m/s
 
-def delay2loc_grad(micsloc,meas_delayMat,debug=False):
+def delay2loc_grad(micsloc,meas_delayMat,mu=1.,debug=False):
     # from delays to location using gradient descent
     #
     # micsloc: Mx3, 3-D locations of M mics
     # meas_delayMat: MxM, measured delay matrix
+    # mu: gradient step size
     #
     # loc: 1x3, output location of the sound source
 
-    M = len(micsloc)
+    M,N = np.shape(micsloc)
     nIter = 0
 
     locNow = np.mean(micsloc,axis=0)
@@ -27,10 +28,10 @@ def delay2loc_grad(micsloc,meas_delayMat,debug=False):
     grad = gradEst(locNow,errNow,micsloc,meas_delayMat)
     while True:
         # backtrack line search
-        mu = 1. # gradient step size
         while True:
             # gradient descent update
             locNext = locNow-mu*grad
+            #print('===== locNext = %s, locNow = %s, mu = %s, grad = %s' % (locNext,locNow,mu,grad))
             errNext = errEst(locNext,micsloc,meas_delayMat)
             if errNext <= errNow:
                 locNow = locNext
@@ -45,17 +46,17 @@ def delay2loc_grad(micsloc,meas_delayMat,debug=False):
         # check terminal condition
         nIter += 1
         if debug:
-            print('nIter = %s, mu = %s, |grad| = %s, err= %s, loc = %s' % \
-                    (nIter,mu,np.linalg.norm(grad),errNow,locNow))
-        if nIter >= 1e2:
+            print('nIter = %s, mu = %s, grad = %s, loc= %s, err = %s' % \
+                    (nIter,mu,grad,locNow,errNow))
+        if nIter >= 1e4:
             if debug:
                 print('Done! Max # of iterations reached')
             break
-        if np.linalg.norm(grad) < 1e-9:
+        if np.linalg.norm(grad) < 1e-6:
             if debug:
                 print('Done! Gradient is sufficiently small')
             break
-        if mu < 1e-9:
+        if mu < 1e-2:
             if debug:
                 print('Done! Stepsize is sufficiently small')
             break
@@ -63,16 +64,25 @@ def delay2loc_grad(micsloc,meas_delayMat,debug=False):
     return locNow,errNow,grad
 
 def gradEst(loc,err,micsloc,meas_delayMat):
+    # interior-point optimization
+    # gradient of the ojective and the logarithmic barrier functions
+    # of the constraint |loc-micsCen| <= 200,
+    # i.e. the solution should be within the 200 m radius
     gradStep = .1 # meter
     N = len(loc)
     grad = np.zeros(N)
+    micsCen = np.mean(micsloc,axis=0) # micArray centroid
+    lambda = 1.
 
     for k in range(N):
-        locNext = loc
-        locNext[k] += gradStep
-
+        locNext = np.array(loc); locNext[k] += gradStep
         errNext = errEst(locNext,micsloc,meas_delayMat)
-        grad[k] = (errNext-err)/gradStep
+
+        d = np.linalg.norm(loc-micsCen)
+        dNext = np.linalg.norm(locNext-micsCen)
+
+        grad[k] = (errNext-err)/gradStep + \
+                lambda/(200-d)*(dNext-d)/gradStep
         
     return grad
 
@@ -82,7 +92,7 @@ def errEst(loc,micsloc,meas_delayMat):
 
     delays,_ = estDelay(micsloc,loc)
     delayMat = toMat(delays)
-    err = np.mean((delayMat-meas_delayMat)**2) # total squared delay error is metric to minimize
+    err = 0.5*np.sum(np.abs(delayMat-meas_delayMat)) # total error in delay is the metric to minimize
 
     return err
 
