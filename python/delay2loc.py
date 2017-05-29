@@ -48,7 +48,7 @@ def delay2loc_grad(micsloc,meas_delayMat,mu=1.,debug=False):
         if debug:
             print('nIter = %s, mu = %s, grad = %s, loc = %s, err = %s' % \
                     (nIter,mu,grad,locNow,errNow))
-        if nIter >= 1e4:
+        if nIter >= 1e3:
             if debug:
                 print('Done! Max # of iterations reached')
             break
@@ -56,14 +56,14 @@ def delay2loc_grad(micsloc,meas_delayMat,mu=1.,debug=False):
             if debug:
                 print('Done! Gradient is sufficiently small')
             break
-        if mu < 1e-2:
+        if mu < 1e-6:
             if debug:
                 print('Done! Stepsize is sufficiently small')
             break
 
     return locNow,errNow,grad
 
-def gradEst(loc,err,micsloc,meas_delayMat,lam=[1.,1.]):
+def gradEst(loc,err,micsloc,meas_delayMat,lam=[.5,.5]):
     # interior-point optimization
     # gradient of the ojective and the logarithmic barrier functions
     # of the following constraints 
@@ -86,8 +86,8 @@ def gradEst(loc,err,micsloc,meas_delayMat,lam=[1.,1.]):
         z = loc[-1]
         zNext = locNext[-1]
 
-        grad[k] = (errNext-err)/gradStep + \
-                lam[0]/(200-d)*(dNext-d)/gradStep + \
+        grad[k] = (errNext-err)/gradStep+\
+                lam[0]/(200-d)*(dNext-d)/gradStep-\
                 lam[1]/z*(zNext-z)/gradStep
         
     return grad
