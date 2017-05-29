@@ -46,7 +46,7 @@ def delay2loc_grad(micsloc,meas_delayMat,mu=1.,debug=False):
         # check terminal condition
         nIter += 1
         if debug:
-            print('nIter = %s, mu = %s, grad = %s, loc= %s, err = %s' % \
+            print('nIter = %s, mu = %s, grad = %s, loc = %s, err = %s' % \
                     (nIter,mu,grad,locNow,errNow))
         if nIter >= 1e4:
             if debug:
@@ -63,16 +63,18 @@ def delay2loc_grad(micsloc,meas_delayMat,mu=1.,debug=False):
 
     return locNow,errNow,grad
 
-def gradEst(loc,err,micsloc,meas_delayMat):
+def gradEst(loc,err,micsloc,meas_delayMat,lam=[1.,1.]):
     # interior-point optimization
     # gradient of the ojective and the logarithmic barrier functions
-    # of the constraint |loc-micsCen| <= 200,
+    # of the following constraints 
+    # |loc-micsCen| <= 200,
     # i.e. the solution should be within the 200 m radius
+    # z >= 0
+    # i.e. the height must be positive
     gradStep = .1 # meter
     N = len(loc)
     grad = np.zeros(N)
     micsCen = np.mean(micsloc,axis=0) # micArray centroid
-    lambda = 1.
 
     for k in range(N):
         locNext = np.array(loc); locNext[k] += gradStep
@@ -81,8 +83,12 @@ def gradEst(loc,err,micsloc,meas_delayMat):
         d = np.linalg.norm(loc-micsCen)
         dNext = np.linalg.norm(locNext-micsCen)
 
+        z = loc[-1]
+        zNext = locNext[-1]
+
         grad[k] = (errNext-err)/gradStep + \
-                lambda/(200-d)*(dNext-d)/gradStep
+                lam[0]/(200-d)*(dNext-d)/gradStep + \
+                lam[1]/z*(zNext-z)/gradStep
         
     return grad
 
