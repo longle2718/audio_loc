@@ -63,12 +63,12 @@ def delay2loc_grad(micsloc,meas_delayMat,mu=1.,debug=False):
 
     return locNow,errNow,grad
 
-def gradEst(loc,err,micsloc,meas_delayMat,lam=[.5,.5]):
+def gradEst(loc,err,micsloc,meas_delayMat,lam=[.5,.25,.25]):
     # interior-point optimization
     # gradient of the ojective and the logarithmic barrier functions
     # of the following constraints 
-    # |loc-micsCen| <= 200,
-    # i.e. the solution should be within the 200 m radius
+    # |loc-micsCen| <= 100,
+    # i.e. the solution should be within the 100 m radius
     # z >= 0
     # i.e. the height must be positive
     gradStep = .1 # meter
@@ -86,9 +86,10 @@ def gradEst(loc,err,micsloc,meas_delayMat,lam=[.5,.5]):
         z = loc[-1]
         zNext = locNext[-1]
 
-        grad[k] = (errNext-err)/gradStep+\
-                lam[0]/(200-d)*(dNext-d)/gradStep-\
-                lam[1]/z*(zNext-z)/gradStep
+        grad[k] = (errNext-err)/gradStep\
+                +lam[0]/(100-d)*(dNext-d)/gradStep\
+                -lam[1]/z*(zNext-z)/gradStep\
+                +lam[2]/(100-z)*(zNext-z)/gradStep
         
     return grad
 
