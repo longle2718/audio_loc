@@ -28,6 +28,7 @@ def delay2loc_grad(micsloc,meas_delayMat,mu=1.,debug=False):
     grad = gradEst(locNow,errNow,micsloc,meas_delayMat)
     while True:
         # backtrack line search
+        # TODO: fixed/optimized this gradient descent line search
         while True:
             # gradient descent update
             locNext = locNow-mu*grad
